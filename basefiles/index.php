@@ -3,7 +3,7 @@ include_once('./basefiles/header.php');
 ?>
 	<div class="corps" id="presentation">
 		<h2 class="center-header"><?php echo ABOUT_ME; ?></h2>
-		<img src="https://01.cdn.elanis.eu/elanis/Elanis_300.png" alt="elanis"  id="elanis"/>
+		<img src="https://01.cdn.elanis.eu/elanis/Elanis.png" alt="elanis" style="border-radius: 256px; border: 3px solid black; width: 450px;" id="index-img-elanis"/>
 		<p><?php echo ABOUT_ME_P1.(date('Y')-2011).ABOUT_ME_P2.floor((time()-1387062000)/365/86400).ABOUT_ME_P3.floor((time()-899071200)/365/86400).ABOUT_ME_P4; ?></p>
 		<table class="cv-table">
 		<tr><td><a class="coolbutton" target="blank" href="CV_Axel_Soupe_Elanis_FR.pdf">CV ( Francais )</a></td>
@@ -19,15 +19,13 @@ include_once('./basefiles/header.php');
 				<div id="JavaScript" class="skills"></div>
 				<div id="JQuery" class="skills"></div>
 				<div id="NodeJS" class="skills"></div>
-				<div id="WebDesign" class="skills"></div>
+				<div id="HTML/CSS" class="skills"></div>
 				<div id="Responsive" class="skills"></div>
 				<div id="Referencement" class="skills"></div>
-				<div id="CMS" class="skills"></div>
 			</td><td>
 				<h1 class="center-header"><?php echo OTHER_SKILLS; ?></h1>
 				<div id="C++" class="skills"></div>
 				<div id="Lua" class="skills"></div>
-				<div id="Unreal Engine" class="skills"></div>
 				<div id="Source Engine" class="skills"></div>
 				<div id="Windows/Batch" class="skills"></div>
 				<div id="Linux/Shell" class="skills"></div>
@@ -46,20 +44,20 @@ include_once('./basefiles/header.php');
 	</div>
 
 	<div class="mini-part">
-		<h3><a href="https://spacegame.elanistudio.eu" target="blank"><span class="game"><?php echo PROJECT_GAME; ?></span> [Francais/English] Galactae</a></h3>
-		<a href="https://spacegame.elanistudio.eu" target="blank"><img src="img/galactae_small.png" alt="galactae"/></a>
+		<h3><a href="https://galactae.elanis.eu" target="blank"><span class="game"><?php echo PROJECT_GAME; ?></span> [Francais/English] Galactae</a></h3>
+		<a href="https://galactae.elanis.eu" target="blank"><img src="img/galactae_small.png" alt="galactae"/></a>
 		<a href="#" class="apercu" id="5"><?php echo PROJECT_PREVIEW; ?></a>
 	</div>
 
 	<div class="mini-part">
-		<h3><a href="https://sg-eap.space" target="blank"><span class="addon"><?php echo PROJECT_ADDON; ?></span> [English] Spacelife</a></h3>
+		<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="addon"><?php echo PROJECT_ADDON; ?></span> [English] Spacelife</a></h3>
 		<table>
 			<tr>
 				<td>
 					<img src="./img/spacelife.jpg" alt="spacelife">
 				</td>
 				<td>
-					<a href="https://scifi.elanistudio.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
+					<a href="https://scifi.elanis.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
 					<a href="https://github.com/Space-Scifi/SpaceLife" target="_blank">Github</a>
 					<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=659445283" target="_blank">Steam Workshop</a>
 				</td>
@@ -74,14 +72,14 @@ include_once('./basefiles/header.php');
 	</div>
 
 	<div class="mini-part">
-		<h3><a href="http://sg-eap.space" target="blank"><span class="addon"><?php echo PROJECT_ADDON; ?></span> [English] Scifi-Pack</a></h3>
+		<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="addon"><?php echo PROJECT_ADDON; ?></span> [English] Scifi-Pack</a></h3>
 		<table>
 			<tr>
 				<td>
 					<img src="./img/sfpack.jpg" alt="scifi-pack">
 				</td>
 				<td>
-					<a href="https://scifi.elanistudio.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
+					<a href="https://scifi.elanis.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
 					<a href="https://github.com/Space-Scifi/SciFi-Pack-Addon-Gamemode" target="_blank">Github</a>
 					<a href="http://steamcommunity.com/workshop/filedetails/?id=459240346" target="_blank">Steam Workshop</a>
 				</td>
@@ -104,8 +102,8 @@ include_once('./basefiles/header.php');
 	</div>
 
 	<div class="mini-part">
-		<h3><a href="https://scifi.elanistudio.eu/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] Space-scifi</a></h3>
-		<a href="https://scifi.elanistudio.eu/" target="blank"><img src="img/space-scifi_small.png" alt="space-scifi" /></a>
+		<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] Space-scifi</a></h3>
+		<a href="https://scifi.elanis.eu/" target="blank"><img src="img/space-scifi_small.png" alt="space-scifi" /></a>
 		<a href="#" class="apercu" id="3"><?php echo PROJECT_PREVIEW; ?></a>
 	</div>
 
@@ -143,8 +141,8 @@ include_once('./basefiles/header.php');
 		</div>
 
 		<div class="mini-part">
-			<h3><a href="https://dev42.elanistudio.eu/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] Dev42</a></h3>
-			<a href="https://dev42.elanistudio.eu/" target="blank"><img src="img/dev42_small.png" alt="dev42" /></a>
+			<h3><a href="https://dev42.elanis.eu/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] Dev42</a></h3>
+			<a href="https://dev42.elanis.eu/" target="blank"><img src="img/dev42_small.png" alt="dev42" /></a>
 			<a href="#" class="apercu" id="2"><?php echo PROJECT_PREVIEW; ?></a>
 		</div>
 	</details>
@@ -169,23 +167,21 @@ include_once('./basefiles/header.php');
 
 				if((docHeight + windowHeight) > presHeight) {
 					// Premiere colonne
-					linearGraph("PHP",90,"#8e44ad");
-					linearGraph("JavaScript",80,"#2980b9");
-					linearGraph("JQuery",55,"#3498db");
-					linearGraph("NodeJS",75,"#27ae60");
-					linearGraph("WebDesign",65,"#2ecc71");
-					linearGraph("Responsive",60,"#f1c40f");
-					linearGraph("Referencement",65,"#e67e22");
-					linearGraph("CMS",30,"#c0392b");
+					linearGraph("PHP",85,"#8e44ad");
+					linearGraph("JavaScript",78,"#2980b9");
+					linearGraph("JQuery",67,"#3498db");
+					linearGraph("NodeJS",73,"#27ae60");
+					linearGraph("HTML/CSS",77,"#f1c40f");
+					linearGraph("Responsive",68,"#e67e22");
+					linearGraph("Referencement",60,"#c0392b");
 					// Seconde colonne
-					linearGraph("C++",70,"#c0392b");
-					linearGraph("Lua",90,"#e67e22");
-					linearGraph("Unreal Engine",15,"#f1c40f");
-					linearGraph("Source Engine",35,"#2ecc71");
-					linearGraph("Windows/Batch",50,"#27ae60");
-					linearGraph("Linux/Shell",70,"#3498db");
-					linearGraph("Photoshop/Gimp",40,"#2980b9");
-					linearGraph("Blender",20,"#8e44ad");
+					linearGraph("C++",35,"#c0392b");
+					linearGraph("Lua",80,"#e67e22");
+					linearGraph("Source Engine",30,"#f1c40f");
+					linearGraph("Windows/Batch",60,"#27ae60");
+					linearGraph("Linux/Shell",80,"#3498db");
+					linearGraph("Photoshop/Gimp",45,"#2980b9");
+					linearGraph("Blender",15,"#8e44ad");
 
 					document.removeEventListener("scroll", skillsGraph);
 				}

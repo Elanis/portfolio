@@ -4,7 +4,7 @@ define('ABOUT_ME_P1','Je suis Axel , alias Elanis , je suis developpeur depuis '
 define('ABOUT_ME_P2',' ans et je suis un developpeur full-stack depuis ');
 define('ABOUT_ME_P3',' ans. Je suis agé de ');
 define('ABOUT_ME_P4',' ans. Je suis interessé depuis plusieurs années par l\'informatique et son fonctionnement , Je suis actuellement en licence informatique mais j\'apprends aussi en autodidacte.</p>
-		<p>Je code la plupart du temps <i>from scratch</i> , malgrès que je possède mes propres librairies. La plupart de mes applications sont codées en POO suivant l\'architecture MVC.');
+		<p>Je code la plupart du temps <i>from scratch</i> , malgrès que je possède mes propres librairies. La plupart de mes applications sont codées en programmation orientée objet.');
 
 define('WEB_SKILLS','Competences Web');
 define('OTHER_SKILLS','Autres Competences');

@@ -9,4 +9,8 @@ define('MENU_CONTACT','Contact');
 
 // Cookie Prevent
 define('COOKIE_STAT_PREVENT','Notre site utilise des cookies et des statistiques anonymes afin de fonctionner, en continuant de naviguer sur ce site, vous acceptez leur utilisation.');
+
+// Metas
+define('META_DESC','Elanis, developpeur web et createur de contenus divers.');
+define('META_KEYS','elanis, developpeur, web, gmod, lua, eap, carter, stargate, evolution, dev42, galactae, getiny.link, randomeme');
 ?>

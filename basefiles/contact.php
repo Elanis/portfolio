@@ -56,7 +56,7 @@ include_once('./basefiles/header.php');
 
 				// Create a message
 				$message = Swift_Message::newInstance($_POST['reason'])
-				  ->setFrom(array('***REMOVED***' => 'Contact elanistudio'))
+				  ->setFrom(array('***REMOVED***' => 'Contact portfolio'))
 				  ->setTo(array('***REMOVED***' => 'Elanis'))
 				  ->setBody($_POST['txt'].'<br/><br/>'.$_POST['mail'] , 'text/html')
 				  ;
