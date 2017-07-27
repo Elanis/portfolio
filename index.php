@@ -1,130 +1,54 @@
 <?php
-include_once("lib/include.php");
+include_once("lib/base.php");
 ?>
-		<div class="corps">
-			<h2>Bienvenue sur le site d'Elanis / Welcome on Elanis' Website !</h2>
-			<br/>
-			<img src="img/Elanis.png" width="50%"class="corps_image">
-			<br/>
-			<script type="text/javascript">
+<section class="corps">
+	<div class="corps-part">
+		<h2 class="center-header"><?php echo ABOUT_ME; ?></h2>
+		<img src="img/Elanis_300.png" alt="elanis"  id="elanis"/>
+		<p> <?php echo ABOUT_ME_P1; echo (date('Y')-2011); echo ABOUT_ME_P2; echo (date('Y')-2013); echo ABOUT_ME_P3; echo floor((time()-899151000)/(365*24*3600)); echo ABOUT_ME_P4; ?> </p>
+		<table class="cv-table">
+		<tr><td><a class="coolbutton" target="blank" href="CV_Axel_Soupe_Elanis_FR.pdf">CV ( Francais )</a></td>
+		<td><a class="coolbutton" target="blank" href="CV_Axel_Soupe_Elanis_EN.pdf">CV ( English )</a></td></tr>
+		</table>
+	</div>
 
+	<div class="corps-part">
+		<img src="img/competence_web.png" alt="competences-web" class="demi-part">
+		<img src="img/competence_others.png" alt="competences-others" class="demi-part">
+	</div>
 
-			var delay = 10000;
-			//My Sites
-			var my_url_sites=['http://dev42.download/','http://liink.xyz/','http://space-scifi.fr/'];
-			var my_title_sites=['Dev42[FR/EN]','Liink[FR/EN]','Space-scifi.fr[FR/EN]'];
+	<h2 class="center-header"><?php echo MY_SITES; ?></h2>
 
-			var my_current_site = 0;
+	<div class="mini-part">
+		<h3><a href="http://randomeme.xyz" target="blank">Randomeme [EN]</a></h3>
+		<a href="http://randomeme.xyz" target="blank"><img src="img/randomeme_small.png" alt="randomeme"/></a>
+	</div>
 
-			function my_next()
-			{
-				my_current_site++;
+	<div class="mini-part">
+		<h3><a href="http://liink.xyz" target="blank">Liink [FR/EN]</a></h3>
+		<a href="http://liink.xyz" target="blank"><img src="img/liink_small.png" alt="liink"/></a>
+	</div>
 
-				if(my_current_site>=my_url_sites.length)
-				{
-					my_current_site = 0;
-				}
+	<div class="mini-part">
+		<h3><a href="http://dev42.elanistudio.eu/" target="blank">Dev42 [FR/EN]</a></h3>
+		<a href="http://dev42.elanistudio.eu/" target="blank"><img src="img/dev42_small.png" alt="dev42" /></a>
+	</div>
 
-				my_changeSite();
-			}
+	<div class="mini-part">
+		<h3><a href="http://scifi.elanistudio.eu/" target="blank">Space-scifi [FR/EN]</a></h3>
+		<a href="http://scifi.elanistudio.eu/" target="blank"><img src="img/space-scifi_small.png" alt="space-scifi" /></a>
+	</div>
 
-			function my_prev()
-			{
-				my_current_site--;
+	<h2 class="center-header"><?php echo CL_SITES; ?></h2>
 
-				if(my_current_site<0)
-				{
-					my_current_site = my_url_sites.length;
-				}
+	<div class="mini-part">
+		<h3><a href="***REMOVED***/" target="blank">***REMOVED***</a></h3>
+		<a href="***REMOVED***/" target="blank"><img src="img/***REMOVED***.png" alt=***REMOVED*** /></a>
+	</div>
 
-				my_changeSite();
-			}
+	<h3 class="center-header"><a href="websites.php">→ Historique des sites←</a></h3>
+</section>
 
-			function my_changeSite()
-			{
-				var frame = document.getElementById('my_site_frame');
-				frame.src = my_url_sites[my_current_site];
-
-				var title = document.getElementById('my_site_title');
-				title.innerHTML = my_title_sites[my_current_site];
-				title.href = my_url_sites[my_current_site];
-
-				window.setTimeout("my_next()", delay);
-			}
-			//Client Sites
-			var cl_url_sites=['http://stargate-evolutionaddonpack.com/','***REMOVED***/'];
-			var cl_title_sites=['Evolution Addon Pack[FR]','Gaspar.ovh[FR]'];
-
-			var cl_current_site = 0;
-
-			function cl_next()
-			{
-				cl_current_site++;
-
-				if(cl_current_site>=cl_url_sites.length)
-				{
-					cl_current_site = 0;
-				}
-
-				cl_changeSite();
-			}
-
-			function cl_prev()
-			{
-				cl_current_site--;
-
-				if(cl_current_site<0)
-				{
-					cl_current_site = cl_url_sites.length;
-				}
-
-				cl_changeSite();
-			}
-
-			function cl_changeSite()
-			{
-				var frame = document.getElementById('cl_site_frame');
-				frame.src = cl_url_sites[cl_current_site];
-
-				var title = document.getElementById('cl_site_title');
-				title.innerHTML = cl_title_sites[cl_current_site];
-				title.href = cl_url_sites[cl_current_site];
-
-				window.setTimeout("cl_next()", delay);
-			}
-
-
-			function Load()
-			{
-				my_changeSite();
-				cl_changeSite();
-			}
-			window.addEventListener('load',Load);
-			</script>
-
-			<h2>Mes Sites<h2>
-
-			<h3><a href="#" target="blank" id="my_site_title">Nom</a></h3>
-			<a class="left" id="my_prev">Prev</a> <a class="right" id="my_next">Next</a>
-			<iframe src="" width="780px" height="480px" id="my_site_frame" ></iframe>
-
-			<h2>Sites de Clients<h2>
-
-			<h3><a href="#" target="blank" id="cl_site_title">Nom</a></h3>
-			<a class="left" id="cl_prev">Prev</a> <a class="right" id="cl_next">Next</a>
-			<iframe src="" width="780px" height="480px" id="cl_site_frame" ></iframe>
-
-			<h3><a href="websites.php">→ Historique ←</a></h3>
-
-			<p>Sur ce site , je vais vous presenter toutes mes creations en tant que develloppeur Web mais aussi en tant que createur d'addons , de mods et de programmes en tout genre ainsi qu'en tant que videaste youtube amateur.</p>
-			
-			<a class="coolbutton" target="blank" href="CV_Axel_Soupe_Elanis_FR.pdf">CV ( Francais )</a>
-			
-			<p>On this Website , i will show you what i made on Web , Addons , Mods , and other programs. I will show you too my youtube videos.</p>
-
-			<a class="coolbutton" target="blank" href="CV_Axel_Soupe_Elanis_EN.pdf">CV ( English )</a>
-			<br />
-		</div>
 <?php
-include_once("lib/footer.php");
+include('lib/php/footer.php');
 ?>

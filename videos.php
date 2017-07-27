@@ -1,23 +1,23 @@
 <?php
-include_once("lib/include.php");
+include_once("lib/base.php");
 ?>
-		<div class="corps">
-		<h2>Mes dernieres vidéos / My last Videos</h2>
-		<center>
+	<section class="corps" id="videocorps">
+		<h2 class="center-header"><?php echo MENU_VIDEOS; ?></h2>
 		<script src="https://apis.google.com/js/platform.js"></script>
-
+		
 		<div class="g-ytsubscribe" data-channel="ElanisGaming" data-layout="full" data-count="default"></div>
-		</center>
-		<iframe width="780" height="480" src="https://www.youtube.com/embed/j5f7VviNY8Y" frameborder="0" allowfullscreen></iframe>
+
+		<iframe width="780" height="480" src="https://www.youtube.com/embed/oUdaOE8hfQQ" allowfullscreen></iframe>
 		<br />
-		<iframe width="780" height="480" src="https://www.youtube.com/embed/7ptB73c8XfY" frameborder="0" allowfullscreen></iframe>
+		<iframe width="780" height="480" src="https://www.youtube.com/embed/eBUnnRpQEpM" allowfullscreen></iframe>
 		<br />
-		<iframe width="780" height="480" src="https://www.youtube.com/embed/APmxJdVbrQw" frameborder="0" allowfullscreen></iframe>
+		<iframe width="780" height="480" src="https://www.youtube.com/embed/uDMsBejBNDI" allowfullscreen></iframe>
 		<br />
-		<iframe width="780" height="480" src="https://www.youtube.com/embed/_YY0C_K05gU" frameborder="0" allowfullscreen></iframe>
+		<iframe width="780" height="480" src="https://www.youtube.com/embed/yPF7U_gejYM" allowfullscreen></iframe>
 		<br />
-		<iframe width="780" height="480" src="https://www.youtube.com/embed/zYv4qgLC62U" frameborder="0" allowfullscreen></iframe>
-		</div>
+		<iframe width="780" height="480" src="https://www.youtube.com/embed/BHfrNTh32sw" allowfullscreen></iframe>
+	</section>
+
 <?php
-include_once("lib/footer.php");
+include('lib/php/footer.php');
 ?>
