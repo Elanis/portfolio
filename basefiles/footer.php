@@ -39,7 +39,7 @@
 		</table>
 		<table>
 			<tr class="second-footer">
-				<td>Galactae: Space Age Rising - Crée par Elanis - Copyright 2016-2017 - Tout droits reservés</td>
+				<td>Elanis.eu - Copyright 2015-<?php echo date('Y'); ?> - Tout droits reservés</td>
 			</tr>
 		</table>
 	</footer>
