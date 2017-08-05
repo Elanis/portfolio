@@ -43,3 +43,7 @@
 			</tr>
 		</table>
 	</footer>
+<?php
+$fin = round(microtime(true) * 1000);
+echo "<!-- Generated in ".($fin-$debut)." ms. -->";
+?>
