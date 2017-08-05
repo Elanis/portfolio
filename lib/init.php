@@ -1,4 +1,11 @@
-<?php $config = parse_ini_file('config.ini'); ?>
+<?php 
+function getmicrotime(){
+    list($usec, $sec) = explode(" ",microtime());
+    return ((float)$usec + (float)$sec);
+}
+$debut = getmicrotime();
+
+$config = parse_ini_file('config.ini'); ?>
 <!DOCTYPE html>
 <!-- 
 	Code by Elanis
@@ -73,5 +80,8 @@ echo $config['website_custom_head'];
 <body>
 <?php
 }
+
+$fin = getmicrotime();
+echo "<!-- Generated in ".round($fin-$debut, 3) ." seconds. -->";
 
 LoadIt();
