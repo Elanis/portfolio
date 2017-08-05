@@ -77,7 +77,4 @@ echo $config['website_custom_head'];
 <?php
 }
 
-$fin = round(microtime(true) * 1000);
-echo "<!-- Generated in ".($fin-$debut)." ms. -->";
-
 LoadIt();
