@@ -47,6 +47,8 @@ else {
  
         include_once('basefiles/'.$currentname.'.php');
 
+        include_once('basefiles/footer.php');
+
         $page = ob_get_contents(); // copie du contenu du tampon dans une chaîne
         ob_end_clean(); // effacement du contenu du tampon et arrêt de son fonctionnement
         
