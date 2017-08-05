@@ -1,5 +1,5 @@
 <?php 
-$debut = microtime();
+$debut = round(microtime(true) * 1000);
 
 $config = parse_ini_file('config.ini'); ?>
 <!DOCTYPE html>
@@ -77,7 +77,7 @@ echo $config['website_custom_head'];
 <?php
 }
 
-$fin = microtime();
+$fin = round(microtime(true) * 1000);
 echo "<!-- Generated in ".($fin-$debut)." ms. -->";
 
 LoadIt();
