@@ -38,14 +38,20 @@ include_once('./basefiles/header.php');
 	<h2 class="center-header" id="projets"><?php echo MY_PROJECTS; ?></h2>
 
 	<div class="mini-part">
+		<h3><a href="https://dehash.me" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [English] Dehash.me</a></h3>
+		<a href="https://dehash.me" target="blank"><img src="img/dehashme_small.png" alt="dehashme"/></a>
+		<a href="#" class="apercu" id="7"><?php echo PROJECT_PREVIEW; ?></a>
+	</div>
+
+	<div class="mini-part">
 		<h3><a href="https://randomeme.xyz" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [English] Randomeme</a></h3>
 		<a href="https://randomeme.xyz" target="blank"><img src="img/randomeme_small.png" alt="randomeme"/></a>
 		<a href="#" class="apercu" id="0"><?php echo PROJECT_PREVIEW; ?></a>
 	</div>
 
 	<div class="mini-part">
-		<h3><a href="https://galactae.elanis.eu" target="blank"><span class="game"><?php echo PROJECT_GAME; ?></span> [Francais/English] Galactae</a></h3>
-		<a href="https://galactae.elanis.eu" target="blank"><img src="img/galactae_small.png" alt="galactae"/></a>
+		<h3><a href="https://galactae.eu" target="blank"><span class="game"><?php echo PROJECT_GAME; ?></span> [Francais/English] Galactae</a></h3>
+		<a href="https://galactae.eu" target="blank"><img src="img/galactae_small.png" alt="galactae"/></a>
 		<a href="#" class="apercu" id="5"><?php echo PROJECT_PREVIEW; ?></a>
 	</div>
 
@@ -63,12 +69,6 @@ include_once('./basefiles/header.php');
 				</td>
 			</tr>
 		</table>
-	</div>
-
-	<div class="mini-part">
-		<h3><a href="https://getiny.link/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] getiny.link</a></h3>
-		<a href="https://getiny.link/" target="blank"><img src="img/getinylink_small.png" alt="getinylink" /></a>
-		<a href="#" class="apercu" id="1"><?php echo PROJECT_PREVIEW; ?></a>
 	</div>
 
 	<div class="mini-part">
@@ -133,11 +133,16 @@ include_once('./basefiles/header.php');
 
 	<details>
       <summary class="center-header"><?php echo OLD_PROJECTS; ?></summary>
+		<div class="mini-part">
+			<h3><a href="https://getiny.link/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] getiny.link</a></h3>
+			<a href="https://getiny.link/" target="blank"><img src="img/getinylink_small.png" alt="getinylink" /></a>
+			<a href="#" class="apercu" id="1"><?php echo PROJECT_PREVIEW; ?></a>
+		</div>
 
 		<div class="mini-part">
 			<h3><a href="#" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais] SG-E / EAP v2</a></h3>
 			<a href="#" target="blank"><img src="img/eap_small.png" alt="sge" /></a>
-			<a href="#" class="apercu" id="5"><?php echo PROJECT_PREVIEW; ?></a>
+			<a href="#" class="apercu" id="6"><?php echo PROJECT_PREVIEW; ?></a>
 		</div>
 
 		<div class="mini-part">
