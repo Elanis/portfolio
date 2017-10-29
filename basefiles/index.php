@@ -6,8 +6,8 @@ include_once('./basefiles/header.php');
 		<img src="https://01.cdn.elanis.eu/elanis/Elanis.png" alt="elanis" style="border-radius: 256px; border: 3px solid black; width: 450px;" id="index-img-elanis"/>
 		<p><?php echo ABOUT_ME_P1.(date('Y')-2011).ABOUT_ME_P2.floor((time()-1387062000)/365/86400).ABOUT_ME_P3.floor((time()-899071200)/365/86400).ABOUT_ME_P4; ?></p>
 		<table class="cv-table">
-		<tr><td><a class="coolbutton" target="blank" href="CV_Axel_Soupe_Elanis_FR.pdf">CV ( Francais )</a></td>
-		<td><a class="coolbutton" target="blank" href="CV_Axel_Soupe_Elanis_EN.pdf">CV ( English )</a></td></tr>
+		<tr><td><a class="coolbutton" target="blank" href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_FR.pdf">CV ( Francais )</a></td>
+		<td><a class="coolbutton" target="blank" href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_EN.pdf">CV ( English )</a></td></tr>
 		</table>
 	</div>
 
@@ -39,19 +39,19 @@ include_once('./basefiles/header.php');
 
 	<div class="mini-part">
 		<h3><a href="https://dehash.me" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [English] Dehash.me</a></h3>
-		<a href="https://dehash.me" target="blank"><img src="img/dehashme_small.png" alt="dehashme"/></a>
+		<a href="https://dehash.me" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/dehashme_small.png" alt="dehashme"/></a>
 		<a href="#" class="apercu" id="7"><?php echo PROJECT_PREVIEW; ?></a>
 	</div>
 
 	<div class="mini-part">
 		<h3><a href="https://randomeme.xyz" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [English] Randomeme</a></h3>
-		<a href="https://randomeme.xyz" target="blank"><img src="img/randomeme_small.png" alt="randomeme"/></a>
+		<a href="https://randomeme.xyz" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/randomeme_small.png" alt="randomeme"/></a>
 		<a href="#" class="apercu" id="0"><?php echo PROJECT_PREVIEW; ?></a>
 	</div>
 
 	<div class="mini-part">
 		<h3><a href="https://galactae.eu" target="blank"><span class="game"><?php echo PROJECT_GAME; ?></span> [Francais/English] Galactae</a></h3>
-		<a href="https://galactae.eu" target="blank"><img src="img/galactae_small.png" alt="galactae"/></a>
+		<a href="https://galactae.eu" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/galactae_small.png" alt="galactae"/></a>
 		<a href="#" class="apercu" id="5"><?php echo PROJECT_PREVIEW; ?></a>
 	</div>
 
@@ -60,7 +60,7 @@ include_once('./basefiles/header.php');
 		<table>
 			<tr>
 				<td>
-					<img src="./img/spacelife.jpg" alt="spacelife">
+					<img src="https://01.cdn.elanis.eu/portfolio/img/spacelife.jpg" alt="spacelife">
 				</td>
 				<td>
 					<a href="https://scifi.elanis.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
@@ -76,7 +76,7 @@ include_once('./basefiles/header.php');
 		<table>
 			<tr>
 				<td>
-					<img src="./img/sfpack.jpg" alt="scifi-pack">
+					<img src="https://01.cdn.elanis.eu/portfolio/img/sfpack.jpg" alt="scifi-pack">
 				</td>
 				<td>
 					<a href="https://scifi.elanis.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
@@ -92,7 +92,7 @@ include_once('./basefiles/header.php');
 		<table>
 			<tr>
 				<td>
-					<img src="./img/UtlimateConstrainer.jpg" alt="ultimate-constrainer">
+					<img src="https://01.cdn.elanis.eu/portfolio/img/UtlimateConstrainer.jpg" alt="ultimate-constrainer">
 				</td>
 				<td>
 					<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=659473058" target="_blank">Steam Workshop</a>
@@ -103,7 +103,7 @@ include_once('./basefiles/header.php');
 
 	<div class="mini-part">
 		<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] Space-scifi</a></h3>
-		<a href="https://scifi.elanis.eu/" target="blank"><img src="img/space-scifi_small.png" alt="space-scifi" /></a>
+		<a href="https://scifi.elanis.eu/" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/space-scifi_small.png" alt="space-scifi" /></a>
 		<a href="#" class="apercu" id="3"><?php echo PROJECT_PREVIEW; ?></a>
 	</div>
 
@@ -114,7 +114,7 @@ include_once('./basefiles/header.php');
 		<table>
 			<tr>
 				<td>
-					<img src="./img/eap.jpg" alt="eap">
+					<img src="https://01.cdn.elanis.eu/portfolio/img/eap.jpg" alt="eap">
 				</td>
 				<td>
 					<a href="http://sg-eap.space" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
@@ -127,7 +127,7 @@ include_once('./basefiles/header.php');
 
 	<div class="mini-part">
 		<h3><a href="***REMOVED***/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais] Gaspar</a></h3>
-		<a href="***REMOVED***/" target="blank"><img src="img/***REMOVED***.png" alt=***REMOVED*** /></a>
+		<a href="***REMOVED***/" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/***REMOVED***.png" alt=***REMOVED*** /></a>
 		<a href="#" class="apercu" id="4"><?php echo PROJECT_PREVIEW; ?></a>
 	</div>
 
@@ -135,19 +135,19 @@ include_once('./basefiles/header.php');
       <summary class="center-header"><?php echo OLD_PROJECTS; ?></summary>
 		<div class="mini-part">
 			<h3><a href="https://getiny.link/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] getiny.link</a></h3>
-			<a href="https://getiny.link/" target="blank"><img src="img/getinylink_small.png" alt="getinylink" /></a>
+			<a href="https://getiny.link/" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/getinylink_small.png" alt="getinylink" /></a>
 			<a href="#" class="apercu" id="1"><?php echo PROJECT_PREVIEW; ?></a>
 		</div>
 
 		<div class="mini-part">
 			<h3><a href="#" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais] SG-E / EAP v2</a></h3>
-			<a href="#" target="blank"><img src="img/eap_small.png" alt="sge" /></a>
+			<a href="#" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/eap_small.png" alt="sge" /></a>
 			<a href="#" class="apercu" id="6"><?php echo PROJECT_PREVIEW; ?></a>
 		</div>
 
 		<div class="mini-part">
 			<h3><a href="https://dev42.elanis.eu/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] Dev42</a></h3>
-			<a href="https://dev42.elanis.eu/" target="blank"><img src="img/dev42_small.png" alt="dev42" /></a>
+			<a href="https://dev42.elanis.eu/" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/dev42_small.png" alt="dev42" /></a>
 			<a href="#" class="apercu" id="2"><?php echo PROJECT_PREVIEW; ?></a>
 		</div>
 	</details>
@@ -160,7 +160,7 @@ include_once('./basefiles/header.php');
 	</div>
 
 	<script type="text/javascript" src="./lib/graph/main.js"></script>
-	<script type="text/javascript" src="./lib/iFrameOverlay/main.js"></script>
+	<script type="text/javascript" src="https://01.cdn.elanis.eu/portfolio/js/iFrameOverlay.js"></script>
 	<script type="text/javascript">
 		window.addEventListener('load', function() {
 			function skillsGraph() {

@@ -1,4 +1,4 @@
-	<img id="hamburger" src="img/hamburger.png" alt="menu">
+	<img id="hamburger" src="https://01.cdn.elanis.eu/portfolio/img/hamburger.png" alt="menu">
 
 	<ul id="menu">
 		<li><a href="/"><?php echo MENU_HOME; ?></a></li>
@@ -12,10 +12,10 @@
 	</ul>
 
 	<ul class="socialnetworks">
-		<li><a href="redir/steam.php" target="_blank"><img src="img/steam.png" alt="steam"></a></li>
-		<li><a href="mailto:***REMOVED***" target="_blank"><img src="img/mail.png" alt="mail"></a></li>
-		<li><a href="redir/github.php" target="_blank"><img src="img/github.png" alt="github"></a></li>
-		<li><a href="redir/youtube.php" target="_blank"><img src="img/youtube.png" alt="youtube"></a></li>
-		<li><a href="redir/twitter.php" target="_blank"><img src="img/twitter.png" alt="twitter"></a></li>
-		<li><a href="redir/facebook.php" target="_blank"><img src="img/facebook.png" alt="facebook"></a></li>
+		<li><a href="redir/steam.php" target="_blank"><img src="https://01.cdn.elanis.eu/portfolio/img/steam.png" alt="steam"></a></li>
+		<li><a href="mailto:***REMOVED***" target="_blank"><img src="https://01.cdn.elanis.eu/portfolio/img/mail.png" alt="mail"></a></li>
+		<li><a href="redir/github.php" target="_blank"><img src="https://01.cdn.elanis.eu/portfolio/img/github.png" alt="github"></a></li>
+		<li><a href="redir/youtube.php" target="_blank"><img src="https://01.cdn.elanis.eu/portfolio/img/youtube.png" alt="youtube"></a></li>
+		<li><a href="redir/twitter.php" target="_blank"><img src="https://01.cdn.elanis.eu/portfolio/img/twitter.png" alt="twitter"></a></li>
+		<li><a href="redir/facebook.php" target="_blank"><img src="https://01.cdn.elanis.eu/portfolio/img/facebook.png" alt="facebook"></a></li>
 	</ul>

@@ -5,7 +5,7 @@ include_once('./basefiles/header.php');
 <br/>
 <br/>
 <!-- SGC Computer -->
-<script src="lib/ui/sgc_computer.js"></script>
+<script src="https://01.cdn.elanis.eu/portfolio/js/sgc_computer.js"></script>
 
 <div id="draw_ui">
 	<section class="corps">
@@ -18,6 +18,6 @@ include_once('./basefiles/header.php');
 <section class="corps">
 	<section id="sgc_computer" class="mini-part">
 		<h3>SGC Computer ( Stargate )</h3>
-		<img src="img/sgc_computer.jpg" alt="stargate-center-computer" />
+		<img src="https://01.cdn.elanis.eu/portfolio/img/sgc_computer.jpg" alt="stargate-center-computer" />
 	</section>
 </section>

@@ -5,8 +5,8 @@
 					<ul>
 						<li><h3>Elanis</h3></li>
 						<li><a href="/"><?php echo MENU_HOME; ?></a></li>
-						<li><a href="CV_Axel_Soupe_Elanis_FR.pdf">CV (FR)</a></li>
-						<li><a href="CV_Axel_Soupe_Elanis_EN.pdf">CV (EN)</a></li>
+						<li><a href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_FR.pdf">CV (FR)</a></li>
+						<li><a href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_EN.pdf">CV (EN)</a></li>
 						<li><a href="contact"><?php echo MENU_CONTACT; ?></a></li>
 					</ul>
 				</td>
