@@ -35,12 +35,17 @@ function full_url( $s, $use_forwarded_host = false )
     return url_origin( $s, $use_forwarded_host ) . $s['REQUEST_URI'];
 }
 
+<<<<<<< HEAD
 if(!isset($_SESSION['visited']) || (isset($_SESSION['visited']) && $_SESSION['visited']!=$_SERVER['REQUEST_URI'])) {
+=======
+if(!isset($_SESSION['visited']) || $_SESSION['visited']!=$_SERVER['REQUEST_URI']) {
+>>>>>>> 7f7a52037a5c50ca4971a906e4abf64218d95294
     $manager = new MongoDB\Driver\Manager("***REMOVED***");
 
     $visit = [];
     if(strstr(strtolower($_SERVER['HTTP_USER_AGENT']), "googlebot"))
     {
+<<<<<<< HEAD
         $visit["ip"] = "Google Bot";
     } elseif(strstr(strtolower($_SERVER['HTTP_USER_AGENT']), "baidu")) {
         $visit["ip"] = "Baidu Bot";
@@ -49,6 +54,18 @@ if(!isset($_SESSION['visited']) || (isset($_SESSION['visited']) && $_SESSION['vi
     } else {
         $visit["ip"] = get_client_ip();
     }
+=======
+        $visit["user-agent"] = "Google Bot";
+    } elseif(strstr(strtolower($_SERVER['HTTP_USER_AGENT']), "baidu")) {
+        $visit["user-agent"] = "Baidu Bot";
+    } elseif(substr($_SERVER['HTTP_USER_AGENT'],0,31)=="Mozilla/5.0 (compatible; Yandex") {
+        $visit["user-agent"] = "Yandex Bot";
+    } else {
+        $visit['user-agent'] = $_SERVER['HTTP_USER_AGENT'];
+    }
+    
+    $visit["ip"] = get_client_ip();
+>>>>>>> 7f7a52037a5c50ca4971a906e4abf64218d95294
     $visit["url"] = full_url($_SERVER);
     $visit["origin"] = (isset($_SERVER['HTTP_REFERER']))?$_SERVER['HTTP_REFERER']:null;
     $visit["time"] = time();

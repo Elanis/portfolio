@@ -57,8 +57,15 @@ class Language {
 				$lang = $_POST['selected-language'];
 			} elseif(isset($_POST['langue'])) {
 				$lang = $_POST['langue'];
+<<<<<<< HEAD
 			} else {
 				$lang = $_SESSION['lang'];	
+=======
+			} elseif(isset($_SESSION['lang'])) {
+				$lang = $_SESSION['lang'];	
+			} else {
+				$lang = "";
+>>>>>>> 7f7a52037a5c50ca4971a906e4abf64218d95294
 			}
 			$find = array_search($lang, $this->languageList);
 		}
