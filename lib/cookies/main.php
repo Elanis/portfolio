@@ -5,10 +5,6 @@
 function drawCookiePreventionPanel() {
 	/* Get Vars from Config */
 	global $config;
-<<<<<<< HEAD
-	
-	if($config['cookies-prevention-activated']==true && (!isset($_COOKIE['cookies_accepted']) || $_COOKIE['cookies_accepted']!=1 )) {
-=======
 
 	if(isset($_GET['cookies_accepted']) && $_GET['cookies_accepted']==1) {
 		echo "<script type=\"text/javascript\">
@@ -17,7 +13,6 @@ function drawCookiePreventionPanel() {
 	}
 
 	if($config['cookies-prevention-activated']==true && (!isset($_COOKIE['cookies_accepted']) || $_COOKIE['cookies_accepted']!=1 ) && (!isset($_GET['cookies_accepted']) || $_GET['cookies_accepted']!=1 )) {
->>>>>>> 7f7a52037a5c50ca4971a906e4abf64218d95294
 		// Is the language module active ? If not, do its work ...
 		if($config['module_lang']!="1" && $config['module_lang']!=1) {
 			define('COOKIE_STAT_PREVENT',$config['cookies-prevention-default-message']);
