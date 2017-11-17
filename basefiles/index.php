@@ -146,8 +146,8 @@ include_once('./basefiles/header.php');
 		</div>
 
 		<div class="mini-part">
-			<h3><a href="https://dev.elanis.eu/dev42" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] Dev42</a></h3>
-			<a href="https://dev.elanis.eu/dev42" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/dev42_small.png" alt="dev42" /></a>
+			<h3><a href="https://dev.elanis.eu/dev42/v2" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] Dev42</a></h3>
+			<a href="https://dev.elanis.eu/dev42/v2" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/dev42_small.png" alt="dev42" /></a>
 			<a href="#" class="apercu" id="2"><?php echo PROJECT_PREVIEW; ?></a>
 		</div>
 	</details>
