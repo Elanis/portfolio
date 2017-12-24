@@ -13,7 +13,7 @@ define('MY_PROJECTS','Mes Projets');
 define('PROJECT_DEV','Projets où je suis un/le developpeur');
 define('OLD_PROJECTS','Projets anciens ou fermés');
 define('PROJECT_WEBSITE','Site Web');
-define('PROJECT_ADDON','Add-on');
+define('PROJECT_GADDON','Addon Garry\'s Mod');
 define('PROJECT_GAME','Jeu video');
 define('PROJECT_PREVIEW','Apercu');
 ?>

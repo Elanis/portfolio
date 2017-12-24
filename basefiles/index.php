@@ -38,6 +38,21 @@ include_once('./basefiles/header.php');
 	<h2 class="center-header" id="projets"><?php echo MY_PROJECTS; ?></h2>
 
 	<div class="mini-part">
+		<h3><a href="https://sg-eap.space" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [English] Simple Anti Propsurf</a></h3>
+		<table>
+			<tr>
+				<td>
+					<img src="https://raw.githubusercontent.com/Team-Pixel/GmodAntiSurf/master/icon.jpg" alt="GmodAntiSurfr">
+				</td>
+				<td>
+					<a href="https://github.com/Team-Pixel/GmodAntiSurf" target="_blank">Github</a>
+					<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=1230723021" target="_blank">Steam Workshop</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="mini-part">
 		<h3><a href="https://dehash.me" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [English] Dehash.me</a></h3>
 		<a href="https://dehash.me" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/dehashme_small.png" alt="dehashme"/></a>
 		<a href="#" class="apercu" id="7"><?php echo PROJECT_PREVIEW; ?></a>
@@ -56,7 +71,7 @@ include_once('./basefiles/header.php');
 	</div>
 
 	<div class="mini-part">
-		<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="addon"><?php echo PROJECT_ADDON; ?></span> [English] Spacelife</a></h3>
+		<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [English] Spacelife</a></h3>
 		<table>
 			<tr>
 				<td>
@@ -64,7 +79,7 @@ include_once('./basefiles/header.php');
 				</td>
 				<td>
 					<a href="https://scifi.elanis.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
-					<a href="https://github.com/Space-Scifi/SpaceLife" target="_blank">Github</a>
+					<a href="https://github.com/Elanis/SpaceLife" target="_blank">Github</a>
 					<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=659445283" target="_blank">Steam Workshop</a>
 				</td>
 			</tr>
@@ -72,7 +87,7 @@ include_once('./basefiles/header.php');
 	</div>
 
 	<div class="mini-part">
-		<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="addon"><?php echo PROJECT_ADDON; ?></span> [English] Scifi-Pack</a></h3>
+		<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [English] Scifi-Pack</a></h3>
 		<table>
 			<tr>
 				<td>
@@ -80,7 +95,7 @@ include_once('./basefiles/header.php');
 				</td>
 				<td>
 					<a href="https://scifi.elanis.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
-					<a href="https://github.com/Space-Scifi/SciFi-Pack-Addon-Gamemode" target="_blank">Github</a>
+					<a href="https://github.com/Elanis/SciFi-Pack-Addon-Gamemode" target="_blank">Github</a>
 					<a href="http://steamcommunity.com/workshop/filedetails/?id=459240346" target="_blank">Steam Workshop</a>
 				</td>
 			</tr>
@@ -88,7 +103,7 @@ include_once('./basefiles/header.php');
 	</div>
 
 	<div class="mini-part">
-		<h3><a href="https://sg-eap.space" target="blank"><span class="addon"><?php echo PROJECT_ADDON; ?></span> [English] Ultimate Constrainer</a></h3>
+		<h3><a href="https://sg-eap.space" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [English] Ultimate Constrainer</a></h3>
 		<table>
 			<tr>
 				<td>
@@ -110,7 +125,7 @@ include_once('./basefiles/header.php');
 	<h2 class="center-header"><?php echo PROJECT_DEV; ?></h2>
 
 	<div class="mini-part">
-		<h3><a href="https://sg-eap.space" target="blank"><span class="addon"><?php echo PROJECT_ADDON; ?></span> [Multi-Languages] Evolution Addon Pack</a></h3>
+		<h3><a href="https://sg-eap.space" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [Multi-Languages] Evolution Addon Pack</a></h3>
 		<table>
 			<tr>
 				<td>
