@@ -38,7 +38,7 @@ include_once('./basefiles/header.php');
 	<h2 class="center-header" id="projets"><?php echo MY_PROJECTS; ?></h2>
 
 	<div class="mini-part">
-		<h3><a href="https://sg-eap.space" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [English] Simple Anti Propsurf</a></h3>
+		<h3><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=1230723021" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [English] Simple Anti Propsurf</a></h3>
 		<table>
 			<tr>
 				<td>
@@ -71,38 +71,6 @@ include_once('./basefiles/header.php');
 	</div>
 
 	<div class="mini-part">
-		<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [English] Spacelife</a></h3>
-		<table>
-			<tr>
-				<td>
-					<img src="https://01.cdn.elanis.eu/portfolio/img/spacelife.jpg" alt="spacelife">
-				</td>
-				<td>
-					<a href="https://scifi.elanis.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
-					<a href="https://github.com/Elanis/SpaceLife" target="_blank">Github</a>
-					<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=659445283" target="_blank">Steam Workshop</a>
-				</td>
-			</tr>
-		</table>
-	</div>
-
-	<div class="mini-part">
-		<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [English] Scifi-Pack</a></h3>
-		<table>
-			<tr>
-				<td>
-					<img src="https://01.cdn.elanis.eu/portfolio/img/sfpack.jpg" alt="scifi-pack">
-				</td>
-				<td>
-					<a href="https://scifi.elanis.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
-					<a href="https://github.com/Elanis/SciFi-Pack-Addon-Gamemode" target="_blank">Github</a>
-					<a href="http://steamcommunity.com/workshop/filedetails/?id=459240346" target="_blank">Steam Workshop</a>
-				</td>
-			</tr>
-		</table>
-	</div>
-
-	<div class="mini-part">
 		<h3><a href="https://sg-eap.space" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [English] Ultimate Constrainer</a></h3>
 		<table>
 			<tr>
@@ -116,29 +84,7 @@ include_once('./basefiles/header.php');
 		</table>
 	</div>
 
-	<div class="mini-part">
-		<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] Space-scifi</a></h3>
-		<a href="https://scifi.elanis.eu/" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/space-scifi_small.png" alt="space-scifi" /></a>
-		<a href="#" class="apercu" id="3"><?php echo PROJECT_PREVIEW; ?></a>
-	</div>
-
 	<h2 class="center-header"><?php echo PROJECT_DEV; ?></h2>
-
-	<div class="mini-part">
-		<h3><a href="https://sg-eap.space" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [Multi-Languages] Evolution Addon Pack</a></h3>
-		<table>
-			<tr>
-				<td>
-					<img src="https://01.cdn.elanis.eu/portfolio/img/eap.jpg" alt="eap">
-				</td>
-				<td>
-					<a href="http://sg-eap.space" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
-					<a href="https://github.com/williamdefly/Evolutionaddonpack" target="_blank">Github</a>
-					<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=515981131" target="_blank">Steam Workshop</a>
-				</td>
-			</tr>
-		</table>
-	</div>
 
 	<div class="mini-part">
 		<h3><a href="***REMOVED***/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais] Gaspar</a></h3>
@@ -147,7 +93,62 @@ include_once('./basefiles/header.php');
 	</div>
 
 	<details>
-      <summary class="center-header"><?php echo OLD_PROJECTS; ?></summary>
+    	<summary class="center-header"><?php echo OLD_PROJECTS; ?></summary>
+
+		<div class="mini-part">
+			<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] Space-scifi</a></h3>
+			<a href="https://scifi.elanis.eu/" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/space-scifi_small.png" alt="space-scifi" /></a>
+			<a href="#" class="apercu" id="3"><?php echo PROJECT_PREVIEW; ?></a>
+		</div>
+
+		<div class="mini-part">
+			<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [English] Scifi-Pack</a></h3>
+			<table>
+				<tr>
+					<td>
+						<img src="https://01.cdn.elanis.eu/portfolio/img/sfpack.jpg" alt="scifi-pack">
+					</td>
+					<td>
+						<a href="https://scifi.elanis.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
+						<a href="https://github.com/Elanis/SciFi-Pack-Addon-Gamemode" target="_blank">Github</a>
+						<a href="http://steamcommunity.com/workshop/filedetails/?id=459240346" target="_blank">Steam Workshop</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="mini-part">
+			<h3><a href="https://sg-eap.space" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [Multi-Languages] Evolution Addon Pack</a></h3>
+			<table>
+				<tr>
+					<td>
+						<img src="https://01.cdn.elanis.eu/portfolio/img/eap.jpg" alt="eap">
+					</td>
+					<td>
+						<a href="http://sg-eap.space" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
+						<a href="https://github.com/williamdefly/Evolutionaddonpack" target="_blank">Github</a>
+						<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=515981131" target="_blank">Steam Workshop</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="mini-part">
+			<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="addon"><?php echo PROJECT_GADDON; ?></span> [English] Spacelife</a></h3>
+			<table>
+				<tr>
+					<td>
+						<img src="https://01.cdn.elanis.eu/portfolio/img/spacelife.jpg" alt="spacelife">
+					</td>
+					<td>
+						<a href="https://scifi.elanis.eu" target="_blank"><?php echo PROJECT_WEBSITE; ?></a>
+						<a href="https://github.com/Elanis/SpaceLife" target="_blank">Github</a>
+						<a href="http://steamcommunity.com/sharedfiles/filedetails/?id=659445283" target="_blank">Steam Workshop</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
 		<div class="mini-part">
 			<h3><a href="https://getiny.link/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] getiny.link</a></h3>
 			<a href="https://getiny.link/" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/getinylink_small.png" alt="getinylink" /></a>
