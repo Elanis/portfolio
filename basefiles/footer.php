@@ -13,18 +13,15 @@
 				<td>
 					<ul>
 						<li><h3><?php echo PROJECT_WEBSITE; ?></h3></li>
-						<li><a href="https://scifi.elanistudio.eu">Spacelife/Scifipack</a></li>
-						<li><a href="https://dev42.elanistudio.eu">Dev42</a></li>
-						<li><a href="https://getiny.link">Get Tiny Link</a></li>
+						<li><a href="https://dehash.me">Dehash.me</a></li>
+						<li><a href="https://howtoopen.me">HowToOpen.me</a></li>
 						<li><a href="https://randomeme.xyz">Randomeme</a></li>
 					</ul>
 				</td>
 				<td>
 					<ul>
 						<li><h3><?php echo PROJECT_GAME; ?></h3></li>
-						<li><a href="https://github.com/Space-Scifi/SciFi-Pack-Addon-Gamemode">SciFi Pack</a></li>
-						<li><a href="https://github.com/Space-Scifi/SpaceLife">SpaceLife</a></li>
-						<li><a href="https://spacegame.elanistudio.eu">Galactae: Space Age Rising</a></li>
+						<li><a href="https://galactae.eu">Galactae: Space Age Dawn</a></li>
 					</ul>
 				</td>
 				<td>
