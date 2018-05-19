@@ -13,6 +13,7 @@
     <priority>1.00</priority>
     <link rel="alternate" href="https://elanis.eu/?lang=fr" hreflang="fr"/>
     <link rel="alternate" href="https://elanis.eu/?lang=en" hreflang="en"/>
+    <link rel="alternate" href="https://elanis.eu/?lang=fr" hreflang="x-default"/>
   </url>
   <url>
     <loc>https://elanis.eu/index</loc>
@@ -20,6 +21,7 @@
     <priority>0.80</priority>
     <link rel="alternate" href="https://elanis.eu/index?lang=fr" hreflang="fr"/>
     <link rel="alternate" href="https://elanis.eu/index?lang=en" hreflang="en"/>
+    <link rel="alternate" href="https://elanis.eu/index?lang=fr" hreflang="x-default"/>
   </url>
   <url>
     <loc>https://elanis.eu/ui_ux</loc>
@@ -27,6 +29,7 @@
     <priority>0.80</priority>
     <link rel="alternate" href="https://elanis.eu/ui_ux?lang=fr" hreflang="fr"/>
     <link rel="alternate" href="https://elanis.eu/ui_ux?lang=en" hreflang="en"/>
+    <link rel="alternate" href="https://elanis.eu/ui_ux?lang=fr" hreflang="x-default"/>
   </url>
   <url>
     <loc>https://elanis.eu/contact</loc>
@@ -34,6 +37,7 @@
     <priority>1.00</priority>
     <link rel="alternate" href="https://elanis.eu/contact?lang=fr" hreflang="fr"/>
     <link rel="alternate" href="https://elanis.eu/contact?lang=en" hreflang="en"/>
+    <link rel="alternate" href="https://elanis.eu/contact?lang=fr" hreflang="x-default"/>
   </url>
   <url>
     <loc>https://elanis.eu/CV_Axel_Soupe_Elanis_FR.pdf</loc>
