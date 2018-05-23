@@ -33,12 +33,12 @@
     <link rel="alternate" href="https://elanis.eu/contact?lang=fr" hreflang="x-default"/>
   </url>
   <url>
-    <loc>https://elanis.eu/CV_Axel_Soupe_Elanis_FR.pdf</loc>
+    <loc>https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_FR.pdf</loc>
     <changefreq>monthly</changefreq>
     <priority>0.30</priority>
   </url>
   <url>
-    <loc>https://elanis.eu/CV_Axel_Soupe_Elanis_EN.pdf</loc>
+    <loc>https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_EN.pdf</loc>
     <changefreq>monthly</changefreq>
     <priority>0.30</priority>
   </url>
