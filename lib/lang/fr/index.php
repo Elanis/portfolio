@@ -1,6 +1,6 @@
 <?php
 define('ABOUT_ME','A propos de moi ...');
-define('ABOUT_ME_P1','Je suis Axel , alias Elanis , je m'intéresse à la programmation depuis ');
+define('ABOUT_ME_P1','Je suis Axel , alias Elanis , je m\'intéresse à la programmation depuis ');
 define('ABOUT_ME_P2',' ans et je suis un developpeur web en amateur depuis ');
 define('ABOUT_ME_P3',' ans. Je suis agé de ');
 define('ABOUT_ME_P4',' ans. Je suis interessé depuis plusieurs années par l\'informatique et son fonctionnement , Je suis actuellement en licence informatique mais j\'apprends aussi en autodidacte.</p>
