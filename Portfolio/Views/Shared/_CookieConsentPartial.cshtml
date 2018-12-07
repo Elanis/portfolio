@@ -1,0 +1,24 @@
+﻿@using Microsoft.AspNetCore.Http.Features
+
+@{
+	var consentFeature = Context.Features.Get<ITrackingConsentFeature>();
+	var showBanner = !consentFeature?.CanTrack ?? false;
+	var cookieString = consentFeature?.CreateConsentCookie();
+}
+
+@if (showBanner) {
+	<nav id="cookie-prevent">
+		<p>
+			@Localizer["COOKIE_STAT_PREVENT"]
+		</p>
+		<span id="cookie-prevent-close">X</span>
+	</nav>
+	<script>
+        (function () {
+			document.querySelector("#cookie-prevent-close").addEventListener("click", function (el) {
+                document.cookie = "@cookieString";
+				document.querySelector("#cookie-prevent").classList.add("hidden");
+            }, false);
+        })();
+	</script>
+}
