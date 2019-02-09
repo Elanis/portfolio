@@ -4,6 +4,7 @@ define('CONTACT_MAIL','Votre E-Mail ( pour repondre )');
 define('CONTACT_TXT','Contenu du message');
 define('CONTACT_SEND','Envoyer Message');
 define('CONTACT_OK','Le message a bien été envoyé !');
+define('CONTACT_PAS_OK','Erreur: Le message n\'a pas pu être envoyé.');
 define('BY_MAIL','Par mail :');
 define('COND_OR','Ou');
 define('REASON','Raison');
