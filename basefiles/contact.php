@@ -36,29 +36,43 @@ include_once('./basefiles/header.php');
 		
 		<?php }
 		else {
-			$reCaptcha = new ReCaptcha("***REMOVED***");
+			foreach($_POST as $key => $value) {
+				$variablesPost[htmlspecialchars(trim($key), ENT_QUOTES | ENT_HTML5, 'UTF-8')] = htmlspecialchars(trim($value), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+			}
 
-			$resp = $reCaptcha->verifyResponse(
-				$_SERVER["REMOTE_ADDR"],
-				$_POST["g-recaptcha-response"]
-				);
+			$url = 'https://www.google.com/recaptcha/api/siteverify';
+			$data = array(
+				'secret' => '***REMOVED***',
+				'response' => $variablesPost["g-recaptcha-response"]
+			);
+			$options = array(
+				'http' => array (
+					'method' => 'POST',
+					'content' => http_build_query($data)
+				)
+			);
+			$context  = stream_context_create($options);
+			$verify = file_get_contents($url, false, $context);
+			$resp=json_decode($verify);
+
 			if ($resp != null && $resp->success) {
 				require_once './lib/swiftmailer/swift_required.php';
 
 				// Create the Transport
-				$transport = Swift_SmtpTransport::newInstance('***REMOVED***', 465, 'ssl')
-				  ->setUsername('***REMOVED***')
-				  ->setPassword('***REMOVED***')
-				  ;
+			    $transport = Swift_SmtpTransport::newInstance('***REMOVED***', 587, 'tls')
+			      ->setUsername('***REMOVED***')
+			      ->setPassword('***REMOVED***')
+			      ->setStreamOptions(array('ssl' => array('allow_self_signed' => true, 'verify_peer_name' => false, 'verify_peer' => false)))
+			      ;
 
 				// Create the Mailer using your created Transport
 				$mailer = Swift_Mailer::newInstance($transport);
 
 				// Create a message
-				$message = Swift_Message::newInstance($_POST['reason'])
+				$message = Swift_Message::newInstance($variablesPost['reason'])
 				  ->setFrom(array('***REMOVED***' => 'Contact portfolio'))
 				  ->setTo(array('***REMOVED***' => 'Elanis'))
-				  ->setBody($_POST['txt'].'<br/><br/>'.$_POST['mail'] , 'text/html')
+				  ->setBody($variablesPost['txt'].'<br/><br/>'.$variablesPost['mail'] , 'text/html')
 				  ;
 
 				// Send the message
