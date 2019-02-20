@@ -14,16 +14,15 @@
     <meta name="keywords" content="@Localizer["META_KEYS"]">
     <meta name="description" content="@Localizer["META_DESC"]" />
 
-    @{ string cdnURL = ""; }
     <environment include="Development">
-        @{ cdnURL = "/"; }
+        @{ ViewData["cdnURL"] = "/"; }
     </environment>
     <environment exclude="Development">
-        @{ cdnURL = "https://01.cdn.elanis.eu/portfolio/"; }
+        @{ ViewData["cdnURL"] = "https://01.cdn.elanis.eu/portfolio/"; }
     </environment>
 
-    <link rel="shortcut icon" type="image/png" href="@(cdnURL)img/favicon.png" />
-    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="@(cdnURL)css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="@ViewData["cdnURL"]img/favicon.png" />
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="@ViewData["cdnURL"]css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 </head>
