@@ -1,35 +1,11 @@
-<?php 
+<?php
 /************************************************
 			       PHP SQL LIB
 					BY ELANIS
 ************************************************/
 
-class sqlInterface {
+class SQLInterface {
 	private $bd;
-
-	/**
-	 * Connect
-	 *
-	 * @param      string  $host      The host
-	 * @param      string  $db        The database
-	 * @param      string  $id        The username
-	 * @param      string  $password  The password
-	 */
-	private function connect($host,$db,$id,$password,$port=3306) {
-		if($host=="") { $host="localhost"; }
-
-		if($id==""||!isset($id)||$db==""||!isset($db)||$password==""||!isset($password)) { //Wrong Use !
-			echo "DATABASE ERROR: All needed informations are not given !";
-			exit();
-		}
-
-		try {
-			$this->bd = new PDO('mysql:host='.$host.';port='.$port.';dbname='.$db,$id,$password);
-		}
-		catch (Exception $e) {
-			die('Erreur : ' . $e->getMessage());
-		}
-	}
 
 	/**
 	 * constructor
@@ -39,8 +15,31 @@ class sqlInterface {
 	 * @param      string  $id        The username
 	 * @param      string  $password  The password
 	 */
-	public function __construct($host,$db,$id,$password) {
-		$this->connect($host,$db,$id,$password); //Il faut se connecter à la BDD
+	public function __construct($host='',$db='',$id='',$password='',$driver='pgsql',$port=5432) {
+
+		if($host=='') { $host='localhost'; }
+
+		if($id==''||$db==''||$password=='') { //Wrong Use !
+			global $config;
+
+			if(isset($config['SQLCredentials'])) {
+				$host 		= $config['SQLCredentials']['host'];
+				$db 		= $config['SQLCredentials']['db'];
+				$id 		= $config['SQLCredentials']['id'];
+				$password 	= $config['SQLCredentials']['password'];
+				$driver 	= $config['SQLCredentials']['driver'];
+				$port 		= $config['SQLCredentials']['port'];
+			} else {
+				die('DATABASE ERROR: All needed informations are not given !');
+			}
+		}
+
+		try {
+			$this->bd = new PDO($driver.':host='.$host.';port='.$port.';dbname='.$db,$id,$password);
+		}
+		catch (Exception $e) {
+			die('Erreur : ' . $e->getMessage());
+		}
     }
 
 	/**
@@ -53,16 +52,65 @@ class sqlInterface {
 	 *
 	 * @return     array           The content.
 	 */
-	public function getContent($table,$min=0,$size=1000000,$order="") {
-		if(is_string($table)) {
-			$query = $this->bd->prepare('SELECT * FROM '.$table.' ORDER BY '.$order.' LIMIT '.$min.', '.$size);
+	public function getContent($table,$min=0,$size=1000000,$order='') {
+		if(is_string($table) && is_int($min) && is_int($size) && is_string($order)) {
+
+			$query = $this->bd->prepare('SELECT * FROM '.$table.' ORDER BY '.$order.' OFFSET '.$min.' LIMIT '.$size);
 			$query->execute();
-			$data = array();
-			$i = 0;
-			while($data1 = $query->fetch()) {
-				$data[$i] = $data1;
-				$i++;
+
+			$data = $query->fetchAll(PDO::FETCH_ASSOC);
+			$query->CloseCursor();
+
+			return $data;
+		}
+		else {
+			return [];
+		}
+	}
+
+	private function bindValues($query, $bindValue, $suffixe='') {
+		foreach($bindValue as $name => $value) {
+			if(is_int($value) || is_bool($value)) {
+				$pdoType = PDO::PARAM_INT;
+			} else {
+				$pdoType = PDO::PARAM_STR;
 			}
+
+			$query->bindValue((':'.$name.$suffixe), $value, $pdoType);
+		}
+	}
+
+	/**
+	 * Gets content of a table depends on specified conditions.
+	 *
+	 * @param      array           $table  The table name
+	 * @param      array           $where  The condition
+	 * @param      integer		   $min    The minimum index
+	 * @param      integer         $size   The size
+	 * @param      string          $order  The order type
+	 *
+	 * @return     array           The condition content.
+	 */
+	public function getCondContent($table,$where,$min=0,$size=1000000,$order='') {
+		if(is_string($table) && is_array($where) && is_int($min)  && is_int($size) && is_string($order)) {
+			$where_cond = '';
+
+			foreach($where as $name => $value) {
+				if($where_cond != '') { $where_cond .= ' AND '; } //@ADD : OR/NOT/AND
+				$where_cond .= $name.' = :'.$name;
+			}
+
+			if($order != '') {
+				$order = ' ORDER BY '.$order;
+			}
+
+			$query = $this->bd->prepare('SELECT * FROM '.$table.' WHERE '.$where_cond.$order.' OFFSET '.$min.' LIMIT '.$size);
+
+			$this->bindValues($query, $where);
+
+			$query->execute();
+
+			$data = $query->fetchAll();
 			$query->CloseCursor();
 
 			return $data;
@@ -83,36 +131,28 @@ class sqlInterface {
 	 *
 	 * @return     array           The condition content.
 	 */
-	public function getCondContent($table,$where,$min=0,$size=1000000,$order="id") {
-		if(is_string($table)&&is_array($where)) {
-			$where_cond = "";
+	public function getILIKECondContent($table,$where,$min=0,$size=1000000,$order='') {
+		if(is_string($table) && is_array($where) && is_int($min)  && is_int($size) && is_string($order)) {
+			$where_cond = '';
 
-			for($i=0; $i<sizeof($where); $i++) {
-				$where_cond .= 'LOWER('.$where[$i][0].') = :'.$where[$i][0];
-				if($i!=sizeof($where)-1) {
-					$where_cond .= ' AND '; //@ADD : OR/NOT/AND
-				}
+			foreach($where as $name => $value) {
+				if($where_cond != '') { $where_cond .= ' AND '; } //@ADD : OR/NOT/AND
+				$where_cond .= $name.' ILIKE :'.$name;
+
+				$where[$name] = "%".$value."%";
 			}
 
-
-			$query = $this->bd->prepare('SELECT * FROM '.$table.' WHERE '.$where_cond.' ORDER BY '.$order.' LIMIT '.$min.', '.$size);
-
-			for($i=0; $i<sizeof($where); $i++) {
-				if($where[$i][2]=="int") {
-					$query->bindValue(':'.$where[$i][0],$where[$i][1],PDO::PARAM_INT);
-
-				} else {
-					$query->bindValue(':'.$where[$i][0],strtolower($where[$i][1]),PDO::PARAM_STR);
-				}
+			if($order != '') {
+				$order = ' ORDER BY '.$order;
 			}
+
+			$query = $this->bd->prepare('SELECT * FROM '.$table.' WHERE '.$where_cond.$order.' OFFSET '.$min.' LIMIT '.$size);
+
+			$this->bindValues($query, $where);
 
 			$query->execute();
-			$data = array();
-			$i = 0;
-			while($data1 = $query->fetch()) {
-				$data[$i] = $data1;
-				$i++;
-			}
+
+			$data = $query->fetchAll();
 			$query->CloseCursor();
 
 			return $data;
@@ -129,39 +169,52 @@ class sqlInterface {
 	 * @param      array   $data   The data
 	 */
 	public function addContent($table,$data) {
+		if(!is_string($table) ||
+			!is_array($data) ||
+			count($data) < 1) {
 
-			$content = "(";
+			return;
+		}
 
-			for($i=0; $i<sizeof($data); $i++) {
-				$content .= $data[$i][0];
-				if($i!=sizeof($data)-1) {
-					$content .= ', ';
-				}
+
+		$content = ' (';
+
+		foreach($data[0] as $name => $value) {
+			if($content != ' (') { $content .= ', '; }
+			$content .= '"'.$name.'"';
+		}
+
+		$content .= ' ) VALUES ';
+
+		$firstRow = true;
+		for($i=0; $i<count($data); $i++) {
+			if(!$firstRow) { 
+				$content .= ', ';
 			}
-			$content .= ' ) VALUES ( ';
+			$firstRow = false;
 
-			for($i=0; $i<sizeof($data); $i++) {
-				$content .= ':'.$data[$i][0];
-				if($i!=sizeof($data)-1) {
-					$content .= ', ';
+			$content .= '( ';
+
+			$firstCol = true;
+			foreach($data[$i] as $name => $value) {
+				if(!$firstCol) {
+					$content .= ', '; 
 				}
-			}
+				$firstCol = false;
 
+				$content .= ':'.$name.'_'.$i;
+			}
 			$content .= ' )';
+		}
 
-			$query = $this->bd->prepare('INSERT INTO '.$table.$content);
+		$query = $this->bd->prepare('INSERT INTO "'.$table.'"'.$content);
 
-			for($i=0; $i<sizeof($data); $i++) {
-				if($data[$i][2]=="int") {
-					$query->bindValue(':'.$data[$i][0],$data[$i][1],PDO::PARAM_INT);
+		for($i=0; $i<count($data); $i++) {
+			$this->bindValues($query, $data[$i], '_'.$i);
+		}
 
-				} else {
-					$query->bindValue(':'.$data[$i][0],$data[$i][1],PDO::PARAM_STR);
-				}
-			}
-
-			$query->execute();
-			$query->CloseCursor();
+		$query->execute();
+		$query->CloseCursor();
 	}
 
 	/**
@@ -174,41 +227,22 @@ class sqlInterface {
 	public function updateContent($table,$data,$where) {
 		if(is_string($table)&&is_array($data)&&is_array($where)) {
 
-			$where_cond = "";
-			for($i=0; $i<sizeof($where); $i++) {
-				$where_cond .= $where[$i][0].' = :'.$where[$i][0];
-				if($i!=sizeof($where)-1) {
-					$where_cond .= ' AND '; //@ADD : OR/NOT/AND
-				}
+			$where_cond = '';
+			foreach($where as $name => $value) {
+				if($where_cond != '') { $where_cond .= ' AND '; } //@ADD : OR/NOT/AND
+				$where_cond .= $name.' = :'.$name;
 			}
 
-			$set_cond = "";
-			for($i=0; $i<sizeof($data); $i++) {
-				$set_cond .= $data[$i][0].' = :'.$data[$i][0];
-				if($i!=sizeof($data)-1) {
-					$set_cond .= ', ';
-				}
+			$set_cond = '';
+			foreach($data as $name => $value) {
+				if($set_cond != '') { $set_cond .= ' AND '; } //@ADD : OR/NOT/AND
+				$set_cond .= $name.' = :'.$name;
 			}
 
 			$query = $this->bd->prepare('UPDATE '.$table.' SET '.$set_cond.' WHERE '.$where_cond);
 
-			for($i=0; $i<sizeof($data); $i++) {
-				if($data[$i][2]=="int") {
-					$query->bindValue(':'.$data[$i][0],$data[$i][1],PDO::PARAM_INT);
-
-				} else {
-					$query->bindValue(':'.$data[$i][0],$data[$i][1],PDO::PARAM_STR);
-				}
-			}
-
-			for($i=0; $i<sizeof($where); $i++) {
-				if($where[$i][2]=="int") {
-					$query->bindValue(':'.$where[$i][0],$where[$i][1],PDO::PARAM_INT);
-
-				} else {
-					$query->bindValue(':'.$where[$i][0],$where[$i][1],PDO::PARAM_STR);
-				}
-			}
+			$this->bindValues($query, $data);
+			$this->bindValues($query, $where);
 
 			$query->execute();
 			$query->CloseCursor();
@@ -224,24 +258,15 @@ class sqlInterface {
 	public function removeContent($table,$where) {
 		if(is_string($table)&&is_array($where)) {
 
-			$where_cond = "";
-			for($i=0; $i<sizeof($where); $i++) {
-				$where_cond .= $where[$i][0].' = :'.$where[$i][0];
-				if($i!=sizeof($where)-1) {
-					$where_cond .= ' AND '; //@ADD : OR/NOT/AND
-				}
+			$where_cond = '';
+			foreach($where as $name => $value) {
+				if($where_cond != '') { $where_cond .= ' AND '; } //@ADD : OR/NOT/AND
+				$where_cond .= $name.' = :'.$name;
 			}
 
 			$query = $this->bd->prepare('DELETE FROM '.$table.' WHERE '.$where_cond);
 
-			for($i=0; $i<sizeof($where); $i++) {
-				if($where[$i][2]=="int") {
-					$query->bindValue(':'.$where[$i][0],$where[$i][1],PDO::PARAM_INT);
-
-				} else {
-					$query->bindValue(':'.$where[$i][0],$where[$i][1],PDO::PARAM_STR);
-				}
-			}
+			$this->bindValues($query, $where);
 
 			$query->execute();
 			$query->CloseCursor();
@@ -258,12 +283,12 @@ class sqlInterface {
 	 * @param      integer  $size    The size
 	 * @param      string   $order   The order
 	 */
-	public function drawTableByContent($header,$rows,$table,$min=0,$size=1000000,$order="") {
-		echo "<table><tr>";
+	public function drawTableByContent($header,$rows,$table,$min=0,$size=1000000,$order='') {
+		echo '<table><tr>';
 		for($i=0; $i<count($header); $i++) {
-			echo "<th>".$header[$i]."</th>";
+			echo '<th>'.$header[$i].'</th>';
 		}
-		echo "</tr>";
+		echo '</tr>';
 
 		foreach ($this->getContent($table,$min,$size,$order) as $data) {
 			echo '<tr>';
@@ -272,7 +297,7 @@ class sqlInterface {
 					echo $data[$rows[$i]];
 					echo '</td>';
 			}
-			echo "</tr>";
+			echo '</tr>';
 		}
 	}
 
@@ -284,7 +309,13 @@ class sqlInterface {
 	 * @return     integer          compte de lignes
 	 */
 	public function count($table) {
-		return $this->bd->query("SELECT COUNT(*) FROM ".$table)->fetchColumn();
+		$queryResult = $this->bd->query('SELECT COUNT(*) FROM "'.$table.'"');
+
+		if($queryResult !== false) {
+			return $queryResult->fetchColumn();
+		} else {
+			return -1;
+		}
 	}
 
 	/**
@@ -297,36 +328,23 @@ class sqlInterface {
 	 * @return     array|boolean  ( description_of_the_return_value )
 	 */
 	public function selectQuery($query,$bindValue,$oneResult=false) {
-
 		if(is_string($query)&&is_array($bindValue)&&is_bool($oneResult)) {
-
 			$query = $this->bd->prepare($query);
 
-			foreach($bindValue as $name => $value) {
-				if(is_int($value) || is_bool($value)) {
-					$pdoType = PDO::PARAM_INT;
-				} else {
-					$pdoType = PDO::PARAM_STR;
-				}
-
-				$query->bindValue(':'.$name,$value,$pdoType);
-			}
+			$this->bindValues($query, $bindValue);
+			
+			$query->execute();
 
 			if($oneResult) {
 				$data = $query->fetch();
 				$query->CloseCursor();
+
 				return $data;
 			} else {
-				$query->execute();
-				$data = array();
-				$i = 0;
-				while($data1 = $query->fetch()) {
-					$data[$i] = $data1;
-					$i++;
-				}
+				$data = $query->fetchAll();
 				$query->CloseCursor();
 
-				return $data;	
+				return $data;
 			}
 		} else {
 			return false;
@@ -344,19 +362,10 @@ class sqlInterface {
 
 			$query = $this->bd->prepare($query);
 
-			foreach($bindValue as $name => $value) {
-				if(is_int($value) || is_bool($value)) {
-					$pdoType = PDO::PARAM_INT;
-				} else {
-					$pdoType = PDO::PARAM_STR;
-				}
-
-				$query->bindValue(':'.$name,$value,$pdoType);
-			}
+			$this->bindValues($query, $bindValue);
 
 			$query->execute();
 			$query->CloseCursor();
 		}
 	}
 }
-?>

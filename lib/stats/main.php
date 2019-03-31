@@ -45,18 +45,18 @@ function full_url( $s, $use_forwarded_host = false )
 }
 
 if(!isset($_SESSION['visited']) || $_SESSION['visited']!=$_SERVER['REQUEST_URI']) {
-    $manager = new MongoDB\Driver\Manager("***REMOVED***");
+    require 'lib/sql/main.php';
 
     $visit = [];
     if(strstr(strtolower($_SERVER['HTTP_USER_AGENT']), "googlebot"))
     {
-        $visit["user-agent"] = "Google Bot";
+        $visit["userAgent"] = "Google Bot";
     } elseif(strstr(strtolower($_SERVER['HTTP_USER_AGENT']), "baidu")) {
-        $visit["user-agent"] = "Baidu Bot";
+        $visit["userAgent"] = "Baidu Bot";
     } elseif(substr($_SERVER['HTTP_USER_AGENT'],0,31)=="Mozilla/5.0 (compatible; Yandex") {
-        $visit["user-agent"] = "Yandex Bot";
+        $visit["userAgent"] = "Yandex Bot";
     } else {
-        $visit['user-agent'] = $_SERVER['HTTP_USER_AGENT'];
+        $visit['userAgent'] = $_SERVER['HTTP_USER_AGENT'];
     }
     
     $visit["ip"] = get_client_ip();
@@ -64,10 +64,13 @@ if(!isset($_SESSION['visited']) || $_SESSION['visited']!=$_SERVER['REQUEST_URI']
     $visit["origin"] = (isset($_SERVER['HTTP_REFERER']))?$_SERVER['HTTP_REFERER']:null;
     $visit["time"] = time();
 
-    $bulkVisit = new MongoDB\Driver\BulkWrite(['ordered' => true]);
-    $bulkVisit->insert($visit);
+    var_dump($visit);
 
-    $manager->executeBulkWrite('stats.visits', $bulkVisit);
+    $sqlStats = new SQLInterface('***REMOVED***');
+    $sqlStats->addContent(
+            'visits',
+            [$visit]
+        );
 
     $_SESSION['visited'] = $_SERVER['REQUEST_URI'];
 }
