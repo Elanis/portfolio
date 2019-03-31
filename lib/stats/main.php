@@ -63,9 +63,7 @@ if(!isset($_SESSION['visited']) || $_SESSION['visited']!=$_SERVER['REQUEST_URI']
     $visit["url"] = full_url($_SERVER);
     $visit["origin"] = (isset($_SERVER['HTTP_REFERER']))?$_SERVER['HTTP_REFERER']:null;
     $visit["time"] = time();
-
-    var_dump($visit);
-
+    
     $sqlStats = new SQLInterface('***REMOVED***');
     $sqlStats->addContent(
             'visits',
