@@ -7,6 +7,53 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+/**********************
+		General		
+**********************/
+#main-ui footer {
+	position: absolute;
+	left: 0;
+    /* Couleurs et police */
+    background-color: #e5e5e5;
+    color: black;
+    border-top: 1px solid #828282;
+    /* Positionnements */
+    font-size: 0.7em;
+    width: 100%;
+    vertical-align: bottom;
+    margin-top: 2em;
+}
+
+#main-ui footer table, #main-ui footer table tr {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* Liens */
+#main-ui .first-footer td {
+    min-width: 25%;
+    vertical-align: top;
+}
+
+#main-ui .first-footer td ul {
+    list-style: none;
+}
+
+#main-ui .first-footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.first-footer a:hover {
+    text-decoration: underline;
+}
+/* Copyright */
+#main-ui .second-footer {
+    text-align: center;
+}
+
+
 .text-center {
 	text-align: center;
 }
