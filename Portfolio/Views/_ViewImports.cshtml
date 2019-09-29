@@ -8,6 +8,6 @@
 @inject IViewLocalizer Localizer
 
 @{
-	var culture = Context.Features.Get<IRequestCultureFeature>
-		().RequestCulture.Culture.TwoLetterISOLanguageName;
+    var culture = Context.Features.Get<IRequestCultureFeature>
+        ().RequestCulture.Culture.TwoLetterISOLanguageName;
 }

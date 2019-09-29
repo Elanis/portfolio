@@ -1,4 +1,11 @@
 ﻿@{
-	Layout = "_Layout";
-	ViewData["background"] = "no-background";
+    Layout = "_Layout";
+    ViewData["background"] = "no-background";
 }
+
+<environment include="Development">
+    @{ ViewData["cdnURL"] = "/"; }
+</environment>
+<environment exclude="Development">
+    @{ ViewData["cdnURL"] = "https://01.cdn.elanis.eu/portfolio/"; }
+</environment>
