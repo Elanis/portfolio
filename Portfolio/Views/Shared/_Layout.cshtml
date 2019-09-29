@@ -7,44 +7,36 @@
 -->
 <html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0b1012">
-    <title>@ViewData["Title"]</title>
-    <meta name="keywords" content="@Localizer["META_KEYS"]">
-    <meta name="description" content="@Localizer["META_DESC"]" />
-
-    <environment include="Development">
-        @{ ViewData["cdnURL"] = "/"; }
-    </environment>
-    <environment exclude="Development">
-        @{ ViewData["cdnURL"] = "https://01.cdn.elanis.eu/portfolio/"; }
-    </environment>
-
-    <link rel="shortcut icon" type="image/png" href="@ViewData["cdnURL"]img/favicon.png" />
-    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="@ViewData["cdnURL"]css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#0b1012">
+	<title>@ViewData["Title"]</title>
+	<meta name="keywords" content="@Localizer["META_KEYS"]">
+	<meta name="description" content="@Localizer["META_DESC"]" />
+	<environment include="Development">
+		@{ ViewData["cdnURL"] = "/"; }
+	</environment>
+	<environment exclude="Development">
+		@{ ViewData["cdnURL"] = "https://01.cdn.elanis.eu/portfolio/"; }
+	</environment>
+	<link rel="shortcut icon" type="image/png" href="@ViewData["cdnURL"]img/favicon.png" />
+	<link rel="stylesheet" media="screen" type="text/css" title="Design" href="@ViewData["cdnURL"]css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 </head>
 <body>
-    <partial name="_Loading" />
+	<partial name="_Loading" />
+	<div id="main-ui-bar">
+		<span id="main-ui-title">Elanis' Portfolio</span>
+		<span id="main-ui-close">X</span>
+	</div>
+	<div id="main-ui">
+		<partial name="_Menu" />
 
-    <div id="main-ui-bar">
-        <span id="main-ui-title">Elanis' Portfolio</span>
-        <span id="main-ui-close">X</span>
-    </div>
-    <div id="main-ui">
-
-        <partial name="_Menu" />
-
-
-        @* <partial name="_CookieConsentPartial" /> *@
-
-        @RenderBody()
-
-        @*<partial name="_Footer" />*@
-    </div>
-
-    @RenderSection("Scripts", required: false)
+		@* <partial name="_CookieConsentPartial" /> *@
+		@RenderBody()
+		@*<partial name="_Footer" />*@
+	</div>
+	@RenderSection("Scripts", required: false)
 </body>
 </html>

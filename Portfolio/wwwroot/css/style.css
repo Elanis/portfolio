@@ -271,7 +271,8 @@ a:hover {
 		list-style: none;
 		position: fixed;
 		top: 100px;
-		right : calc(2.5vw + 20px);
+		right : calc(1vw + 20px);
+		padding-right: 10px;
 	}
 
 	.socialnetworks li {
@@ -288,7 +289,7 @@ a:hover {
 		width: 40px;
 	}
 }
-@media all and (orientation: portrait) { /* Put a the bottom */
+@media all and (orientation: portrait), (max-width: 490px) { /* Put a the bottom */
 	.socialnetworks {
 		position: fixed;
 		bottom: 0;
@@ -298,18 +299,14 @@ a:hover {
 		padding: 0;
 		height: 80px;
 	}
+
 	.socialnetworks li {
 		display: inline-block;
 	}
+
 	.socialnetworks img {
 		width: 50px;
 		margin: 5px;
-	}
-}
-
-@media all and (max-width: 490px) {
-	.socialnetworks, .socialnetworks * { /* The screen is too small !!!!!! */
-		display: none;
 	}
 }
 
