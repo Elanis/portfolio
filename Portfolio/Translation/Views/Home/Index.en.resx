@@ -156,6 +156,9 @@
   <data name="SKILLS_BACK_END" xml:space="preserve">
     <value>Web Back-end:</value>
   </data>
+  <data name="SKILLS_DB" xml:space="preserve">
+    <value>Databases</value>
+  </data>
   <data name="SKILLS_FRONT_END" xml:space="preserve">
     <value>Web Front-end:</value>
   </data>
@@ -163,7 +166,7 @@
     <value>Outside Web</value>
   </data>
   <data name="SKILLS_OW_JOKESREF" xml:space="preserve">
-    <value />
+    <value>Jokes and movies references</value>
   </data>
   <data name="SKILLS_OW_LINUX" xml:space="preserve">
     <value>GNU/Linux clientside/serverside and shell</value>
@@ -178,9 +181,14 @@
     <value>Tools</value>
   </data>
   <data name="SKILLS_TOOLS_ADOBE" xml:space="preserve">
-    <value />
+    <value>Adobe tools: especially Photoshop and Premiere Pro</value>
   </data>
   <data name="WELCOME_MESSAGE" xml:space="preserve">
-    <value />
+    <value>Welcome on my portfolio !&lt;br/&gt;&lt;br/&gt;
+My name is Axel aka Elanis, and this website presents you my projets and skills I learned in the past years. Most of these skills were learned by myself, and some while studying or in my jobs.&lt;br/&gt;
+&lt;br/&gt;
+I'm yyyy years old, I began "advanced" computing around 2011 and began to develop at the begining of 2014. Then I started a Bachelor-Master course in septembre 2016 and am now in a internship.&lt;br/&gt;
+&lt;br/&gt;
+Between this internship (my main activity), I'm also the founder of &lt;a href="https://dysnomia.studio"&gt;Dysnomia&lt;/a&gt; a company created to manage my biggest projects. More informations on this company at: &lt;a href="https://dysnomia.studio"&gt;https://dysnomia.studio&lt;/a&gt;.&lt;br /&gt;</value>
   </data>
 </root>

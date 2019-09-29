@@ -156,6 +156,9 @@
   <data name="SKILLS_BACK_END" xml:space="preserve">
     <value>Web Back-end:</value>
   </data>
+  <data name="SKILLS_DB" xml:space="preserve">
+    <value>Bases de données</value>
+  </data>
   <data name="SKILLS_FRONT_END" xml:space="preserve">
     <value>Web Front-end:</value>
   </data>
@@ -184,7 +187,7 @@
     <value>Bonjour et bienvenue sur mon portfolio !&lt;br /&gt;&lt;br /&gt;
     Je suis Axel aka Elanis et ce site présente mes différents projets et compétences acquises au cours de ces dernières années. J'ai appris la plupart de ces connaissances en autodidacte, certaines au cours de mes études ou de mes jobs.&lt;br /&gt;
     &lt;br /&gt;
-    Pour parler historique, j'ai yyyy ans, j'ai commencé à m'intéresser à l'informatique "avancée" en 2011 et la programmation début 2014. J'ai ensuite commencé mon cursus licence-master en septembre 2016 et suis actuellement en 3e année de licence informatique en alternance.&lt;br /&gt;
+    Pour parler de mon histoire, j'ai yyyy ans, j'ai commencé à m'intéresser à l'informatique "avancée" en 2011 et la programmation début 2014. J'ai ensuite commencé mon cursus licence-master en septembre 2016 et suis actuellement en 1ere année de master informatique en alternance.&lt;br /&gt;
     &lt;br /&gt;
     A côté de mon activité principale de développeur en alternance, je suis aussi fondateur de &lt;a href="https://dysnomia.studio"&gt;Dysnomia&lt;/a&gt;, entreprise crée afin de gérer mes projets Web les plus importants. Vous pouvez avoir plus d'informations sur: &lt;a href="https://dysnomia.studio"&gt;https://dysnomia.studio&lt;/a&gt;.&lt;br /&gt;</value>
   </data>
