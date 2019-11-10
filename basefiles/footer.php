@@ -15,7 +15,7 @@
 						<li><h3><?php echo PROJECT_WEBSITE; ?></h3></li>
 						<li><a href="https://dehash.me">Dehash.me</a></li>
 						<li><a href="https://howtoopen.me">HowToOpen.me</a></li>
-						<li><a href="https://randomeme.xyz">Randomeme</a></li>
+						<li><a href="https://whoowns.me">WhoOwns.me</a></li>
 					</ul>
 				</td>
 				<td>

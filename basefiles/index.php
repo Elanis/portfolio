@@ -59,12 +59,6 @@ include_once('./basefiles/header.php');
 	</div>
 
 	<div class="mini-part">
-		<h3><a href="https://randomeme.xyz" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [English] Randomeme</a></h3>
-		<a href="https://randomeme.xyz" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/randomeme_small.png" alt="randomeme"/></a>
-		<a href="#" class="apercu" id="0"><?php echo PROJECT_PREVIEW; ?></a>
-	</div>
-
-	<div class="mini-part">
 		<h3><a href="https://galactae.eu" target="blank"><span class="game"><?php echo PROJECT_GAME; ?></span> [Francais/English] Galactae</a></h3>
 		<a href="https://galactae.eu" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/galactae_small.png" alt="galactae"/></a>
 		<a href="#" class="apercu" id="5"><?php echo PROJECT_PREVIEW; ?></a>
@@ -94,6 +88,12 @@ include_once('./basefiles/header.php');
 
 	<details>
     	<summary class="center-header"><?php echo OLD_PROJECTS; ?></summary>
+
+		<div class="mini-part">
+			<h3><a href="https://randomeme.xyz" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [English] Randomeme</a></h3>
+			<a href="https://randomeme.xyz" target="blank"><img src="https://01.cdn.elanis.eu/portfolio/img/randomeme_small.png" alt="randomeme"/></a>
+			<a href="#" class="apercu" id="0"><?php echo PROJECT_PREVIEW; ?></a>
+		</div>
 
 		<div class="mini-part">
 			<h3><a href="https://scifi.elanis.eu/" target="blank"><span class="website"><?php echo PROJECT_WEBSITE; ?></span> [Francais/English] Space-scifi</a></h3>
