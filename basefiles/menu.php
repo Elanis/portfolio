@@ -5,8 +5,6 @@
 		<li><a href="index#skills" class="menuAncre"><?php echo MENU_SKILLS; ?></a></li>
 		<li><a href="index#projets" class="menuAncre"><?php echo MENU_PROJECTS; ?></a></li>
 		<li><a href="ui_ux"><?php echo MENU_UI_UX; ?></a></li>
-		<!--<li><a href="softwares.php"><?php echo MENU_SOFTWARES; ?></a></li>-->
-		<!--<li><a href="prestations.php"><?php echo MENU_PREST; ?></a></li>-->
 		<li><a href="contact"><?php echo MENU_CONTACT; ?></a></li>
 		<li><?php $lang->drawLanguageList(); ?></li>
 	</ul>
