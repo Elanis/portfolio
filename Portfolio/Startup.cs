@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
 
+using Dysnomia.Common.Stats;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -64,6 +66,14 @@ namespace Portfolio {
 			app.UseStaticFiles();
 			app.UseRouting();
 			app.UseCookiePolicy();
+
+			if (!env.IsEnvironment("Testing")) {
+				app.Use(async (context, next) => {
+					StatsRecorder.NewVisit(context);
+
+					await next();
+				});
+			}
 
 			app.UseEndpoints(endpoints => {
 				endpoints.MapControllerRoute(
