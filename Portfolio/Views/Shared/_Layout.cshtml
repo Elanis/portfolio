@@ -21,7 +21,7 @@
 <body>
     <partial name="_Loading" />
     <div id="main-ui-bar">
-        <span id="main-ui-title">Elanis' Portfolio <span id="main-ui-language">[<a href="/fr/@System.IO.Path.GetFileNameWithoutExtension(ViewContext.View.Path)">Francais</a> / <a href="/en/@System.IO.Path.GetFileNameWithoutExtension(ViewContext.View.Path)">English</a>]</span></span>
+        <span id="main-ui-title">Elanis' Portfolio <span id="main-ui-language">[<a href="/fr/@System.IO.Path.GetFileNameWithoutExtension(ViewContext.View.Path).ToLower()">Francais</a> / <a href="/en/@System.IO.Path.GetFileNameWithoutExtension(ViewContext.View.Path).ToLower()">English</a>]</span></span>
         <span id="main-ui-close">X</span>
     </div>
     <div id="main-ui">

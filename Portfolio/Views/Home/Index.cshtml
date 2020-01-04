@@ -1,22 +1,22 @@
 ﻿@{
-	ViewData["Title"] = "Elanis' Portfolio";
+    ViewData["Title"] = "Elanis' Portfolio";
 }
 <h1 class="text-center">Elanis</h1>
 <div class="text-center">
-	<img src="https://01.cdn.elanis.eu/elanis/Elanis.png" alt="elanis" id="index-img-elanis" />
+    <img src="https://01.cdn.elanis.eu/elanis/Elanis.png" alt="elanis" id="index-img-elanis" />
 </div>
 <br />
 <br />
 <p>
-	@Html.Raw(Localizer["WELCOME_MESSAGE"].Value.Replace("yyyy",
-			Convert.ToString(Math.Floor((DateTime.Today - new DateTime(1998, 06, 29)).Days / 365.25m))
-	))
+    @Html.Raw(Localizer["WELCOME_MESSAGE"].Value.Replace("yyyy",
+            Convert.ToString(Math.Floor((DateTime.Today - new DateTime(1998, 06, 29)).Days / 365.25m))
+    ))
 </p>
 <table class="cv-table">
-	<tr>
-		<td><a class="coolbutton" target="blank" href="@ViewData["cdnURL"]pdf/CV_Axel_Soupe_Elanis_FR.pdf">@Localizer["CV_FR"]</a></td>
-		<td><a class="coolbutton" target="blank" href="@ViewData["cdnURL"]pdf/CV_Axel_Soupe_Elanis_EN.pdf">@Localizer["CV_EN"]</a></td>
-	</tr>
+    <tr>
+        <td><a class="coolbutton" target="blank" href="@ViewData["cdnURL"]pdf/CV_Axel_Soupe_Elanis_FR.pdf">@Localizer["CV_FR"]</a></td>
+        <td><a class="coolbutton" target="blank" href="@ViewData["cdnURL"]pdf/CV_Axel_Soupe_Elanis_EN.pdf">@Localizer["CV_EN"]</a></td>
+    </tr>
 </table>
 <h1 class="text-center">@Localizer["SKILLS_TITLE"]</h1>
 <div>
@@ -106,17 +106,17 @@
     </div>
     <h1 class="text-center">@Localizer["PROJECTS_I_WORK_ON"]</h1>
     <div class="mini-part projet">
-        <h3><a href="https://teamcp.net/" target="blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span><span class="role">@Localizer["PROJECT_COFOUNDER"]</span> [Francais] @Localizer["PROJECTS_TCP_TITLE"]</a></h3>
-        <a href="https://teamcp.net/" target="blank"><img src="@ViewData["cdnURL"]img/teamcp_small.png" alt="teamcp" /></a>
-        <a href="#" class="apercu" id="4">@Localizer["PROJECT_PREVIEW"]</a>
-    </div>
-    <div class="mini-part projet">
         <h3><a href="***REMOVED***/" target="blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span><span class="role">@Localizer["PROJECT_DEVELOPER"]</span> [Francais] Gaspar</a></h3>
         <a href="***REMOVED***/" target="blank"><img src="@ViewData["cdnURL"]img/***REMOVED***.png" alt=***REMOVED*** /></a>
         <a href="#" class="apercu" id="4">@Localizer["PROJECT_PREVIEW"]</a>
     </div>
     <details>
         <summary class="text-center">@Localizer["OLD_PROJECTS"]</summary>
+        <div class="mini-part projet">
+            <h3><a href="https://teamcp.net/" target="blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span><span class="role">@Localizer["PROJECT_COFOUNDER"]</span> [Francais] @Localizer["PROJECTS_TCP_TITLE"]</a></h3>
+            <a href="https://teamcp.net/" target="blank"><img src="@ViewData["cdnURL"]img/teamcp_small.png" alt="teamcp" /></a>
+            <a href="#" class="apercu" id="4">@Localizer["PROJECT_PREVIEW"]</a>
+        </div>
         <div class="mini-part projet">
             <h3><a href="https://randomeme.xyz" target="blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span> [English] Randomeme</a></h3>
             <a href="https://randomeme.xyz" target="blank"><img src="@ViewData["cdnURL"]img/randomeme_small.png" alt="randomeme" /></a>
@@ -194,6 +194,8 @@
         <a id="quitFrame" href="#">X</a>
         <iframe id="ApercuFrame"></iframe>
     </div>
+
+    <h1 class="text-center">@Localizer["CONTACT"]</h1>
 </div>
 
 <footer>
@@ -240,55 +242,55 @@
 </footer>
 
 <script type="text/javascript">
-	/**
-	 * Blue Screen
-	 */
-	function blueScreen() {
-		document.body.innerHTML = '<div class="blueScreen"></div>';
+    /**
+     * Blue Screen
+     */
+    function blueScreen() {
+        document.body.innerHTML = '<div class="blueScreen"></div>';
 
-		/* We'll disable this ... This may be too much
-		if (!document.fullscreenElement &&    // alternative standard method
-			!document.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
+        /* We'll disable this ... This may be too much
+        if (!document.fullscreenElement &&    // alternative standard method
+            !document.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
 
-			if (document.documentElement.requestFullscreen) {
-				document.documentElement.requestFullscreen();
-			} else if (document.documentElement.mozRequestFullScreen) {
-				document.documentElement.mozRequestFullScreen();
-			} else if (document.documentElement.webkitRequestFullscreen) {
-				document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
-			}
-		} else {
-			if (document.cancelFullScreen) {
-				document.cancelFullScreen();
-			} else if (document.mozCancelFullScreen) {
-				document.mozCancelFullScreen();
-			} else if (document.webkitCancelFullScreen) {
-				document.webkitCancelFullScreen();
-			}
-		}*/
-	}
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullscreen) {
+                document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+        } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+        }*/
+    }
 
-	/**
-	 * Draw the UI
-	 */
-	function drawUI() {
-		document.getElementById('main-ui').classList.add('main-ui-anim');
-		document.getElementById('main-ui-bar').classList.add('main-ui-bar-anim');
+    /**
+     * Draw the UI
+     */
+    function drawUI() {
+        document.getElementById('main-ui').classList.add('main-ui-anim');
+        document.getElementById('main-ui-bar').classList.add('main-ui-bar-anim');
 
-		document.getElementById('main-ui-close').addEventListener('click', function () {
-			blueScreen();
-		});
-	}
+        document.getElementById('main-ui-close').addEventListener('click', function () {
+            blueScreen();
+        });
+    }
 
-	/**
-	 * Loading process
-	 */
-	let loadingLi = document.querySelectorAll('#loading-list li');
-	function showLI(i = 0) {
-		if (loadingLi[i] === undefined) { drawUI(); return; }
-		loadingLi[i].style.display = "block";
+    /**
+     * Loading process
+     */
+    let loadingLi = document.querySelectorAll('#loading-list li');
+    function showLI(i = 0) {
+        if (loadingLi[i] === undefined) { drawUI(); return; }
+        loadingLi[i].style.display = "block";
 
-		setTimeout(function () { showLI(i + 1); }, 100 + Math.round(Math.random() * (400 - i * 50)));
-	}
-	showLI();
+        setTimeout(function () { showLI(i + 1); }, 100 + Math.round(Math.random() * (400 - i * 50)));
+    }
+    showLI();
 </script>
