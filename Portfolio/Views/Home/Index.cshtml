@@ -196,6 +196,15 @@
     </div>
 
     <h1 class="text-center">@Localizer["CONTACT"]</h1>
+
+    <form method="post" action="contact">
+        <input type="text" id="mail" name="mail" placeholder="@Localizer["CONTACT_MAIL"]" required><br />
+        <textarea cols="40" rows="6" id="txt" name="txt" placeholder="@Localizer["CONTACT_TXT"]" required></textarea><br />
+
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <div class="g-recaptcha" data-sitekey="***REMOVED***"></div>
+        <input type="submit" value="@Localizer["CONTACT_SEND"]" />
+    </form>
 </div>
 
 <footer>

@@ -117,11 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CONTACT" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="CONTACT_MAIL" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="CONTACT_SEND" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="CONTACT_TXT" xml:space="preserve">
+    <value>Your message</value>
+  </data>
   <data name="CV_EN" xml:space="preserve">
     <value>CV (English)</value>
   </data>
   <data name="CV_FR" xml:space="preserve">
     <value>CV (French)</value>
+  </data>
+  <data name="META_DESC" xml:space="preserve">
+    <value>Elanis: GameDev, Web Developer, and miscellaneous content maker</value>
+  </data>
+  <data name="META_KEY" xml:space="preserve">
+    <value>elanis, developer, web, gmod, eap, stargate, galactae, dysnomia</value>
   </data>
   <data name="MY_PROJECTS_TITLE" xml:space="preserve">
     <value>My Projects</value>
