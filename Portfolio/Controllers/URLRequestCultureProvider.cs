@@ -1,12 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Localization;
-using System;
+﻿using System;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Localization;
+
 namespace Portfolio.Controllers {
-	public class UrlRequestCultureProvider:IRequestCultureProvider {
+	public class UrlRequestCultureProvider : IRequestCultureProvider {
 		public Task<ProviderCultureResult> DetermineProviderCultureResult(HttpContext httpContext) {
 			var url = httpContext.Request.Path;
 
