@@ -15,6 +15,8 @@ using Microsoft.Extensions.Hosting;
 
 using Portfolio.Controllers;
 
+using reCAPTCHA.AspNetCore;
+
 namespace Portfolio {
 	public class Startup {
 		public Startup(IConfiguration configuration) {
@@ -30,6 +32,10 @@ namespace Portfolio {
 				options.CheckConsentNeeded = context => true;
 				options.MinimumSameSitePolicy = SameSiteMode.None;
 			});
+
+			// Captcha
+			services.Configure<RecaptchaSettings>(Configuration.GetSection("RecaptchaSettings"));
+			services.AddTransient<IRecaptchaService, RecaptchaService>();
 
 
 			services.AddLocalization(options => options.ResourcesPath = "Translation")

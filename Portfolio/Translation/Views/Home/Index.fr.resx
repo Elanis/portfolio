@@ -123,6 +123,12 @@
   <data name="CONTACT_MAIL" xml:space="preserve">
     <value>Email</value>
   </data>
+  <data name="CONTACT_NOK" xml:space="preserve">
+    <value>Votre message n'a pas pu être envoyé, veuillez reessayer et veiller à completer le captcha.</value>
+  </data>
+  <data name="CONTACT_OK" xml:space="preserve">
+    <value>Votre message a bien été transmis.</value>
+  </data>
   <data name="CONTACT_SEND" xml:space="preserve">
     <value>Envoyer</value>
   </data>

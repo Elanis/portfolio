@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Threading.Tasks;
 
 using MailKit.Net.Smtp;
 
@@ -9,11 +10,15 @@ using MimeKit;
 
 using Portfolio.Models;
 
+using reCAPTCHA.AspNetCore;
+
 namespace Portfolio.Controllers {
 	public class HomeController : Controller {
 		public IStringLocalizer<HomeController> _localizer;
-		public HomeController(IStringLocalizer<HomeController> localizer) {
+		private IRecaptchaService _recaptcha;
+		public HomeController(IStringLocalizer<HomeController> localizer, IRecaptchaService recaptcha) {
 			_localizer = localizer;
+			_recaptcha = recaptcha;
 		}
 
 		[HttpGet]
@@ -28,8 +33,12 @@ namespace Portfolio.Controllers {
 		[HttpPost]
 		[Route("contact")]
 		[Route("{culture}/contact")]
-		public IActionResult Contact(string mail, string txt) {
-			// @TODO: recaptcha check - see: https://github.com/TimothyMeadows/reCAPTCHA.AspNetCore
+		public async Task<ActionResult> Contact(string mail, string txt) {
+			var recaptcha = await _recaptcha.Validate(Request);
+			if (string.IsNullOrWhiteSpace(mail) || string.IsNullOrWhiteSpace(txt) || !recaptcha.success) {
+				@ViewData["Message"] = "CONTACT_NOK";
+				return View("Index");
+			}
 
 			var message = new MimeMessage();
 			message.From.Add(new MailboxAddress("Elanis - Contact Form", "***REMOVED***"));
@@ -52,6 +61,8 @@ namespace Portfolio.Controllers {
 				client.Send(message);
 				client.Disconnect(true);
 			}
+
+			@ViewData["Message"] = "CONTACT_OK";
 
 			return View("Index");
 		}

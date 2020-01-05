@@ -1,6 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Elanis' Portfolio";
 }
+@if (ViewData["Message"] != null) {
+    <h1 class="text-center">@Localizer[(string)ViewData["Message"]]</h1>
+    <hr />
+}
+
 <h1 class="text-center">Elanis</h1>
 <div class="text-center">
     <img src="https://01.cdn.elanis.eu/elanis/Elanis.png" alt="elanis" id="index-img-elanis" />
