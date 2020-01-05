@@ -141,12 +141,6 @@
   <data name="CV_FR" xml:space="preserve">
     <value>CV (Francais)</value>
   </data>
-  <data name="META_DESC" xml:space="preserve">
-    <value>Elanis: GameDev, Web Developpeur, et createur de contenus divers</value>
-  </data>
-  <data name="META_KEYS" xml:space="preserve">
-    <value>elanis, developpeur, web, gmod, eap, stargate, galactae, dysnomia</value>
-  </data>
   <data name="MY_PROJECTS_TITLE" xml:space="preserve">
     <value>Mes projets</value>
   </data>
