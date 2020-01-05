@@ -32,7 +32,7 @@ namespace Portfolio.Controllers {
 		[Route("contact")]
 		[Route("{culture}/contact")]
 		public async Task<ActionResult> Contact(string mail, string txt) {
-			var recaptcha = await _recaptcha.Validate(Request);
+			var recaptcha = await _recaptcha.Validate(Request, false); // @TODO: find a better way, that allow only some domains
 			if (string.IsNullOrWhiteSpace(mail) || string.IsNullOrWhiteSpace(txt) || !recaptcha.success) {
 				@ViewData["Message"] = "CONTACT_NOK";
 				return View("Index");
