@@ -308,7 +308,7 @@ a:hover {
  */
 .blueScreen {
 	background-color: #007cff;
-	background: url(../img/bsod.png);
+	background-image: url(../img/bsod.png);
 	background-size: cover;
 	background-position: center;
 

@@ -14,10 +14,8 @@ using reCAPTCHA.AspNetCore;
 
 namespace Portfolio.Controllers {
 	public class HomeController : Controller {
-		public IStringLocalizer<HomeController> _localizer;
-		private IRecaptchaService _recaptcha;
+		private readonly IRecaptchaService _recaptcha;
 		public HomeController(IStringLocalizer<HomeController> localizer, IRecaptchaService recaptcha) {
-			_localizer = localizer;
 			_recaptcha = recaptcha;
 		}
 
