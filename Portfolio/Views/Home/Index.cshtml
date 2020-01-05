@@ -1,0 +1,310 @@
+﻿@{
+    ViewData["Title"] = "Elanis' Portfolio";
+}
+@if (ViewData["Message"] != null) {
+    <h1 class="text-center">@Localizer[(string)ViewData["Message"]]</h1>
+    <hr />
+}
+
+<h1 class="text-center">Elanis</h1>
+<div class="text-center">
+    <img src="https://01.cdn.elanis.eu/elanis/Elanis.png" alt="elanis" id="index-img-elanis" />
+</div>
+<br />
+<br />
+<p>
+    @Html.Raw(Localizer["WELCOME_MESSAGE"].Value.Replace("yyyy",
+            Convert.ToString(Math.Floor((DateTime.Today - new DateTime(1998, 06, 29)).Days / 365.25m))
+    ))
+</p>
+<table class="cv-table" aria-describedby="Curriculum vitaé">
+    <tr>
+        <td><a class="coolbutton" rel="noopener noreferrer" target="_blank" href="@ViewData["cdnURL"]pdf/CV_Axel_Soupe_Elanis_FR.pdf">@Localizer["CV_FR"]</a></td>
+        <td><a class="coolbutton" rel="noopener noreferrer" target="_blank" href="@ViewData["cdnURL"]pdf/CV_Axel_Soupe_Elanis_EN.pdf">@Localizer["CV_EN"]</a></td>
+    </tr>
+</table>
+<h1 class="text-center">@Localizer["SKILLS_TITLE"]</h1>
+<div>
+    <div class="mini-part">
+        <h2>@Localizer["SKILLS_BACK_END"]</h2>
+        <ul>
+            <li>PHP: MVC, SQL, MongoDB, ...</li>
+            <li>NodeJS: socket.io, mongoose, node-postgres, mocha, ...</li>
+            <li>C# (.NET & .NET Core): MVC, WebAPI</li>
+            <li>@Localizer["SKILLS_DB"]: MySQL/MariaDB, Oracle, SQL Server, MongoDB, Postgres</li>
+        </ul>
+    </div>
+    <div class="mini-part">
+        <h2>@Localizer["SKILLS_FRONT_END"]</h2>
+        <ul>
+            <li>Design: CSS, Bootstrap, Responsive</li>
+            <li>JavaScript (ES2018): Vanilla, jQuery, D3.JS, Angular, React.JS, ...</li>
+            <li>SEO</li>
+        </ul>
+    </div>
+    <div class="mini-part">
+        <h2>@Localizer["SKILLS_OUT_WEB"]</h2>
+        <ul>
+            <li>@Localizer["SKILLS_OW_LUA"]</li>
+            <li>@Localizer["SKILLS_OW_LINUX"]</li>
+            <li>@Localizer["SKILLS_OW_JOKESREF"]</li>
+        </ul>
+    </div>
+    <div class="mini-part">
+        <h2>@Localizer["SKILLS_TOOLS"]</h2>
+        <ul>
+            <li>Versionning: Git, TFVC</li>
+            <li>Todo & Roadmap: Gantt, Github Issues, Redmine, Flyspray
+            <li>Sonarqube</li>
+            <li>Octopus Deploy</li>
+            <li>@Localizer["SKILLS_TOOLS_ADOBE"]</li>
+        </ul>
+        </li>
+    </div>
+    <h1 class="text-center">@Localizer["MY_PROJECTS_TITLE"]</h1>
+    <div class="mini-part projet">
+        <h3><a href="https://whoowns.me" rel="noopener noreferrer" target="_blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span> [English] WhoOwns.me</a></h3>
+        <a href="https://whoowns.me" rel="noopener noreferrer" target="_blank"><img src="@ViewData["cdnURL"]img/whoownsme_small.png" alt="whoownsme" /></a>
+        <a href="#" class="apercu" id="7">@Localizer["PROJECT_PREVIEW"]</a>
+    </div>
+    <div class="mini-part projet">
+        <h3><a href="https://howtoopen.me" rel="noopener noreferrer" target="_blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span> [English] HowToOpen.me</a></h3>
+        <a href="https://howtoopen.me" rel="noopener noreferrer" target="_blank"><img src="@ViewData["cdnURL"]img/howtoopenme_small.png" alt="howtoopenme" /></a>
+        <a href="#" class="apercu" id="7">@Localizer["PROJECT_PREVIEW"]</a>
+    </div>
+    <div class="mini-part projet">
+        <h3><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=1230723021" rel="noopener noreferrer" target="_blank"><span class="addon">@Localizer["PROJECT_GADDON"]</span> [English] Simple Anti Propsurf</a></h3>
+        <table aria-describedby="Gmod Anti PropSurf">
+            <tr>
+                <td>
+                    <img src="https://raw.githubusercontent.com/Team-Pixel/GmodAntiSurf/master/icon.jpg" alt="GmodAntiSurf">
+                </td>
+                <td>
+                    <a href="https://github.com/Team-Pixel/GmodAntiSurf" rel="noopener noreferrer" target="_blank">Github</a><br />
+                    <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=1230723021" rel="noopener noreferrer" target="_blank">Steam Workshop</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="mini-part projet">
+        <h3><a href="https://dehash.me" rel="noopener noreferrer" target="_blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span> [English] Dehash.me</a></h3>
+        <a href="https://dehash.me" rel="noopener noreferrer" target="_blank"><img src="@ViewData["cdnURL"]img/dehashme_small.png" alt="dehashme" /></a>
+        <a href="#" class="apercu" id="7">@Localizer["PROJECT_PREVIEW"]</a>
+    </div>
+    <div class="mini-part projet">
+        <h3><a href="https://galactae.eu" rel="noopener noreferrer" target="_blank"><span class="game">@Localizer["PROJECT_GAME"]</span> [Francais/English] Galactae</a></h3>
+        <a href="https://galactae.eu" rel="noopener noreferrer" target="_blank"><img src="@ViewData["cdnURL"]img/galactae_small.png" alt="galactae" /></a>
+        <a href="#" class="apercu" id="5">@Localizer["PROJECT_PREVIEW"]</a>
+    </div>
+    <div class="mini-part projet">
+        <h3><a href="#" rel="noopener noreferrer" target="_blank"><span class="addon">@Localizer["PROJECT_GADDON"]</span> [English] Ultimate Constrainer</a></h3>
+        <table aria-describedby="Ultimate Constrainer">
+            <tr>
+                <td>
+                    <img src="@ViewData["cdnURL"]img/UtlimateConstrainer.jpg" alt="ultimate-constrainer">
+                </td>
+                <td>
+                    <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=659473058" rel="noopener noreferrer" target="_blank">Steam Workshop</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h1 class="text-center">@Localizer["PROJECTS_I_WORK_ON"]</h1>
+    <div class="mini-part projet">
+        <h3><a href="***REMOVED***/" rel="noopener noreferrer" target="_blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span><span class="role">@Localizer["PROJECT_DEVELOPER"]</span> [Francais] Gaspar</a></h3>
+        <a href="***REMOVED***/" rel="noopener noreferrer" target="_blank"><img src="@ViewData["cdnURL"]img/***REMOVED***.png" alt=***REMOVED*** /></a>
+        <a href="#" class="apercu" id="4">@Localizer["PROJECT_PREVIEW"]</a>
+    </div>
+    <details>
+        <summary class="text-center">@Localizer["OLD_PROJECTS"]</summary>
+        <div class="mini-part projet">
+            <h3><a href="https://teamcp.net/" rel="noopener noreferrer" target="_blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span><span class="role">@Localizer["PROJECT_COFOUNDER"]</span> [Francais] @Localizer["PROJECTS_TCP_TITLE"]</a></h3>
+            <a href="https://teamcp.net/" rel="noopener noreferrer" target="_blank"><img src="@ViewData["cdnURL"]img/teamcp_small.png" alt="teamcp" /></a>
+            <a href="#" class="apercu" id="4">@Localizer["PROJECT_PREVIEW"]</a>
+        </div>
+        <div class="mini-part projet">
+            <h3><a href="https://randomeme.xyz" rel="noopener noreferrer" target="_blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span> [English] Randomeme</a></h3>
+            <a href="https://randomeme.xyz" rel="noopener noreferrer" target="_blank"><img src="@ViewData["cdnURL"]img/randomeme_small.png" alt="randomeme" /></a>
+            <a href="#" class="apercu" id="0">@Localizer["PROJECT_PREVIEW"]</a>
+        </div>
+        <div class="mini-part projet">
+            <h3><a href="https://scifi.elanis.eu/" rel="noopener noreferrer" target="_blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span> [Francais/English] Space-scifi</a></h3>
+            <a href="https://scifi.elanis.eu/" rel="noopener noreferrer" target="_blank"><img src="@ViewData["cdnURL"]img/space-scifi_small.png" alt="space-scifi" /></a>
+            <a href="#" class="apercu" id="3">@Localizer["PROJECT_PREVIEW"]</a>
+        </div>
+        <div class="mini-part projet">
+            <h3><a href="https://scifi.elanis.eu/" rel="noopener noreferrer" target="_blank"><span class="addon">@Localizer["PROJECT_GADDON"]</span> [English] Scifi-Pack</a></h3>
+            <table aria-describedby="Scifi-Pack">
+                <tr>
+                    <td>
+                        <img src="@ViewData["cdnURL"]img/sfpack.jpg" alt="scifi-pack">
+                    </td>
+                    <td>
+                        <a href="https://scifi.elanis.eu" rel="noopener noreferrer" target="_blank">@Localizer["PROJECT_WEBSITE"]</a><br />
+                        <a href="https://github.com/Elanis/SciFi-Pack-Addon-Gamemode" rel="noopener noreferrer" target="_blank">Github</a><br />
+                        <a href="http://steamcommunity.com/workshop/filedetails/?id=459240346" rel="noopener noreferrer" target="_blank">Steam Workshop</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="mini-part projet">
+            <h3><a href="https://sg-eap.space" rel="noopener noreferrer" target="_blank"><span class="addon">@Localizer["PROJECT_GADDON"]</span> [Multi-Languages] Evolution Addon Pack</a></h3>
+            <table aria-describedby="Evolution Addon Pack">
+                <tr>
+                    <td>
+                        <img src="@ViewData["cdnURL"]img/eap.jpg" alt="eap">
+                    </td>
+                    <td>
+                        <a href="http://sg-eap.space" rel="noopener noreferrer" target="_blank">@Localizer["PROJECT_WEBSITE"]</a><br />
+                        <a href="https://github.com/williamdefly/Evolutionaddonpack" rel="noopener noreferrer" target="_blank">Github</a><br />
+                        <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=515981131" rel="noopener noreferrer" target="_blank">Steam Workshop</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="mini-part projet">
+            <h3><a href="https://scifi.elanis.eu/" rel="noopener noreferrer" target="_blank"><span class="addon">@Localizer["PROJECT_GADDON"]</span> [English] Spacelife</a></h3>
+            <table aria-describedby="Spacelife">
+                <tr>
+                    <td>
+                        <img src="@ViewData["cdnURL"]img/spacelife.jpg" alt="spacelife">
+                    </td>
+                    <td>
+                        <a href="https://scifi.elanis.eu" rel="noopener noreferrer" target="_blank">@Localizer["PROJECT_WEBSITE"]</a><br />
+                        <a href="https://github.com/Elanis/SpaceLife" rel="noopener noreferrer" target="_blank">Github</a><br />
+                        <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=659445283" rel="noopener noreferrer" target="_blank">Steam Workshop</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="mini-part projet">
+            <h3><a href="https://getiny.link/" rel="noopener noreferrer" target="_blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span> [Francais/English] getiny.link</a></h3>
+            <a href="https://getiny.link/" rel="noopener noreferrer" target="_blank"><img src="@ViewData["cdnURL"]img/getinylink_small.png" alt="getinylink" /></a>
+            <a href="#" class="apercu" id="1">@Localizer["PROJECT_PREVIEW"]</a>
+        </div>
+        <div class="mini-part projet">
+            <h3><a href="#" rel="noopener noreferrer" target="_blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span> [Francais] SG-E / EAP v2</a></h3>
+            <a href="#" rel="noopener noreferrer" target="_blank"><img src="@ViewData["cdnURL"]img/eap_small.png" alt="sge" /></a>
+            <a href="#" class="apercu" id="6">@Localizer["PROJECT_PREVIEW"]</a>
+        </div>
+        <div class="mini-part projet">
+            <h3><a href="https://dev.elanis.eu/dev42/v2" rel="noopener noreferrer" target="_blank"><span class="website">@Localizer["PROJECT_WEBSITE"]</span> [Francais/English] Dev42</a></h3>
+            <a href="https://dev.elanis.eu/dev42/v2" rel="noopener noreferrer" target="_blank"><img src="@ViewData["cdnURL"]img/dev42_small.png" alt="dev42" /></a>
+            <a href="#" class="apercu" id="2">@Localizer["PROJECT_PREVIEW"]</a>
+        </div>
+    </details>
+    <div id="FrameOverlay">
+        <h2 class="center-header"><a id="titleFrame" href="#" rel="noopener noreferrer" target="_blank"></a></h2>
+        <p class="center-header" id="versionFrame"></p>
+        <a id="quitFrame" href="#">X</a>
+        <iframe id="ApercuFrame" title="Preview"></iframe>
+    </div>
+
+    <h1 class="text-center">@Localizer["CONTACT"]</h1>
+
+    <form method="post" action="contact" id="contact">
+        <input type="text" id="mail" name="mail" placeholder="@Localizer["CONTACT_MAIL"]" required><br /><br />
+        <textarea cols="40" rows="6" id="txt" name="txt" placeholder="@Localizer["CONTACT_TXT"]" required></textarea><br />
+
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <div class="g-recaptcha" data-sitekey="***REMOVED***"></div>
+        <input type="submit" value="@Localizer["CONTACT_SEND"]" />
+    </form>
+</div>
+
+<footer>
+    <table aria-describedby="first-footer">
+        <tr class="first-footer">
+            <td>
+                <ul>
+                    <li><h3>Elanis</h3></li>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_FR.pdf">CV (FR)</a></li>
+                    <li><a href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_EN.pdf">CV (EN)</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><h3>Site Web</h3></li>
+                    <li><a href="https://dehash.me">Dehash.me</a></li>
+                    <li><a href="https://howtoopen.me">HowToOpen.me</a></li>
+                    <li><a href="https://whoowns.me">Whoowns.me</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><h3>Jeu video</h3></li>
+                    <li><a href="https://galactae.eu">Galactae: Space Age Dawn</a></li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li><h3>Reseaux Sociaux</h3></li>
+                    <li><a href="https://www.facebook.com/elanisgaming/">Facebook</a></li>
+                    <li><a href="https://twitter.com/ElanisGaming">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/user/ElanisGaming">Youtube</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <table aria-describedby="second-footer">
+        <tr class="second-footer">
+            <td>Elanis.eu - Copyright 2015-@DateTime.Now.Year - Tout droits reservés</td>
+        </tr>
+    </table>
+</footer>
+
+<script type="text/javascript">
+    /**
+     * Blue Screen
+     */
+    function blueScreen() {
+        document.body.innerHTML = '<div class="blueScreen"></div>';
+
+        /* We'll disable this ... This may be too much
+        if (!document.fullscreenElement &&    // alternative standard method
+            !document.mozFullScreenElement && !document.webkitFullscreenElement) {  // current working methods
+
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullscreen) {
+                document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+            }
+        } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+        }*/
+    }
+
+    /**
+     * Draw the UI
+     */
+    function drawUI() {
+        document.getElementById('main-ui').classList.add('main-ui-anim');
+        document.getElementById('main-ui-bar').classList.add('main-ui-bar-anim');
+
+        document.getElementById('main-ui-close').addEventListener('click', function () {
+            blueScreen();
+        });
+    }
+
+    /**
+     * Loading process
+     */
+    let loadingLi = document.querySelectorAll('#loading-list li');
+    function showLI(i = 0) {
+        if (loadingLi[i] === undefined) { drawUI(); return; }
+        loadingLi[i].style.display = "block";
+
+        setTimeout(function () { showLI(i + 1); }, 100 + Math.round(Math.random() * (400 - i * 50)));
+    }
+    showLI();
+</script>
