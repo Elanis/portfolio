@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using MailKit.Net.Smtp;
 
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Localization;
 
 using MimeKit;
 
@@ -15,7 +14,7 @@ using reCAPTCHA.AspNetCore;
 namespace Portfolio.Controllers {
 	public class HomeController : Controller {
 		private readonly IRecaptchaService _recaptcha;
-		public HomeController(IStringLocalizer<HomeController> localizer, IRecaptchaService recaptcha) {
+		public HomeController(IRecaptchaService recaptcha) {
 			_recaptcha = recaptcha;
 		}
 
