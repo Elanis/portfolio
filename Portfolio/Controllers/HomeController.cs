@@ -31,35 +31,41 @@ namespace Portfolio.Controllers {
 		[Route("contact")]
 		[Route("{culture}/contact")]
 		public async Task<ActionResult> Contact(string mail, string txt) {
-			var recaptcha = await _recaptcha.Validate(Request, false); // @TODO: find a better way, that allow only some domains
-			if (string.IsNullOrWhiteSpace(mail) || string.IsNullOrWhiteSpace(txt) || !recaptcha.success) {
+			try {
+				var recaptcha = await _recaptcha.Validate(Request, false); // @TODO: find a better way, that allow only some domains
+				if (string.IsNullOrWhiteSpace(mail) || string.IsNullOrWhiteSpace(txt) || !recaptcha.success) {
+					@ViewData["Message"] = "CONTACT_NOK";
+					return View("Index");
+				}
+
+				var message = new MimeMessage();
+				message.From.Add(new MailboxAddress("Elanis - Contact Form", "***REMOVED***"));
+				message.To.Add(new MailboxAddress("Elanis", "***REMOVED***"));
+				message.Subject = "Contact Form";
+
+				message.Body = new TextPart("plain") {
+					Text = txt + "\n\n\n" + mail
+				};
+
+				using (var client = new SmtpClient()) {
+					// For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
+					client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+
+					client.Connect("***REMOVED***", 587, false);
+
+					// Note: only needed if the SMTP server requires authentication
+					client.Authenticate("***REMOVED***", "***REMOVED***");
+
+					client.Send(message);
+					client.Disconnect(true);
+				}
+
+				@ViewData["Message"] = "CONTACT_OK";
+
+			} catch (System.ComponentModel.DataAnnotations.ValidationException e) {
 				@ViewData["Message"] = "CONTACT_NOK";
-				return View("Index");
+				// TODO: Log it
 			}
-
-			var message = new MimeMessage();
-			message.From.Add(new MailboxAddress("Elanis - Contact Form", "***REMOVED***"));
-			message.To.Add(new MailboxAddress("Elanis", "***REMOVED***"));
-			message.Subject = "Contact Form";
-
-			message.Body = new TextPart("plain") {
-				Text = txt + "\n\n\n" + mail
-			};
-
-			using (var client = new SmtpClient()) {
-				// For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
-				client.ServerCertificateValidationCallback = (s, c, h, e) => true;
-
-				client.Connect("***REMOVED***", 587, false);
-
-				// Note: only needed if the SMTP server requires authentication
-				client.Authenticate("***REMOVED***", "***REMOVED***");
-
-				client.Send(message);
-				client.Disconnect(true);
-			}
-
-			@ViewData["Message"] = "CONTACT_OK";
 
 			return View("Index");
 		}
