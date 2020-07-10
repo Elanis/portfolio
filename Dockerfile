@@ -3,7 +3,6 @@ WORKDIR /app
 
 # Build Project
 COPY . ./
-RUN ping nuget-server
 RUN dotnet sonarscanner begin /k:"portfolio" /d:sonar.host.url="***REMOVED***" /d:sonar.login="***REMOVED***" /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" /d:sonar.coverage.exclusions="**Test*.cs"
 RUN dotnet restore Portfolio.sln --ignore-failed-sources /p:EnableDefaultItems=false
 RUN dotnet publish Portfolio.sln --no-restore -c Release -o out
