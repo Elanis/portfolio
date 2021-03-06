@@ -187,7 +187,7 @@
     <value>Jokes and movies references</value>
   </data>
   <data name="SKILLS_OW_LINUX" xml:space="preserve">
-    <value>GNU/Linux clientside/serverside and shell</value>
+    <value>System Administration: Debian, Windows Server, Docker based architecture, etc.</value>
   </data>
   <data name="SKILLS_OW_LUA" xml:space="preserve">
     <value>Lua - especially on Valve Source Engine</value>

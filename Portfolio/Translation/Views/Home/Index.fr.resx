@@ -187,7 +187,7 @@
     <value>Blagues et références cinéma (plus ou moins obscures)</value>
   </data>
   <data name="SKILLS_OW_LINUX" xml:space="preserve">
-    <value>GNU/Linux client/serveur et shell</value>
+    <value>Administraiton Système: Debian, Windows Server, architecture basées sur Docker, etc.</value>
   </data>
   <data name="SKILLS_OW_LUA" xml:space="preserve">
     <value>Lua - en particulier sur le moteur Source de Valve</value>
