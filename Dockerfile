@@ -3,9 +3,15 @@ WORKDIR /app
 
 ARG SONAR_HOST
 ARG SONAR_TOKEN
+ARG PORTFOLIO_RECAPTCHA_SECRETKEY
+ARG PORTFOLIO_RECAPTCHA_SITEKEY
 
 # Build Project
 COPY . ./
+
+RUN jq ".RecaptchaSettings.SecretKey = \"$PORTFOLIO_RECAPTCHA_SECRETKEY\"" Portfolio/appsettings.json > tmp.appsettings.json && mv tmp.appsettings.json Portfolio/appsettings.json
+RUN jq ".RecaptchaSettings.SiteKey = \"$PORTFOLIO_RECAPTCHA_SITEKEY\"" Portfolio/appsettings.json > tmp.appsettings.json && mv tmp.appsettings.json Portfolio/appsettings.json
+
 RUN dotnet sonarscanner begin /k:"portfolio" /d:sonar.host.url="$SONAR_HOST" /d:sonar.login="$SONAR_TOKEN" /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" /d:sonar.coverage.exclusions="**Test*.cs"
 RUN dotnet restore Portfolio.sln --ignore-failed-sources /p:EnableDefaultItems=false
 RUN dotnet publish Portfolio.sln --no-restore -c Release -o out
