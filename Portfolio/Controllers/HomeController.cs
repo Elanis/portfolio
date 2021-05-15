@@ -38,27 +38,7 @@ namespace Portfolio.Controllers {
 					return View("Index");
 				}
 
-				var message = new MimeMessage();
-				message.From.Add(new MailboxAddress("Elanis - Contact Form", "***REMOVED***"));
-				message.To.Add(new MailboxAddress("Elanis", "***REMOVED***"));
-				message.Subject = "Contact Form";
-
-				message.Body = new TextPart("plain") {
-					Text = txt + "\n\n\n" + mail
-				};
-
-				using (var client = new SmtpClient()) {
-					// For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
-					client.ServerCertificateValidationCallback = (s, c, h, e) => true;
-
-					client.Connect("***REMOVED***", 587, false);
-
-					// Note: only needed if the SMTP server requires authentication
-					client.Authenticate("***REMOVED***", "***REMOVED***");
-
-					client.Send(message);
-					client.Disconnect(true);
-				}
+				SendMail(mail, txt);
 
 				@ViewData["Message"] = "CONTACT_OK";
 
@@ -68,6 +48,31 @@ namespace Portfolio.Controllers {
 			}
 
 			return View("Index");
+		}
+
+		[NonAction]
+		public void SendMail(string mail, string txt) {
+			var message = new MimeMessage();
+			message.From.Add(new MailboxAddress("Elanis - Contact Form", "***REMOVED***"));
+			message.To.Add(new MailboxAddress("Elanis", "***REMOVED***"));
+			message.Subject = "Contact Form";
+
+			message.Body = new TextPart("plain") {
+				Text = txt + "\n\n\n" + mail
+			};
+
+			using (var client = new SmtpClient()) {
+				// For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
+				client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+
+				client.Connect("***REMOVED***", 587, false);
+
+				// Note: only needed if the SMTP server requires authentication
+				client.Authenticate("***REMOVED***", "***REMOVED***");
+
+				client.Send(message);
+				client.Disconnect(true);
+			}
 		}
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
