@@ -61,18 +61,18 @@ namespace Portfolio.Controllers {
 				Text = txt + "\n\n\n" + mail
 			};
 
-			using (var client = new SmtpClient()) {
-				// For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
-				client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+			using var client = new SmtpClient();
 
-				client.Connect("***REMOVED***", 587, false);
+			// For demo-purposes, accept all SSL certificates (in case the server supports STARTTLS)
+			client.ServerCertificateValidationCallback = (s, c, h, e) => true;
 
-				// Note: only needed if the SMTP server requires authentication
-				client.Authenticate("***REMOVED***", "***REMOVED***");
+			client.Connect("***REMOVED***", 587, false);
 
-				client.Send(message);
-				client.Disconnect(true);
-			}
+			// Note: only needed if the SMTP server requires authentication
+			client.Authenticate("***REMOVED***", "***REMOVED***");
+
+			client.Send(message);
+			client.Disconnect(true);
 		}
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
