@@ -26,10 +26,12 @@ namespace Portfolio {
 
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services) {
+			var appSettingsSection = Configuration.GetSection("AppSettings");
+			services.Configure<AppSettings>(appSettingsSection);
+
 			// Captcha
 			services.Configure<RecaptchaSettings>(Configuration.GetSection("RecaptchaSettings"));
 			services.AddTransient<IRecaptchaService, RecaptchaService>();
-
 
 			services.AddLocalization(options => options.ResourcesPath = "Translation")
 				.AddMvc()

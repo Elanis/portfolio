@@ -7,6 +7,7 @@ using FluentAssertions;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 using Portfolio.Controllers;
 
@@ -16,11 +17,18 @@ namespace Portfolio.Test {
 	public class HomeControllerTest {
 		public HttpClient client { get; }
 		public TestServer server { get; }
+		public AppSettings appSettings { get; }
 		public HomeControllerTest() {
 			var config = new ConfigurationBuilder()
 				.AddJsonFile("appsettings.json", optional: false)
 				.AddUserSecrets<Startup>()
 				.Build();
+
+			this.appSettings = new AppSettings() {
+				MailServer = config["Appsettings:MailServer"],
+				MailAddress = config["Appsettings:MailAddress"],
+				MailPassword = config["Appsettings:MailPassword"]
+			};
 
 			var builder = new WebHostBuilder()
 				 .UseConfiguration(config)
@@ -118,7 +126,7 @@ namespace Portfolio.Test {
 
 		[Fact]
 		public async void SendMail() {
-			var controller = new HomeController(null);
+			var controller = new HomeController(null, Options.Create(appSettings));
 
 			controller.SendMail("unitTest@dysnomia.studio", "Unit test mail sending");
 		}
