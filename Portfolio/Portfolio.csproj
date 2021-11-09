@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <UserSecretsId>70eb6d72-1a44-4858-9959-b692a2c18c09</UserSecretsId>
   </PropertyGroup>
 
@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dysnomia.Common.Stats" Version="1.0.7" />
+    <PackageReference Include="Dysnomia.Common.Stats" Version="1.0.9" />
     <PackageReference Include="MailKit" Version="2.15.0" />
     <PackageReference Include="reCAPTCHA.AspNetCore" Version="3.0.10" />
   </ItemGroup>

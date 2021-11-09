@@ -21,7 +21,7 @@ namespace Portfolio.Test {
 		public HomeControllerTest() {
 			var config = new ConfigurationBuilder()
 				.AddJsonFile("appsettings.json", optional: false)
-				.AddUserSecrets<Startup>()
+				.AddUserSecrets<Startup>(optional: true)
 				.Build();
 
 			this.appSettings = new AppSettings() {
