@@ -1,13 +1,14 @@
 FROM dysnomia/net-sdk-6-0 AS build-env
 WORKDIR /app
 
-ARG SONAR_HOST
-ARG SONAR_TOKEN
-ARG PORTFOLIO_RECAPTCHA_SECRETKEY
-ARG PORTFOLIO_RECAPTCHA_SITEKEY
-ARG MAIL_SERVER
+ARG DRONE_BRANCH
 ARG MAIL_ADDRESS
 ARG MAIL_PASSWORD
+ARG MAIL_SERVER
+ARG PORTFOLIO_RECAPTCHA_SECRETKEY
+ARG PORTFOLIO_RECAPTCHA_SITEKEY
+ARG SONAR_HOST
+ARG SONAR_TOKEN
 
 # Build Project
 COPY . ./
@@ -18,7 +19,7 @@ RUN jq ".AppSettings.MailServer = \"$MAIL_SERVER\"" Portfolio/appsettings.json >
 RUN jq ".AppSettings.MailAddress = \"$MAIL_ADDRESS\"" Portfolio/appsettings.json > tmp.appsettings.json && mv tmp.appsettings.json Portfolio/appsettings.json
 RUN jq ".AppSettings.MailPassword = \"$MAIL_PASSWORD\"" Portfolio/appsettings.json > tmp.appsettings.json && mv tmp.appsettings.json Portfolio/appsettings.json
 
-RUN dotnet sonarscanner begin /k:"portfolio" /d:sonar.host.url="$SONAR_HOST" /d:sonar.login="$SONAR_TOKEN" /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" /d:sonar.coverage.exclusions="**Test*.cs"
+RUN dotnet sonarscanner begin /k:"portfolio" /d:sonar.host.url="$SONAR_HOST" /d:sonar.login="$SONAR_TOKEN" /d:sonar.cs.opencover.reportsPaths="**/coverage.opencover.xml" /d:sonar.coverage.exclusions="**Test*.cs" /d:sonar.branch.name="$DRONE_BRANCH"
 RUN dotnet restore Portfolio.sln --ignore-failed-sources /p:EnableDefaultItems=false
 RUN dotnet publish Portfolio.sln --no-restore -c Release -o out
 RUN dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
