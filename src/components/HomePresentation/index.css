@@ -1,0 +1,22 @@
+.body-half {
+	display: inline-block;
+	margin: 2.5%;
+
+	vertical-align: top;
+}
+
+@media (min-width: 800px) {
+	.body-half {
+		width: 45%;
+	}
+}
+
+@media (max-width: 800px) {
+	.body-half {
+		width: 95%;
+	}
+}
+
+.body-half a {
+	color: white;
+}

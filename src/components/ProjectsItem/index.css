@@ -1,0 +1,152 @@
+.projects-item {
+	flex: none;
+	width: 25%;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	text-decoration: none;
+}
+
+.projects-item:hover {
+	background-size: 120%;
+}
+
+
+.project-item-title {
+	display: block;
+	margin-bottom: 1rem;
+
+	font-size: 1.5em;
+}
+
+.project-item-opacityBg {
+	display: block;
+	background: #222222BB;
+	padding: 1.5em 1em;
+	padding-bottom: 3em;
+	height: calc(100% - 3em - 1.5em);
+}
+
+@media (min-width: 1000px) and (max-width: 1350px) {
+	.projects-item {
+		width: 33.3%;
+	}
+
+	.project-item-opacityBg {
+		padding-bottom: 3.5em;
+		height: calc(100% - 3.5em - 1.5em);
+	}
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+	.projects-item {
+		width: 50%;
+	}
+
+	.project-item-opacityBg {
+		padding-bottom: 3.5em;
+		height: calc(100% - 3.5em - 1.5em);
+	}
+}
+
+@media (max-width: 700px) {
+	.projects-item {
+		width: 100%;
+	}
+
+	.project-item-opacityBg {
+		padding-bottom: 4.5em;
+		height: calc(100% - 4.5em - 1.5em);
+	}
+}
+
+.project-item-tags, .project-item-techs {
+	font-size: 0.8em;
+	text-align: right;
+}
+
+/**
+ * Flairs
+ */
+.project-item-tags {
+	margin-bottom: 0.75em;
+}
+.project-item-techs {
+	margin-bottom: 1.5em;
+}
+
+.project-item-3D, .project-item-abandonned, .project-item-addon, .project-item-game, .project-item-library, .project-item-minor, .project-item-software, .project-item-tech, .project-item-tool, .project-item-ui, .project-item-website {
+	border-radius: 0.2em;
+	margin-right: 0.3em;
+	padding: 0.2em 0.5em;
+	line-height: 1.5em;
+	vertical-align: middle;
+}
+
+.project-item-3D {
+	background: #03a9f4;
+}
+.project-item-abandonned {
+	background: #ff0000;
+}
+.project-item-addon {
+	background: #4f7394;
+}
+.project-item-game {
+	background: #b33114;
+}
+.project-item-library {
+	background: #e67e22;
+}
+.project-item-minor {
+	background: #009688;
+}
+.project-item-software {
+	background: #238c12;
+}
+.project-item-tech {
+	background: #229fe0;
+}
+.project-item-tool {
+	background: #4caf50;
+}
+.project-item-ui {
+	background: #ff9800;
+}
+.project-item-website {
+	background: #273c75;
+}
+
+/**
+ * Links
+ */
+.project-item-links {
+	text-align: center;
+}
+.project-item-links * {
+	vertical-align: middle;
+}
+.project-item-links img {
+	display: inline-block;
+	max-height: 2em;
+	margin-left: 1em;
+}
+.project-item-links a:first-child img {
+	margin-left: 0;
+}
+.projects-item a {
+	color: rgba(255,255,255,0.87);
+	line-height: 1.5em;
+	text-decoration: none;
+}
+.projects-item a:hover {
+	color: rgba(255,255,255,0.6);
+}
+.project-item-links {
+	position: absolute;
+	bottom: 0.25em;
+	left: 0;
+	right: 0;
+}

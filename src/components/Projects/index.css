@@ -1,0 +1,16 @@
+.projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	width: 90vw;
+	margin: 0 auto;
+
+	word-break: break-all;
+}
+
+@media (max-width: 1000px) {
+	.projects {
+		width: 100vw;
+	}
+}
