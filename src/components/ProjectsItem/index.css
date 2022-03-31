@@ -77,7 +77,7 @@
 	margin-bottom: 1.5em;
 }
 
-.project-item-3D, .project-item-abandonned, .project-item-addon, .project-item-game, .project-item-library, .project-item-minor, .project-item-software, .project-item-tech, .project-item-tool, .project-item-ui, .project-item-website {
+.project-item-3D, .project-item-stopped, .project-item-addon, .project-item-game, .project-item-library, .project-item-minor, .project-item-software, .project-item-tech, .project-item-tool, .project-item-ui, .project-item-website {
 	border-radius: 0.2em;
 	margin-right: 0.3em;
 	padding: 0.2em 0.5em;
@@ -88,7 +88,7 @@
 .project-item-3D {
 	background: #03a9f4;
 }
-.project-item-abandonned {
+.project-item-stopped {
 	background: #ff0000;
 }
 .project-item-addon {
