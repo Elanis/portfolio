@@ -6,7 +6,8 @@ html, body {
 
 	font-family: 'Open Sans', sans-serif;
 
-	background: #222222;
+	background-color: #16191c;
+    background-image: linear-gradient(315deg, #13222e 0%, #16191c 74%);
 	color: white;
 
 	overflow-x: hidden;
