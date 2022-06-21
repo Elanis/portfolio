@@ -14,6 +14,8 @@ export default function ProjectsItem(props) {
 						{project.tags.map((tag) =>
 							<span key={tag} className={'project-item-' + tag.toLowerCase()}>{tag}</span>
 						)}
+						{project.major && <span key="major" className="project-item-major">Major Project</span>}
+						{!project.major && <span key="minor" className="project-item-minor">Minor Project</span>}
 					</div>
 					<div className="project-item-techs">
 						{project.techs.map((tech) =>

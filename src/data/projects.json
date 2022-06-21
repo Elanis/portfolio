@@ -57,7 +57,6 @@
 		"title": "Atomic Text",
 		"description": "Transform a text into Atom Symbols",
 		"tags": [
-			"Minor Project",
 			"Tool"
 		],
 		"techs": [
@@ -80,7 +79,6 @@
 		"description": "A React Wrapper to use HTML5 canvas with mouse move and zoom abilities.",
 		"image": "/img/canvas2d-wrapper.png", 
 		"tags": [
-			"Minor Project",
 			"Library"
 		],
 		"techs": [
@@ -127,7 +125,6 @@
 		"title": "Domain checker",
 		"description": "Check domain availability using the api available at whoisxmlapi.com",
 		"tags": [
-			"Minor Project",
 			"Tool"
 		],
 		"techs": [
@@ -149,7 +146,6 @@
 		"title": "Dysnomia.Common.SQL",
 		"description": "A driver agnostic Micro-ORM for .NET Core & .NET 6",
 		"tags": [
-			"Minor Project",
 			"Library"
 		],
 		"techs": [
@@ -176,7 +172,6 @@
 		"title": "Dysnomia.Common.BlizzardWebAPI",
 		"description": "A C# library to easily get data from Blizzard Web API.",
 		"tags": [
-			"Minor Project",
 			"Library"
 		],
 		"techs": [
@@ -203,7 +198,6 @@
 		"title": "Dysnomia.Common.SteamWebAPI",
 		"description": "A C# library to easily get data from Steam Web API.",
 		"tags": [
-			"Minor Project",
 			"Library"
 		],
 		"techs": [
@@ -230,7 +224,6 @@
 		"title": "Dysnomia.Common.WebAPIWrapper",
 		"description": "A C# library to easily get data from Web API. It's used in our Web API wrapper like Steam, Blizzard, etc.",
 		"tags": [
-			"Minor Project",
 			"Library"
 		],
 		"techs": [
@@ -371,15 +364,14 @@
 				"url": "https://github.com/L-U-M-E-N",
 				"name": "Github"
 			}
-		]
+		],
+		"major": true
 	},
 	"raytracer-rust": {
 		"title": "Raytracer (Rust)",
 		"description": "Application of \"Raytracing in a week-end\" in Rust.",
 		"image": "/img/raytracer-rust.png",
-		"tags": [
-			"Minor Project"
-		],
+		"tags": [],
 		"techs": [
 			"Rust"
 		],
@@ -399,7 +391,6 @@
 		"title": "Redmine to OpenProject",
 		"description": "Tool I used to migrate from redmine to openproject.",
 		"tags": [
-			"Minor Project",
 			"Tool",
 			"Stopped"
 		],
@@ -423,9 +414,7 @@
 		"title": "Rust physical engine",
 		"description": "A basic physical engine built for testing Rust Language.",
 		"image": "/img/rust-physical-engine.png",
-		"tags": [
-			"Minor Project"
-		],
+		"tags": [],
 		"techs": [
 			"Rust"
 		],
@@ -499,7 +488,6 @@
 		"description": "A simple and optimized (lag-free) anti propsurf on Garry's Mod.",
 		"image": "/img/GmodAntiSurf.jpg",
 		"tags": [
-			"Minor Project",
 			"Addon"
 		],
 		"techs": [
@@ -526,7 +514,6 @@
 		"title": "Steam Achievements",
 		"description": "A small script to fetch and parse Achievements & Game list from Steam API.",
 		"tags": [
-			"Minor Project",
 			"Tool"
 		],
 		"techs": [
@@ -549,7 +536,6 @@
 		"description": "The Ultimate constrainer is a tool to parent and modify physic of a prop or of a group of props on Garry's Mod.",
 		"image": "/img/UltimateConstrainer.jpg",
 		"tags": [
-			"Minor Project",
 			"Addon"
 		],
 		"techs": [
@@ -572,7 +558,6 @@
 		"title": "Underwater",
 		"description": "Small gamejam game for Game Dev Unlocked Game Jam #4.",
 		"tags": [
-			"Minor Project",
 			"Game"
 		],
 		"techs": [
@@ -600,9 +585,7 @@
 		"title": "Vulkan Triangle (Rust)",
 		"description": "Application of \"vulkan-tutorial\" in Rust.",
 		"image": "/img/vulkan-triangle-rust.png",
-		"tags": [
-			"Minor Project"
-		],
+		"tags": [],
 		"techs": [
 			"Rust",
 			"Vulkan"
@@ -622,9 +605,7 @@
 	"webgpu-tests": {
 		"title": "WebGPU triangle & other scripts",
 		"description": "Some javascript scripts to test WebGPU API",
-		"tags": [
-			"Minor Project"
-		],
+		"tags": [],
 		"techs": [
 			"JS"
 		],
@@ -643,9 +624,7 @@
 	"web-to-desktop-framework-comparison": {
 		"title": "Web to Desktop framework comparison",
 		"description": "This repository was made to create an objective comparison of multiple framework that grant us to \"transform\" our web app to desktop application formats.",
-		"tags": [
-			"Minor Project"
-		],
+		"tags": [],
 		"techs": [],
 		"dates": {
 			"begin": "2021-03-09",
