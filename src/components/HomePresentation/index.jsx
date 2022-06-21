@@ -6,9 +6,9 @@ export default function HomePresentation({ age, workingTime }) {
 			<h2>Elanis' Portfolio</h2>
 			<div className="body-half pres-general">
 				<h3>Axel "Elanis" Soupé</h3>
-				<img className="pres-me" src="img/me.jpg" alt="me" />
-				<p><img className="pres-icon" src="img/birthday.png" alt="age" /> {age} years old</p>
-				<p><img className="pres-icon" src="img/dev_time.png" alt="developing time" /> Developer for {workingTime} years</p>
+				<img className="pres-me" src="img/me.webp" alt="me" />
+				<p><img className="pres-icon" src="img/birthday.webp" alt="age" /> {age} years old</p>
+				<p><img className="pres-icon" src="img/dev_time.webp" alt="developing time" /> Developer for {workingTime} years</p>
 			</div>
 			<div className="body-half">
 				<h3>Some details about me</h3>
@@ -28,10 +28,10 @@ export default function HomePresentation({ age, workingTime }) {
 			</div>
 
 			<div className="body-half pres-cv">
-				<a rel="noopener noreferrer" target="_blank" href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_FR.pdf"><img src="img/pdf.png" alt="cv_fr" /> <span>CV (Francais)</span></a>
+				<a rel="noopener noreferrer" target="_blank" href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_FR.pdf"><img src="img/pdf.webp" alt="cv_fr" /> <span>CV (Francais)</span></a>
 			</div>
 			<div className="body-half pres-cv">
-				<a rel="noopener noreferrer" target="_blank" href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_EN.pdf"><img src="img/pdf.png" alt="cv_en" /> <span>CV (English)</span></a>
+				<a rel="noopener noreferrer" target="_blank" href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_EN.pdf"><img src="img/pdf.webp" alt="cv_en" /> <span>CV (English)</span></a>
 			</div>
 		</>
 	);

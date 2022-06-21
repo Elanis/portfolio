@@ -2,7 +2,7 @@
 	"achieve-games": {
 		"title": "Achieve.games",
 		"description": "Track achievements from all your favorite game libraries.",
-		"image": "/img/achievegames.png", 
+		"image": "/img/achievegames.webp", 
 		"tags": [
 			"Website"
 		],
@@ -26,7 +26,7 @@
 	"alchemistry": {
 		"title": "Alchemistry",
 		"description": "Merge elements to discover new ones ! Craft the entire world from fire to life.",
-		"image": "/img/alchemistry.png", 
+		"image": "/img/alchemistry.webp", 
 		"tags": [
 			"Game"
 		],
@@ -77,7 +77,7 @@
 	"canvas2d-wrapper": {
 		"title": "canvas2d-wrapper",
 		"description": "A React Wrapper to use HTML5 canvas with mouse move and zoom abilities.",
-		"image": "/img/canvas2d-wrapper.png", 
+		"image": "/img/canvas2d-wrapper.webp", 
 		"tags": [
 			"Library"
 		],
@@ -100,7 +100,7 @@
 	"dehash-me": {
 		"title": "Dehash.me",
 		"description": "Dehash.me was created to raise awareness on basic hashing weaknesses. It owns and generate its own (weak) hashes dictionnary.",
-		"image": "/img/dehashme.png", 
+		"image": "/img/dehashme.webp", 
 		"tags": [
 			"Website"
 		],
@@ -249,7 +249,7 @@
 	"evolution-addon-pack": {
 		"title": "Evolution Addon Pack",
 		"description": "The Evolution Addon Pack (EAP) is an addon based on the Stargate Franchise! We have many entities (including spaceships), props, tools, weapons, NPCs and much more!",
-		"image": "/img/EvolutionAddonPack.jpg",
+		"image": "/img/EvolutionAddonPack.webp",
 		"tags": [
 			"Addon",
 			"Stopped"
@@ -279,7 +279,7 @@
 	"extortion": {
 		"title": "Extortion",
 		"description": "You're a computer engineer with a terrible secret. Someone is blackmailing you and now, you have to hack some servers and get secret files for him. Would you succeed to achieve his missions or would you find him and revenge ?",
-		"image": "/img/extortion.png", 
+		"image": "/img/extortion.webp", 
 		"tags": [
 			"Game"
 		],
@@ -313,7 +313,7 @@
 	"galactae": {
 		"title": "Galactae",
 		"description": "Galactae is an in-browser space nation management multiplayer game.",
-		"image": "/img/galactae.png", 
+		"image": "/img/galactae.webp", 
 		"tags": [
 			"Game"
 		],
@@ -347,7 +347,7 @@
 	"lumen": {
 		"title": "L.U.M.E.N.",
 		"description": "L.U.M.E.N. is a simple and modulable personal assistant built on Electron. Modules gives you plenty of differents features like: music, time management, statistics, etc.",
-		"image": "/img/lumen.png", 
+		"image": "/img/lumen.webp", 
 		"tags": [
 			"Software"
 		],
@@ -370,7 +370,7 @@
 	"raytracer-rust": {
 		"title": "Raytracer (Rust)",
 		"description": "Application of \"Raytracing in a week-end\" in Rust.",
-		"image": "/img/raytracer-rust.png",
+		"image": "/img/raytracer-rust.webp",
 		"tags": [],
 		"techs": [
 			"Rust"
@@ -413,7 +413,7 @@
 	"rust-physical-engine": {
 		"title": "Rust physical engine",
 		"description": "A basic physical engine built for testing Rust Language.",
-		"image": "/img/rust-physical-engine.png",
+		"image": "/img/rust-physical-engine.webp",
 		"tags": [],
 		"techs": [
 			"Rust"
@@ -456,7 +456,7 @@
 	"scifi-pack": {
 		"title": "SciFi-Pack (Garry's Mod version)",
 		"description": "The Scifi-Pack is an addon pack made to work as an addon and as a gamemode depending on player choice. It's a pack about many Science Fiction shows, movies, games, etc.",
-		"image": "/img/SciFi-Pack.jpg",
+		"image": "/img/SciFi-Pack.webp",
 		"tags": [
 			"Addon",
 			"Stopped"
@@ -486,7 +486,7 @@
 	"simple-anti-propsurf": {
 		"title": "Simple Anti Propsurf",
 		"description": "A simple and optimized (lag-free) anti propsurf on Garry's Mod.",
-		"image": "/img/GmodAntiSurf.jpg",
+		"image": "/img/GmodAntiSurf.webp",
 		"tags": [
 			"Addon"
 		],
@@ -534,7 +534,7 @@
 	"ultimate-constrainer": {
 		"title": "Ultimate Constrainer",
 		"description": "The Ultimate constrainer is a tool to parent and modify physic of a prop or of a group of props on Garry's Mod.",
-		"image": "/img/UltimateConstrainer.jpg",
+		"image": "/img/UltimateConstrainer.webp",
 		"tags": [
 			"Addon"
 		],
@@ -560,7 +560,7 @@
 		"tags": [
 			"Game"
 		],
-		"image": "/img/underwater.png",
+		"image": "/img/underwater.webp",
 		"techs": [
 			"React",
 			"node-webkit",
@@ -585,7 +585,7 @@
 	"vulkan-triangle-rust": {
 		"title": "Vulkan Triangle (Rust)",
 		"description": "Application of \"vulkan-tutorial\" in Rust.",
-		"image": "/img/vulkan-triangle-rust.png",
+		"image": "/img/vulkan-triangle-rust.webp",
 		"tags": [],
 		"techs": [
 			"Rust",

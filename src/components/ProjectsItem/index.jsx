@@ -27,7 +27,7 @@ export default function ProjectsItem(props) {
 				<div className="project-item-links">
 					{project.links.map((link) =>
 						<a key={link.name} href={link.url} className="project-item-link">
-							<img src={'/img/' + link.name.toLowerCase() + '.png'} alt={link.name} />{link.name}
+							<img src={'/img/' + link.name.toLowerCase() + '.webp'} alt={link.name} />{link.name}
 						</a>
 					)}
 				</div>
