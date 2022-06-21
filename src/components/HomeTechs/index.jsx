@@ -1,3 +1,5 @@
 export default function HomeTechs() {
-	return null;
+	return <>
+		<h2>Techs
+	</>;
 }

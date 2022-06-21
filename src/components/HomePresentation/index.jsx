@@ -16,7 +16,7 @@ export default function HomePresentation({ age, workingTime }) {
 				<h3>Francais</h3>
 				<p>Bonjour !</p>
 				<p>Bienvenue sur mon portfolio !</p>
-				<p>Mon nom est Axel "Elanis" Soupé. J'ai {age} ans, et je travaille sur mes projets personnels depuis maintenant {workingTime} years dans des sujets divers tels que: le developpement web, le developpement de jeu vidéos, le datamining, et bien d'autres.</p>
+				<p>Mon nom est Axel "Elanis" Soupé. J'ai {age} ans, et je travaille sur mes projets personnels depuis maintenant {workingTime} ans dans des sujets divers tels que: le developpement web, le developpement de jeu vidéos, le datamining, et bien d'autres.</p>
 				<p>Je suis passioné par de nombreuses activitées créatives, j'ai bien sûr pratiqué le developpement, mais aussi la 3D, la 2D, la vidéo, le dessin, etc.</p>
 				<p>Vous pouvez jeter un oeil à mes projets sur la page <a href="#projects">Projects</a>.</p>
 			</div>

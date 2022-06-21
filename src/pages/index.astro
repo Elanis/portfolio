@@ -21,8 +21,8 @@ const workingTime = Math.floor((Date.now() - (new Date('2013-12-01 00:00:00')).g
 		<title>Elanis</title>
 	</head>
 	<body>
-		<HomePresentation/>
-		<h2>My projects</h2>
+		<HomePresentation age={age} workingTime={workingTime} />
+		
 		<Projects projects={projects} />
 	</body>
 </html>

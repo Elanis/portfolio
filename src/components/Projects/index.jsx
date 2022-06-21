@@ -9,10 +9,13 @@ export default function Projects({ projects }) {
 
 	let i = 0;
 	return (
-		<div id="projects" className="projects">
-			{projects.map((project) => {
-				return (<ProjectsItem key={i++} project={project} />);
-			})}
+		<div>
+			<h2>My projects</h2>
+			<div id="projects" className="projects">
+				{projects.map((project) => {
+					return (<ProjectsItem key={i++} project={project} />);
+				})}
+			</div>
 		</div>
 	);
 }
