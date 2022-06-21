@@ -28,10 +28,10 @@ export default function HomePresentation({ age, workingTime }) {
 			</div>
 
 			<div className="body-half pres-cv">
-				<a rel="noopener noreferrer" target="_blank" href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_FR.pdf"><img src="img/pdf.png" /> <span>CV (Francais)</span></a>
+				<a rel="noopener noreferrer" target="_blank" href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_FR.pdf"><img src="img/pdf.png" alt="cv_fr" /> <span>CV (Francais)</span></a>
 			</div>
 			<div className="body-half pres-cv">
-				<a rel="noopener noreferrer" target="_blank" href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_EN.pdf"><img src="img/pdf.png" /> <span>CV (English)</span></a>
+				<a rel="noopener noreferrer" target="_blank" href="https://01.cdn.elanis.eu/portfolio/pdf/CV_Axel_Soupe_Elanis_EN.pdf"><img src="img/pdf.png" alt="cv_en" /> <span>CV (English)</span></a>
 			</div>
 		</>
 	);
