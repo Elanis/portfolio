@@ -12,7 +12,7 @@
 		"dates": {
 			"begin": "2021-03-29",
 			"first-release": "2021-04",
-			"updated": "2022-03-19"
+			"updated": "2022-06-19"
 		},
 		"links": [
 			{
@@ -38,7 +38,7 @@
 		"dates": {
 			"begin": "2021-08-01",
 			"first-release": "2022-03-07",
-			"updated": "2022-03-31"
+			"updated": "2022-06-11"
 		},
 		"links": [
 			{
@@ -89,7 +89,7 @@
 		"dates": {
 			"begin": "2021-05-24",
 			"first-release": "2021-05-24",
-			"updated": "2022-03-26"
+			"updated": "2022-04-14"
 		},
 		"links": [
 			{
@@ -112,7 +112,7 @@
 		"dates": {
 			"begin": "2017-04-05",
 			"first-release": "2017-04-05",
-			"updated": "2022-03-13"
+			"updated": "2022-04-09"
 		},
 		"links": [
 			{
@@ -298,7 +298,7 @@
 		"dates": {
 			"begin": "2020-02-15",
 			"first-release": "2020-10-30",
-			"updated": "2021-12-04"
+			"updated": "2022-04-23"
 		},
 		"links": [
 			{
@@ -364,7 +364,7 @@
 		"dates": {
 			"begin": "2016-05-01",
 			"first-release": "2020-12-09",
-			"updated": "2022-03-19"
+			"updated": "2022-06-19"
 		},
 		"links": [
 			{
@@ -568,6 +568,34 @@
 			}
 		]
 	},
+	"underwater": {
+		"title": "Underwater",
+		"description": "Small gamejam game for Game Dev Unlocked Game Jam #4.",
+		"tags": [
+			"Minor Project",
+			"Game"
+		],
+		"techs": [
+			"React",
+			"node-webkit",
+			"Steam (greenworks.js)"
+		],
+		"dates": {
+			"begin": "2022-04-09",
+			"first-release": "2022-04-10",
+			"updated": "2022-06-18"
+		},
+		"links": [
+			{
+				"url": "https://elanis.itch.io/underwater",
+				"name": "Itch"
+			},
+			{
+				"url": "https://github.com/Elanis/underwater",
+				"name": "Github"
+			}
+		]
+	},
 	"vulkan-triangle-rust": {
 		"title": "Vulkan Triangle (Rust)",
 		"description": "Application of \"vulkan-tutorial\" in Rust.",
@@ -622,7 +650,7 @@
 		"dates": {
 			"begin": "2021-03-09",
 			"first-release": "2021-03-09",
-			"updated": "2022-03-26"
+			"updated": "2022-06-12"
 		},
 		"links": [
 			{
