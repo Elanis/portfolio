@@ -33,3 +33,18 @@
 .pres-icon {
 	max-height: 1.5rem;
 }
+
+.pres-cv {
+	margin-top: 2rem;
+	text-align: center;
+}
+.pres-cv a {
+	font-size: 1.25rem;
+	text-decoration: none;
+}
+.pres-cv a * {
+	vertical-align: middle;
+}
+.pres-cv img {
+	height: 1em;
+}
