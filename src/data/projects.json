@@ -560,6 +560,7 @@
 		"tags": [
 			"Game"
 		],
+		"image": "/img/underwater.png",
 		"techs": [
 			"React",
 			"node-webkit",
