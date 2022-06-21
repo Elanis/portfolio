@@ -8,6 +8,8 @@ html, body {
 
 	background: #222222;
 	color: white;
+
+	overflow-x: hidden;
 }
 
 h2 {
