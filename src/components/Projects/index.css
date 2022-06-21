@@ -18,6 +18,7 @@
 @media (max-width: 1000px) {
 	.projects {
 		width: 100vw;
+		margin: 0;
 	}
 
 	.year-separator {
