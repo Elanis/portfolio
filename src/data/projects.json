@@ -562,9 +562,7 @@
 		],
 		"image": "/img/underwater.webp",
 		"techs": [
-			"React",
-			"node-webkit",
-			"Steam (greenworks.js)"
+			"React"
 		],
 		"dates": {
 			"begin": "2022-04-09",
