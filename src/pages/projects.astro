@@ -1,0 +1,20 @@
+---
+import Projects from '../components/Projects';
+
+import ProjectsData from '../data/ProjectsData.js';
+
+import '../styles/index.css';
+
+const projects = ProjectsData.getProjects();
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Game dev & Fullstack web developer" />
+		<title>Elanis</title>
+	</head>
+	<body>
+		<Projects projects={projects} allowMinors={true} />
+	</body>
+</html>

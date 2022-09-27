@@ -26,6 +26,13 @@
 	}
 }
 
-.projects-subtitle {
+.projects-subtitle, .page-link {
 	text-align: center;
+}
+.page-link a {
+	color: white;
+	text-decoration: none;
+}
+.page-link a:hover {
+	text-decoration: underline;
 }
