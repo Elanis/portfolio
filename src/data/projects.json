@@ -12,7 +12,7 @@
 		"dates": {
 			"begin": "2021-03-29",
 			"first-release": "2021-04",
-			"updated": "2022-06-19"
+			"updated": "2022-09-17"
 		},
 		"links": [
 			{
@@ -38,7 +38,7 @@
 		"dates": {
 			"begin": "2021-08-01",
 			"first-release": "2022-03-07",
-			"updated": "2022-06-11"
+			"updated": "2022-08-21"
 		},
 		"links": [
 			{
@@ -74,6 +74,27 @@
 			}
 		]
 	},
+	"backup-git-repositories": {
+		"title": "backup-git-repositories",
+		"description": "Script used to backup my Github repositories on my TrueNAS Scale server",
+		"tags": [
+			"Tool"
+		],
+		"techs": [
+			"Bash"
+		],
+		"dates": {
+			"begin": "2022-08-15",
+			"first-release": "2022-08-15",
+			"updated": "2022-08-17"
+		},
+		"links": [
+			{
+				"url": "https://github.com/Elanis/backup-git-repositories",
+				"name": "Github"
+			}
+		]
+	},
 	"canvas2d-wrapper": {
 		"title": "canvas2d-wrapper",
 		"description": "A React Wrapper to use HTML5 canvas with mouse move and zoom abilities.",
@@ -87,7 +108,7 @@
 		"dates": {
 			"begin": "2021-05-24",
 			"first-release": "2021-05-24",
-			"updated": "2022-04-14"
+			"updated": "2022-07-02"
 		},
 		"links": [
 			{
@@ -133,7 +154,7 @@
 		"dates": {
 			"begin": "2021-03-27",
 			"first-release": "2021-03-27",
-			"updated": "2022-02-06"
+			"updated": "2022-08-26"
 		},
 		"links": [
 			{
@@ -141,6 +162,28 @@
 				"name": "Github"
 			}
 		]
+	},
+	"dmarc-parser": {
+		"title": "dmarc-parser",
+		"description": "A simple job that query, parse and save to database dmarc aggregate reports",
+		"tags": [
+			"Tool"
+		],
+		"techs": [
+			"Node.js"
+		],
+		"dates": {
+			"begin": "2022-08-27",
+			"first-release": "2022-08-27",
+			"updated": "2022-09-17"
+		},
+		"links": [
+			{
+				"url": "https://github.com/Dysnomia-Studio/dmarc-parser",
+				"name": "Github"
+			}
+		],
+		"dysnomiaProject": true
 	},
 	"Dysnomia.Common.SQL": {
 		"title": "Dysnomia.Common.SQL",
@@ -357,7 +400,7 @@
 		"dates": {
 			"begin": "2016-05-01",
 			"first-release": "2020-12-09",
-			"updated": "2022-06-19"
+			"updated": "2022-09-05"
 		},
 		"links": [
 			{
@@ -510,6 +553,33 @@
 			}
 		]
 	},
+	"steam-auth-poc": {
+		"title": "Steam Auth POC",
+		"description": "Proof of Concept of various headless browser softwares calling node.js server and using Steam APIs.",
+		"tags": [
+		],
+		"techs": [
+			"Tauri",
+			"Nw.js",
+			"Node.js",
+			"Steam"
+		],
+		"dates": {
+			"begin": "2022-06-11",
+			"first-release": "2022-06-11",
+			"updated": "2022-09-19"
+		},
+		"links": [
+			{
+				"url": "https://github.com/Elanis/steam-auth-poc-nwjs",
+				"name": "Github | NW.JS"
+			},
+			{
+				"url": "https://github.com/Elanis/steam-auth-poc-tauri",
+				"name": "Github | Tauri"
+			}
+		]
+	},
 	"steam-achievements": {
 		"title": "Steam Achievements",
 		"description": "A small script to fetch and parse Achievements & Game list from Steam API.",
@@ -530,6 +600,28 @@
 				"name": "Github"
 			}
 		]
+	},
+	"translatool": {
+		"title": "Translatool",
+		"description": "A cross-platform GUI to easily translate your local projects",
+		"tags": [
+			"Tool"
+		],
+		"techs": [
+			"Tauri"
+		],
+		"dates": {
+			"begin": "2022-02-14",
+			"first-release": "2022-02-14",
+			"updated": "2022-09-27"
+		},
+		"links": [
+			{
+				"url": "https://github.com/Dysnomia-Studio/translatool",
+				"name": "Github"
+			}
+		],
+		"dysnomiaProject": true
 	},
 	"ultimate-constrainer": {
 		"title": "Ultimate Constrainer",
@@ -567,7 +659,7 @@
 		"dates": {
 			"begin": "2022-04-09",
 			"first-release": "2022-04-10",
-			"updated": "2022-06-18"
+			"updated": "2022-08-10"
 		},
 		"links": [
 			{
@@ -628,7 +720,7 @@
 		"dates": {
 			"begin": "2021-03-09",
 			"first-release": "2021-03-09",
-			"updated": "2022-06-12"
+			"updated": "2022-09-21"
 		},
 		"links": [
 			{
