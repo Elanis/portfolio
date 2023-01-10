@@ -60,7 +60,8 @@ jobs:
         uses: docker/build-push-action@v3.2.0
         with:
           push: true
-          tags: ghcr.io/elanis/portfolio:${{github.ref_name}}
+          context: .
+          tags: ghcr.io/elanis/portfolio:${{ github.head_ref || github.ref_name }}  
   
   build_branch:
     if: ${{ (github.ref == 'refs/heads/develop' || startsWith(github.ref, 'refs/heads/feature/')) && github.event_name == 'push' }}
