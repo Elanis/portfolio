@@ -38,7 +38,7 @@
 		"dates": {
 			"begin": "2021-08-01",
 			"first-release": "2022-03-07",
-			"updated": "2022-08-21"
+			"updated": "2022-12-10"
 		},
 		"links": [
 			{
@@ -108,7 +108,7 @@
 		"dates": {
 			"begin": "2021-05-24",
 			"first-release": "2021-05-24",
-			"updated": "2022-07-02"
+			"updated": "2022-12-11"
 		},
 		"links": [
 			{
@@ -198,7 +198,7 @@
 		"dates": {
 			"begin": "2022-02-26",
 			"first-release": "2022-11-08",
-			"updated": "2022-11-26"
+			"updated": "2023-01-09"
 		},
 		"links": [
 			{
@@ -221,7 +221,7 @@
 		"dates": {
 			"begin": "2019-10-03",
 			"first-release": "2019-10-05",
-			"updated": "2022-11-11"
+			"updated": "2022-12-11"
 		},
 		"links": [
 			{
@@ -247,7 +247,7 @@
 		"dates": {
 			"begin": "2021-06-21",
 			"first-release": "2021-06-23",
-			"updated": "2022-11-11"
+			"updated": "2022-12-11"
 		},
 		"links": [
 			{
@@ -273,7 +273,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-04-01",
-			"updated": "2022-11-11"
+			"updated": "2022-12-11"
 		},
 		"links": [
 			{
@@ -299,7 +299,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-06-20",
-			"updated": "2022-11-11"
+			"updated": "2022-12-11"
 		},
 		"links": [
 			{
@@ -411,6 +411,27 @@
 		"major": true,
 		"dysnomiaProject": true
 	},
+	"infras": {
+		"title": "Infras",
+		"description": "This repostiories hosts my homelab and my production (Dysnomia) infrastructures files..",
+		"tags": [],
+		"techs": [
+			"Ansible",
+			"Wireguard"
+		],
+		"dates": {
+			"begin": "2022-03-18",
+			"first-release": "2022-03-18",
+			"updated": "2023-01-15"
+		},
+		"links": [
+			{
+				"url": "https://github.com/Elanis/Infras",
+				"name": "Github"
+			}
+		],
+		"dysnomiaProject": true
+	},
 	"lumen": {
 		"title": "L.U.M.E.N.",
 		"description": "L.U.M.E.N. is a simple and modulable personal assistant built on Electron. Modules gives you plenty of differents features like: music, time management, statistics, etc.",
@@ -424,7 +445,7 @@
 		"dates": {
 			"begin": "2016-05-01",
 			"first-release": "2020-12-09",
-			"updated": "2022-12-05"
+			"updated": "2022-12-30"
 		},
 		"links": [
 			{
@@ -657,7 +678,7 @@
 		"dates": {
 			"begin": "2022-02-14",
 			"first-release": "2022-02-14",
-			"updated": "2022-11-19"
+			"updated": "2023-01-08"
 		},
 		"links": [
 			{
@@ -764,7 +785,7 @@
 		"dates": {
 			"begin": "2021-03-09",
 			"first-release": "2021-03-09",
-			"updated": "2022-11-30"
+			"updated": "2023-01-08"
 		},
 		"links": [
 			{
