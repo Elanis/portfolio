@@ -188,7 +188,7 @@
 	"downstat-us": {
 		"title": "Downstat.us",
 		"description": "Downstat.us is a website monitoring popular services.",
-		"image": "/img/Downstatus.webp", 
+		"image": "/img/downstatus.webp", 
 		"tags": [
 			"Website"
 		],
