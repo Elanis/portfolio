@@ -458,7 +458,6 @@
 	"prey-predator": {
 		"title": "Prey/predator",
 		"description": "Small simulation to try handwritten neuralnetwork on a prey/predator pattern.",
-		"image": "/img/prey-predator.webp",
 		"tags": [],
 		"techs": [
 			"Rust"
