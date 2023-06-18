@@ -38,7 +38,7 @@
 		"dates": {
 			"begin": "2021-08-01",
 			"first-release": "2022-03-07",
-			"updated": "2022-12-10"
+			"updated": "2023-04-25"
 		},
 		"links": [
 			{
@@ -142,6 +142,27 @@
 		"major": true,
 		"dysnomiaProject": true
 	},
+	"discord-server-stats": {
+		"title": "Discord server stats",
+		"description": "A discord bot made to produce stats about servers, users and channels by saving data to local files.",
+		"tags": [
+			"Tool"
+		],
+		"techs": [
+			"Node.js"
+		],
+		"dates": {
+			"begin": "2023-04-27",
+			"first-release": "2023-04-27",
+			"updated": "2023-05-21"
+		},
+		"links": [
+			{
+				"url": "https://github.com/Elanis/discord-server-stats",
+				"name": "Github"
+			}
+		]
+	},
 	"domain-checker": {
 		"title": "Domain checker",
 		"description": "Check domain availability using the api available at whoisxmlapi.com",
@@ -198,7 +219,7 @@
 		"dates": {
 			"begin": "2022-02-26",
 			"first-release": "2022-11-08",
-			"updated": "2023-01-23"
+			"updated": "2023-06-04"
 		},
 		"links": [
 			{
@@ -273,7 +294,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-04-01",
-			"updated": "2023-02-27"
+			"updated": "2023-05-22"
 		},
 		"links": [
 			{
@@ -299,7 +320,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-06-20",
-			"updated": "2023-02-27"
+			"updated": "2023-05-22"
 		},
 		"links": [
 			{
@@ -422,7 +443,7 @@
 		"dates": {
 			"begin": "2022-03-18",
 			"first-release": "2022-03-18",
-			"updated": "2023-02-04"
+			"updated": "2023-05-12"
 		},
 		"links": [
 			{
@@ -445,7 +466,7 @@
 		"dates": {
 			"begin": "2016-05-01",
 			"first-release": "2020-12-09",
-			"updated": "2023-02-27"
+			"updated": "2023-05-28"
 		},
 		"links": [
 			{
@@ -784,7 +805,7 @@
 		"dates": {
 			"begin": "2021-03-09",
 			"first-release": "2021-03-09",
-			"updated": "2023-02-24"
+			"updated": "2023-06-02"
 		},
 		"links": [
 			{
