@@ -118,6 +118,33 @@
 		],
 		"dysnomiaProject": true
 	},
+	"cosmic-idle": {
+		"title": "Cosmic Idle",
+		"description": "Small gamejam game for Game Dev Unlocked Game Jam #6. Build the universe from big bang to life in this incremental game !",
+		"tags": [
+			"Game"
+		],
+		"image": "/img/cosmic-idle.webp",
+		"techs": [
+			"React"
+		],
+		"dates": {
+			"begin": "2023-06-25",
+			"first-release": "2023-07-01",
+			"updated": "2023-07-21"
+		},
+		"links": [
+			{
+				"url": "https://elanis.itch.io/cosmic-idle",
+				"name": "Itch"
+			},
+			{
+				"url": "https://github.com/Dysnomia-Studio/cosmic-idle",
+				"name": "Github"
+			}
+		],
+		"dysnomiaProject": true
+	},
 	"dehash-me": {
 		"title": "Dehash.me",
 		"description": "Dehash.me was created to raise awareness on basic hashing weaknesses. It owns and generate its own (weak) hashes dictionnary.",
@@ -154,7 +181,7 @@
 		"dates": {
 			"begin": "2023-04-27",
 			"first-release": "2023-04-27",
-			"updated": "2023-05-21"
+			"updated": "2023-08-26"
 		},
 		"links": [
 			{
@@ -175,7 +202,7 @@
 		"dates": {
 			"begin": "2021-03-27",
 			"first-release": "2021-03-27",
-			"updated": "2022-08-26"
+			"updated": "2023-06-24"
 		},
 		"links": [
 			{
@@ -432,18 +459,39 @@
 		"major": true,
 		"dysnomiaProject": true
 	},
+	"generative-art": {
+		"title": "Generative art experimentations",
+		"description": "",
+		"image": "/img/generative-art.webp",
+		"tags": [],
+		"techs": [
+			"Javascript"
+		],
+		"dates": {
+			"begin": "2023-06-15",
+			"first-release": "2023-06-157",
+			"updated": "2023-06-15"
+		},
+		"links": [
+			{
+				"url": "https://github.com/Elanis/generative-art",
+				"name": "Github"
+			}
+		]
+	},
 	"infras": {
 		"title": "Infras",
 		"description": "This repostiories hosts my homelab and my production (Dysnomia) infrastructures files..",
 		"tags": [],
 		"techs": [
 			"Ansible",
+			"OctoDNS",
 			"Wireguard"
 		],
 		"dates": {
 			"begin": "2022-03-18",
 			"first-release": "2022-03-18",
-			"updated": "2023-05-12"
+			"updated": "2023-08-28"
 		},
 		"links": [
 			{
@@ -461,12 +509,13 @@
 			"Software"
 		],
 		"techs": [
-			"Electron"
+			"Electron",
+			"Grafana"
 		],
 		"dates": {
 			"begin": "2016-05-01",
 			"first-release": "2020-12-09",
-			"updated": "2023-05-28"
+			"updated": "2023-09-02"
 		},
 		"links": [
 			{
@@ -475,6 +524,33 @@
 			}
 		],
 		"major": true
+	},
+	"manufacturinc": {
+		"title": "Manufactur'inc.",
+		"description": "Lead your new company to success in this industry management game. Blueprint and optimize your production; make ethical choices to influence your worker conditions, ecological impact, automation level, and more.",
+		"image": "/img/manufacturinc.webp", 
+		"tags": [
+			"Game"
+		],
+		"techs": [
+			"React",
+			"Tauri",
+			"Node.js",
+			"Socket.io"
+		],
+		"dates": {
+			"begin": "2020-08-01",
+			"first-release": "2024-12-31",
+			"updated": "2024-12-31"
+		},
+		"links": [
+			{
+				"url": "https://store.steampowered.com/app/2146380/Manufactur_inc/",
+				"name": "Steam"
+			}
+		],
+		"major": true,
+		"dysnomiaProject": true
 	},
 	"prey-predator": {
 		"title": "Prey/predator",
@@ -698,7 +774,7 @@
 		"dates": {
 			"begin": "2022-02-14",
 			"first-release": "2022-02-14",
-			"updated": "2023-03-11"
+			"updated": "2023-08-27"
 		},
 		"links": [
 			{
@@ -805,7 +881,7 @@
 		"dates": {
 			"begin": "2021-03-09",
 			"first-release": "2021-03-09",
-			"updated": "2023-06-02"
+			"updated": "2023-09-02"
 		},
 		"links": [
 			{
