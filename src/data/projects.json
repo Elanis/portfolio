@@ -12,7 +12,7 @@
 		"dates": {
 			"begin": "2021-03-29",
 			"first-release": "2021-04",
-			"updated": "2023-01-23"
+			"updated": "2023-12-01"
 		},
 		"links": [
 			{
@@ -38,7 +38,7 @@
 		"dates": {
 			"begin": "2021-08-01",
 			"first-release": "2022-03-07",
-			"updated": "2023-04-25"
+			"updated": "2023-07-12"
 		},
 		"links": [
 			{
@@ -95,6 +95,27 @@
 			}
 		]
 	},
+	"browser-particle-animation-canvas2d": {
+		"title": "browser-particle-animation-canvas2d",
+		"description": "Browser particle animation using canvas2d-wrapper",
+		"image": "/img/browser-particle-animation-canvas2d.webp",
+		"tags": [
+		],
+		"techs": [
+			"JS"
+		],
+		"dates": {
+			"begin": "2023-12-14",
+			"first-release": "2023-12-14",
+			"updated": "2023-12-14"
+		},
+		"links": [
+			{
+				"url": "https://github.com/Elanis/browser-particle-animation-canvas2d",
+				"name": "Github"
+			}
+		]
+	},
 	"canvas2d-wrapper": {
 		"title": "canvas2d-wrapper",
 		"description": "A React Wrapper to use HTML5 canvas with mouse move and zoom abilities.",
@@ -108,7 +129,7 @@
 		"dates": {
 			"begin": "2021-05-24",
 			"first-release": "2021-05-24",
-			"updated": "2022-12-11"
+			"updated": "2022-07-02"
 		},
 		"links": [
 			{
@@ -158,7 +179,7 @@
 		"dates": {
 			"begin": "2017-04-05",
 			"first-release": "2017-04-05",
-			"updated": "2022-04-09"
+			"updated": "2023-12-01"
 		},
 		"links": [
 			{
@@ -181,7 +202,7 @@
 		"dates": {
 			"begin": "2023-04-27",
 			"first-release": "2023-04-27",
-			"updated": "2023-08-26"
+			"updated": "2023-12-09"
 		},
 		"links": [
 			{
@@ -246,7 +267,7 @@
 		"dates": {
 			"begin": "2022-02-26",
 			"first-release": "2022-11-08",
-			"updated": "2023-06-04"
+			"updated": "2023-12-01"
 		},
 		"links": [
 			{
@@ -269,7 +290,7 @@
 		"dates": {
 			"begin": "2019-10-03",
 			"first-release": "2019-10-05",
-			"updated": "2023-02-27"
+			"updated": "2023-12-01"
 		},
 		"links": [
 			{
@@ -295,7 +316,7 @@
 		"dates": {
 			"begin": "2021-06-21",
 			"first-release": "2021-06-23",
-			"updated": "2023-02-27"
+			"updated": "2023-12-01"
 		},
 		"links": [
 			{
@@ -321,7 +342,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-04-01",
-			"updated": "2023-05-22"
+			"updated": "2023-12-01"
 		},
 		"links": [
 			{
@@ -347,7 +368,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-06-20",
-			"updated": "2023-05-22"
+			"updated": "2023-12-01"
 		},
 		"links": [
 			{
@@ -406,7 +427,7 @@
 		"dates": {
 			"begin": "2020-02-15",
 			"first-release": "2020-10-30",
-			"updated": "2023-02-10"
+			"updated": "2023-12-16"
 		},
 		"links": [
 			{
@@ -491,7 +512,7 @@
 		"dates": {
 			"begin": "2022-03-18",
 			"first-release": "2022-03-18",
-			"updated": "2023-08-28"
+			"updated": "2023-11-11"
 		},
 		"links": [
 			{
@@ -515,7 +536,7 @@
 		"dates": {
 			"begin": "2016-05-01",
 			"first-release": "2020-12-09",
-			"updated": "2023-09-02"
+			"updated": "2023-12-02"
 		},
 		"links": [
 			{
@@ -881,7 +902,7 @@
 		"dates": {
 			"begin": "2021-03-09",
 			"first-release": "2021-03-09",
-			"updated": "2023-09-02"
+			"updated": "2023-12-02"
 		},
 		"links": [
 			{
