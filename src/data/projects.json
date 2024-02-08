@@ -7,7 +7,7 @@
 			"Website"
 		],
 		"techs": [
-			".NET 7"
+			".NET 8"
 		],
 		"dates": {
 			"begin": "2021-03-29",
@@ -174,7 +174,7 @@
 			"Website"
 		],
 		"techs": [
-			".NET 7"
+			".NET 8"
 		],
 		"dates": {
 			"begin": "2017-04-05",
@@ -262,7 +262,7 @@
 			"Website"
 		],
 		"techs": [
-			".NET 7"
+			".NET 8"
 		],
 		"dates": {
 			"begin": "2022-02-26",
@@ -275,8 +275,8 @@
 				"name": "Website"
 			}
 		],
-		"major": true,
-		"dysnomiaProject": true
+		"dysnomiaProject": true,
+		"stopped": true
 	},
 	"Dysnomia.Common.SQL": {
 		"title": "Dysnomia.Common.SQL",
@@ -285,7 +285,7 @@
 			"Library"
 		],
 		"techs": [
-			".NET 7"
+			".NET 8"
 		],
 		"dates": {
 			"begin": "2019-10-03",
@@ -311,7 +311,7 @@
 			"Library"
 		],
 		"techs": [
-			".NET 7"
+			".NET 8"
 		],
 		"dates": {
 			"begin": "2021-06-21",
@@ -337,7 +337,7 @@
 			"Library"
 		],
 		"techs": [
-			".NET 7"
+			".NET 8"
 		],
 		"dates": {
 			"begin": "2021-04-01",
@@ -363,7 +363,7 @@
 			"Library"
 		],
 		"techs": [
-			".NET 7"
+			".NET 8"
 		],
 		"dates": {
 			"begin": "2021-04-01",
