@@ -12,7 +12,7 @@
 		"dates": {
 			"begin": "2021-03-29",
 			"first-release": "2021-04",
-			"updated": "2024-01-13"
+			"updated": "2024-04-21"
 		},
 		"links": [
 			{
@@ -38,7 +38,7 @@
 		"dates": {
 			"begin": "2021-08-01",
 			"first-release": "2022-03-07",
-			"updated": "2023-07-12"
+			"updated": "2024-05-10"
 		},
 		"links": [
 			{
@@ -382,6 +382,35 @@
 		],
 		"dysnomiaProject": true
 	},
+	"dysnomia-wiki": {
+		"title": "Dysnomia's games wiki",
+		"description": "The wiki about everything in my games",
+		"image": "/img/dysnomia-wiki.webp",
+		"tags": [
+			"Website"
+		],
+		"techs": [
+			"JS",
+			"Astro"
+		],
+		"dates": {
+			"begin": "2024-04-12",
+			"first-release": "2024-05-18",
+			"updated": "2024-06-06"
+		},
+		"links": [
+			{
+				"url": "https://wiki.dysnomia.studio",
+				"name": "Website"
+			},
+			{
+				"url": "https://github.com/Dysnomia-Studio/dysnomia-wiki",
+				"name": "Github"
+			}
+		],
+		"dysnomiaProject": true,
+		"major": true
+	},
 	"evolution-addon-pack": {
 		"title": "Evolution Addon Pack",
 		"description": "The Evolution Addon Pack (EAP) is an addon based on the Stargate Franchise! We have many entities (including spaceships), props, tools, weapons, NPCs and much more!",
@@ -480,6 +509,24 @@
 		"major": true,
 		"dysnomiaProject": true
 	},
+	"gamedev-roadmap": {
+		"title": "GameDev Roadmap",
+		"description": "This repository contains the whole (technical, commercial, communication, and so on) roadmap of my games not to forget things to do.",
+		"tags": [],
+		"techs": [],
+		"dates": {
+			"begin": "2024-04-06",
+			"first-release": "2024-04-06",
+			"updated": "2024-05-20"
+		},
+		"links": [
+			{
+				"url": "https://github.com/Dysnomia-Studio/gamedev-roadmap",
+				"name": "Github"
+			}
+		]
+
+	},
 	"generative-art": {
 		"title": "Generative art experimentations",
 		"description": "",
@@ -512,7 +559,7 @@
 		"dates": {
 			"begin": "2022-03-18",
 			"first-release": "2022-03-18",
-			"updated": "2023-11-11"
+			"updated": "2024-05-24"
 		},
 		"links": [
 			{
@@ -536,7 +583,7 @@
 		"dates": {
 			"begin": "2016-05-01",
 			"first-release": "2020-12-09",
-			"updated": "2024-03-07"
+			"updated": "2024-06-09"
 		},
 		"links": [
 			{
@@ -902,13 +949,14 @@
 		"dates": {
 			"begin": "2021-03-09",
 			"first-release": "2021-03-09",
-			"updated": "2024-03-08"
+			"updated": "2024-06-02"
 		},
 		"links": [
 			{
 				"url": "https://github.com/Elanis/web-to-desktop-framework-comparison",
 				"name": "Github"
 			}
-		]
+		],
+		"major": true
 	}
 }
