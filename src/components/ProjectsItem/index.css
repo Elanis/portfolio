@@ -16,9 +16,16 @@
 
 .project-item-title {
 	display: block;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 
 	font-size: 1.5em;
+}
+
+.project-item-lastUpdate {
+	position: absolute;
+	top: 3.1rem;
+	right: 1rem;
+	font-size: 0.85rem;
 }
 
 .project-item-opacityBg {

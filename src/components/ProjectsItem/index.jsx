@@ -10,6 +10,7 @@ export default function ProjectsItem(props) {
 			<div className="project-item-opacityBg">
 				<a className="projects-item-bgLink" href={project.links[0].url}>
 					<span className="project-item-title">{project.title}</span>
+					{project.dates.updated !== project.dates['first-release'] && <span className="project-item-lastUpdate">Last updated: {new Date(project.dates.updated).getFullYear()}</span>}
 					<div className="project-item-tags">
 						{project.tags.map((tag) =>
 							<span key={tag} className={'project-item-' + tag.toLowerCase()}>{tag}</span>
