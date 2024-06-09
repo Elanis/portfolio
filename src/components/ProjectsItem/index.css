@@ -134,6 +134,10 @@
  * Links
  */
 .project-item-links {
+	position: absolute;
+	bottom: 0.25em;
+	left: 0;
+	right: 0;
 	text-align: center;
 }
 .project-item-links * {
@@ -154,10 +158,4 @@
 }
 .projects-item a:hover {
 	color: rgba(255,255,255,0.6);
-}
-.project-item-links {
-	position: absolute;
-	bottom: 0.25em;
-	left: 0;
-	right: 0;
 }

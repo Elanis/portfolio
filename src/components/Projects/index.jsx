@@ -2,9 +2,11 @@ import './index.css';
 
 import ProjectsItem from '../ProjectsItem';
 
+const FIRST_RELEASE_FIELD = 'first-release';
+
 export default function Projects({ projects, allowMinors }) {
 	projects.sort((a, b) => {
-		return (new Date(b.dates['first-release'])).getTime() - (new Date(a.dates['first-release'])).getTime();
+		return (new Date(b.dates[FIRST_RELEASE_FIELD])).getTime() - (new Date(a.dates[FIRST_RELEASE_FIELD])).getTime();
 	});
 
 	let i = 0;
@@ -17,7 +19,7 @@ export default function Projects({ projects, allowMinors }) {
 			{allowMinors && <p className="page-link"><a href="/#projects">Get back to index</a></p>}
 			<div id="projects" className="projects">
 				{projects.filter((p) => allowMinors || p.major).map((project) => {
-					let currentYear = new Date(project.dates['first-release']).getFullYear();
+					const currentYear = new Date(project.dates[FIRST_RELEASE_FIELD]).getFullYear();
 					let yearSeparator = null;
 					if(currentYear !== previousYear) {
 						previousYear = currentYear;

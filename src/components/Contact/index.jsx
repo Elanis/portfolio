@@ -1,6 +1,6 @@
 import './index.css';
 
-export default function Contact(argument) {
+export default function Contact() {
 	return (
 		<div className="contact">
 			<h2>You can contact me ...</h2>
