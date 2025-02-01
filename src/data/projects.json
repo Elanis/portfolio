@@ -12,7 +12,7 @@
 		"dates": {
 			"begin": "2021-03-29",
 			"first-release": "2021-04",
-			"updated": "2024-08-04"
+			"updated": "2025-01-25"
 		},
 		"links": [
 			{
@@ -38,7 +38,7 @@
 		"dates": {
 			"begin": "2021-08-01",
 			"first-release": "2022-03-07",
-			"updated": "2024-05-10"
+			"updated": "2024-11-22"
 		},
 		"links": [
 			{
@@ -107,7 +107,7 @@
 		"dates": {
 			"begin": "2023-12-14",
 			"first-release": "2023-12-14",
-			"updated": "2024-08-03"
+			"updated": "2023-12-14"
 		},
 		"links": [
 			{
@@ -129,7 +129,7 @@
 		"dates": {
 			"begin": "2021-05-24",
 			"first-release": "2021-05-24",
-			"updated": "2024-03-08"
+			"updated": "2024-12-13"
 		},
 		"links": [
 			{
@@ -179,7 +179,7 @@
 		"dates": {
 			"begin": "2017-04-05",
 			"first-release": "2017-04-05",
-			"updated": "2023-12-01"
+			"updated": "2025-01-18"
 		},
 		"links": [
 			{
@@ -202,7 +202,7 @@
 		"dates": {
 			"begin": "2023-04-27",
 			"first-release": "2023-04-27",
-			"updated": "2023-12-09"
+			"updated": "2024-06-15"
 		},
 		"links": [
 			{
@@ -223,7 +223,7 @@
 		"dates": {
 			"begin": "2021-03-27",
 			"first-release": "2021-03-27",
-			"updated": "2023-06-24"
+			"updated": "2024-05-07"
 		},
 		"links": [
 			{
@@ -290,7 +290,7 @@
 		"dates": {
 			"begin": "2019-10-03",
 			"first-release": "2019-10-05",
-			"updated": "2023-12-01"
+			"updated": "2024-12-02"
 		},
 		"links": [
 			{
@@ -316,7 +316,7 @@
 		"dates": {
 			"begin": "2021-06-21",
 			"first-release": "2021-06-23",
-			"updated": "2023-12-01"
+			"updated": "2024-12-27"
 		},
 		"links": [
 			{
@@ -342,7 +342,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-04-01",
-			"updated": "2023-12-01"
+			"updated": "2024-11-27"
 		},
 		"links": [
 			{
@@ -368,7 +368,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-06-20",
-			"updated": "2023-12-01"
+			"updated": "2024-11-22"
 		},
 		"links": [
 			{
@@ -396,7 +396,7 @@
 		"dates": {
 			"begin": "2024-04-12",
 			"first-release": "2024-05-18",
-			"updated": "2024-10-04"
+			"updated": "2024-10-07"
 		},
 		"links": [
 			{
@@ -456,7 +456,7 @@
 		"dates": {
 			"begin": "2020-02-15",
 			"first-release": "2020-10-30",
-			"updated": "2023-12-16"
+			"updated": "2024-10-26"
 		},
 		"links": [
 			{
@@ -559,7 +559,7 @@
 		"dates": {
 			"begin": "2022-03-18",
 			"first-release": "2022-03-18",
-			"updated": "2024-07-06"
+			"updated": "2025-01-27"
 		},
 		"links": [
 			{
@@ -583,7 +583,7 @@
 		"dates": {
 			"begin": "2016-05-01",
 			"first-release": "2020-12-09",
-			"updated": "2024-08-19"
+			"updated": "2025-01-30"
 		},
 		"links": [
 			{
@@ -608,8 +608,8 @@
 		],
 		"dates": {
 			"begin": "2020-08-01",
-			"first-release": "2025-01-15",
-			"updated": "2025-01-15"
+			"first-release": "2025-12-31",
+			"updated": "2025-12-31"
 		},
 		"links": [
 			{
@@ -618,6 +618,32 @@
 			}
 		],
 		"major": true,
+		"dysnomiaProject": true
+	},
+	"neverending": {
+		"title": "Neverending",
+		"description": "(GameJam game:) A tower defense game with a little trick: timelines! You’re playing the game in three eras at the same moment!",
+		"tags": [
+			"Game"
+		],
+		"techs": [
+			"React"
+		],
+		"dates": {
+			"begin": "2024-12-07",
+			"first-release": "2024-12-15",
+			"updated": "2024-12-15"
+		},
+		"links": [
+			{
+				"url": "https://elanis.itch.io/neverending",
+				"name": "Itch"
+			},
+			{
+				"url": "https://github.com/Dysnomia-Studio/neverending",
+				"name": "Github"
+			}
+		],
 		"dysnomiaProject": true
 	},
 	"prey-predator": {
@@ -842,7 +868,7 @@
 		"dates": {
 			"begin": "2022-02-14",
 			"first-release": "2022-02-14",
-			"updated": "2023-08-27"
+			"updated": "2024-12-05"
 		},
 		"links": [
 			{
@@ -949,7 +975,7 @@
 		"dates": {
 			"begin": "2021-03-09",
 			"first-release": "2021-03-09",
-			"updated": "2024-08-08"
+			"updated": "2024-12-25"
 		},
 		"links": [
 			{
