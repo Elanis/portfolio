@@ -12,7 +12,7 @@
 		"dates": {
 			"begin": "2021-03-29",
 			"first-release": "2021-04",
-			"updated": "2025-01-25"
+			"updated": "2025-06-28"
 		},
 		"links": [
 			{
@@ -129,7 +129,7 @@
 		"dates": {
 			"begin": "2021-05-24",
 			"first-release": "2021-05-24",
-			"updated": "2024-12-13"
+			"updated": "2025-06-05"
 		},
 		"links": [
 			{
@@ -152,7 +152,7 @@
 		"dates": {
 			"begin": "2023-06-25",
 			"first-release": "2023-07-01",
-			"updated": "2023-07-21"
+			"updated": "2023-07-02"
 		},
 		"links": [
 			{
@@ -179,12 +179,40 @@
 		"dates": {
 			"begin": "2017-04-05",
 			"first-release": "2017-04-05",
-			"updated": "2025-01-18"
+			"updated": "2025-06-28"
 		},
 		"links": [
 			{
 				"url": "https://dehash.me",
 				"name": "Website"
+			}
+		],
+		"major": true,
+		"dysnomiaProject": true
+	},
+	"devblog": {
+		"title": "Devblog",
+		"description": "Dysnomia's devblog",
+		"tags": [
+			"Website"
+		],
+		"techs": [
+			"JS",
+			"Astro"
+		],
+		"dates": {
+			"begin": "2018-10-05",
+			"first-release": "2018-10-05",
+			"updated": "2025-07-19"
+		},
+		"links": [
+			{
+				"url": "https://blog.dysnomia.studio",
+				"name": "Website"
+			},
+			{
+				"url": "https://github.com/Dysnomia-Studio/devblog",
+				"name": "Github"
 			}
 		],
 		"major": true,
@@ -267,7 +295,7 @@
 		"dates": {
 			"begin": "2022-02-26",
 			"first-release": "2022-11-08",
-			"updated": "2023-12-01"
+			"updated": "2023-12-02"
 		},
 		"links": [
 			{
@@ -368,7 +396,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-06-20",
-			"updated": "2024-11-22"
+			"updated": "2025-02-09"
 		},
 		"links": [
 			{
@@ -396,7 +424,7 @@
 		"dates": {
 			"begin": "2024-04-12",
 			"first-release": "2024-05-18",
-			"updated": "2024-10-07"
+			"updated": "2025-07-11"
 		},
 		"links": [
 			{
@@ -559,7 +587,7 @@
 		"dates": {
 			"begin": "2022-03-18",
 			"first-release": "2022-03-18",
-			"updated": "2025-03-15"
+			"updated": "2025-07-18"
 		},
 		"links": [
 			{
@@ -583,7 +611,7 @@
 		"dates": {
 			"begin": "2016-05-01",
 			"first-release": "2020-12-09",
-			"updated": "2025-04-04"
+			"updated": "2025-07-13"
 		},
 		"links": [
 			{
@@ -608,8 +636,8 @@
 		],
 		"dates": {
 			"begin": "2020-08-01",
-			"first-release": "2025-12-31",
-			"updated": "2025-12-31"
+			"first-release": "2026-12-31",
+			"updated": "2026-12-31"
 		},
 		"links": [
 			{
@@ -914,7 +942,7 @@
 		"dates": {
 			"begin": "2022-04-09",
 			"first-release": "2022-04-10",
-			"updated": "2022-08-10"
+			"updated": "2023-12-26"
 		},
 		"links": [
 			{
