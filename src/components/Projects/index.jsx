@@ -14,14 +14,14 @@ export default function Projects({ projects, allowMinors }) {
 	return (
 		<div id="projects">
 			<h2>My projects</h2>
-			<h3 className="projects-subtitle">(sorted by initial release descending)</h3>
+			<h3 className="projects-subtitle">(sorted by initial release date descending)</h3>
 			{!allowMinors && <p className="page-link"><a href="/projects">Show full project list</a></p>}
 			{allowMinors && <p className="page-link"><a href="/#projects">Get back to index</a></p>}
 			<div id="projects" className="projects">
 				{projects.filter((p) => allowMinors || p.major).map((project) => {
 					const currentYear = new Date(project.dates[FIRST_RELEASE_FIELD]).getFullYear();
 					let yearSeparator = null;
-					if(currentYear !== previousYear) {
+					if (currentYear !== previousYear) {
 						previousYear = currentYear;
 						yearSeparator = (<h3 key={currentYear} className="year-separator">{currentYear}</h3>);
 					}
