@@ -14,7 +14,7 @@ export default function HomePresentation({ age, workingTime }) {
 				<h3>Some details about me</h3>
 
 				<ul>
-					<li>Game developer (Check on Steam: <a href="https://store.steampowered.com/app/2146380/Manufactur_inc/" rel="noopener noreferrer" target="_blank">Manufactur'inc</a>, <a href="https://store.steampowered.com/app/1730540/Alchemistry/" rel="noopener noreferrer" target="_blank">Alchemistry</a>, <a href="https://store.steampowered.com/app/1299430/Extortion/" rel="noopener noreferrer" target="_blank">Extortion</a>)</li>
+					<li>Game developer (Check on Steam: <a href="https://store.steampowered.com/app/3928180/Logistik/" rel="noopener noreferrer" target="_blank">Logistik</a>, <a href="https://store.steampowered.com/app/2146380/Manufactur_inc/" rel="noopener noreferrer" target="_blank">Manufactur'inc</a>, <a href="https://store.steampowered.com/app/1730540/Alchemistry/" rel="noopener noreferrer" target="_blank">Alchemistry</a>, <a href="https://store.steampowered.com/app/1299430/Extortion/" rel="noopener noreferrer" target="_blank">Extortion</a>)</li>
 					<li>Full Stack developer using .NET and React</li>
 					<li>Founder of <a href="https://dysnomia.studio" rel="noopener noreferrer" target="_blank">Dysnomia</a>, the company that manage most of my projects.</li>
 					<li>Part-time teacher at ULCO - Calais</li>
