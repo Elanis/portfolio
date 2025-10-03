@@ -12,7 +12,7 @@
 		"dates": {
 			"begin": "2021-03-29",
 			"first-release": "2021-04",
-			"updated": "2025-06-28"
+			"updated": "2025-08-19"
 		},
 		"links": [
 			{
@@ -70,9 +70,10 @@
 		"links": [
 			{
 				"url": "https://github.com/Elanis/atomic-text",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
-		]
+		],
+		"stopped": true
 	},
 	"backup-git-repositories": {
 		"title": "backup-git-repositories",
@@ -129,7 +130,7 @@
 		"dates": {
 			"begin": "2021-05-24",
 			"first-release": "2021-05-24",
-			"updated": "2025-06-05"
+			"updated": "2025-10-02"
 		},
 		"links": [
 			{
@@ -168,7 +169,7 @@
 	},
 	"dehash-me": {
 		"title": "Dehash.me",
-		"description": "Dehash.me was created to raise awareness on basic hashing weaknesses. It owns and generate its own (weak) hashes dictionnary.",
+		"description": "Dehash.me was created to raise awareness on basic hashing weaknesses. It owned and generated its own (weak) hashes dictionnary.",
 		"image": "/img/dehashme.webp", 
 		"tags": [
 			"Website"
@@ -183,11 +184,12 @@
 		},
 		"links": [
 			{
-				"url": "https://dehash.me",
-				"name": "Website"
+				"url": "https://github.com/Dysnomia-Studio/dehash-me",
+				"name": "GitHub | Archive"
 			}
 		],
 		"major": true,
+		"stopped": true,
 		"dysnomiaProject": true
 	},
 	"devblog": {
@@ -203,7 +205,7 @@
 		"dates": {
 			"begin": "2018-10-05",
 			"first-release": "2018-10-05",
-			"updated": "2025-07-19"
+			"updated": "2025-09-17"
 		},
 		"links": [
 			{
@@ -256,9 +258,10 @@
 		"links": [
 			{
 				"url": "https://github.com/Elanis/domain-checker",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
-		]
+		],
+		"stopped": true
 	},
 	"dmarc-parser": {
 		"title": "dmarc-parser",
@@ -277,14 +280,15 @@
 		"links": [
 			{
 				"url": "https://github.com/Dysnomia-Studio/dmarc-parser",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
 		],
+		"stopped": true,
 		"dysnomiaProject": true
 	},
 	"downstat-us": {
 		"title": "Downstat.us",
-		"description": "Downstat.us is a website monitoring popular services.",
+		"description": "Downstat.us was a website monitoring popular services.",
 		"image": "/img/downstatus.webp", 
 		"tags": [
 			"Website"
@@ -299,8 +303,8 @@
 		},
 		"links": [
 			{
-				"url": "https://downstat.us",
-				"name": "Website"
+				"url": "https://github.com/Dysnomia-Studio/downstatus",
+				"name": "GitHub | Archive"
 			}
 		],
 		"dysnomiaProject": true,
@@ -370,7 +374,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-04-01",
-			"updated": "2025-03-21"
+			"updated": "2025-08-22"
 		},
 		"links": [
 			{
@@ -424,7 +428,7 @@
 		"dates": {
 			"begin": "2024-04-12",
 			"first-release": "2024-05-18",
-			"updated": "2025-07-11"
+			"updated": "2025-10-03"
 		},
 		"links": [
 			{
@@ -545,7 +549,7 @@
 		"dates": {
 			"begin": "2024-04-06",
 			"first-release": "2024-04-06",
-			"updated": "2025-04-23"
+			"updated": "2025-10-02"
 		},
 		"links": [
 			{
@@ -571,9 +575,33 @@
 		"links": [
 			{
 				"url": "https://github.com/Elanis/generative-art",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
-		]
+		],
+		"stopped": true
+	},
+	"howtoopenme": {
+		"title": "HowToOpen.me",
+		"description": "HowToOpen.me was a website to provide a list of software to open a specific file type.",
+		"tags": [
+			"Website"
+		],
+		"techs": [
+			".NET 8"
+		],
+		"dates": {
+			"begin": "2018-04-29",
+			"first-release": "2018-05-01",
+			"updated": "2020-07-10"
+		},
+		"links": [
+			{
+				"url": "https://github.com/Dysnomia-Studio/howtoopenme",
+				"name": "GitHub | Archive"
+			}
+		],
+		"dysnomiaProject": true,
+		"stopped": true
 	},
 	"infras": {
 		"title": "Infras",
@@ -587,7 +615,7 @@
 		"dates": {
 			"begin": "2022-03-18",
 			"first-release": "2022-03-18",
-			"updated": "2025-07-18"
+			"updated": "2025-09-22"
 		},
 		"links": [
 			{
@@ -595,6 +623,32 @@
 				"name": "Github"
 			}
 		],
+		"dysnomiaProject": true
+	},
+	"logistik": {
+		"title": "Logistik",
+		"description": "Lay tracks, schedule trains, and optimize routes to transport passengers and cargo across the map.Balance fuel costs, adapt to your environment, and demands in this ever-evolving train-based puzzle.",
+		"image": "/img/logistik.webp", 
+		"tags": [
+			"Game"
+		],
+		"techs": [
+			"React",
+			"NW.JS",
+			"Node.js"
+		],
+		"dates": {
+			"begin": "2025-04-07",
+			"first-release": "2026-12-31",
+			"updated": "2026-12-31"
+		},
+		"links": [
+			{
+				"url": "https://store.steampowered.com/app/3928180/Logistik",
+				"name": "Steam"
+			}
+		],
+		"major": true,
 		"dysnomiaProject": true
 	},
 	"lumen": {
@@ -611,7 +665,7 @@
 		"dates": {
 			"begin": "2016-05-01",
 			"first-release": "2020-12-09",
-			"updated": "2025-07-13"
+			"updated": "2025-09-14"
 		},
 		"links": [
 			{
@@ -630,7 +684,7 @@
 		],
 		"techs": [
 			"React",
-			"Tauri",
+			"NW.JS",
 			"Node.js",
 			"Socket.io"
 		],
@@ -669,10 +723,11 @@
 			},
 			{
 				"url": "https://github.com/Dysnomia-Studio/neverending",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
 		],
-		"dysnomiaProject": true
+		"dysnomiaProject": true,
+		"stopped": true
 	},
 	"prey-predator": {
 		"title": "Prey/predator",
@@ -689,9 +744,10 @@
 		"links": [
 			{
 				"url": "https://github.com/Elanis/prey-predator",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
-		]
+		],
+		"stopped": true
 	},
 	"raytracer-rust": {
 		"title": "Raytracer (Rust)",
@@ -709,9 +765,10 @@
 		"links": [
 			{
 				"url": "https://github.com/Elanis/raytracer",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
-		]
+		],
+		"stopped": true
 	},
 	"redmine-to-openproject": {
 		"title": "Redmine to OpenProject",
@@ -731,7 +788,7 @@
 		"links": [
 			{
 				"url": "https://github.com/Elanis/redmine-to-openproject",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
 		],
 		"stopped": true
@@ -752,9 +809,10 @@
 		"links": [
 			{
 				"url": "https://github.com/Elanis/rust_physical_engine",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
-		]
+		],
+		"stopped": true
 	},
 	"sbox-scifipack": {
 		"title": "Sci-Fi Pack (S&box version)",
@@ -880,7 +938,7 @@
 		"links": [
 			{
 				"url": "https://github.com/Elanis/steam-achievements",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
 		]
 	},
@@ -951,7 +1009,7 @@
 			},
 			{
 				"url": "https://github.com/Elanis/underwater",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
 		]
 	},
@@ -972,7 +1030,7 @@
 		"links": [
 			{
 				"url": "https://github.com/Elanis/vulkan-tutorial-rs",
-				"name": "Github"
+				"name": "Github | Archive"
 			}
 		]
 	},
@@ -986,7 +1044,7 @@
 		"dates": {
 			"begin": "2021-05-30",
 			"first-release": "2021-05-30",
-			"updated": "2022-11-22"
+			"updated": "2025-07-19"
 		},
 		"links": [
 			{
