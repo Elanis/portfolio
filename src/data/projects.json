@@ -167,6 +167,33 @@
 		],
 		"dysnomiaProject": true
 	},
+	"crash-in-space": {
+		"title": "Crash In Space",
+		"description": "A short narrative game about someone whose ship crashed. Multiple narrative choices available, try restarting the game and not following the narrator!",
+		"tags": [
+			"Game"
+		],
+		"image": "/img/crash-in-space.webp",
+		"techs": [
+			"Godot"
+		],
+		"dates": {
+			"begin": "2025-11-29",
+			"first-release": "2025-12-07",
+			"updated": "2025-12-07"
+		},
+		"links": [
+			{
+				"url": "https://elanis.itch.io/crash-in-space",
+				"name": "Itch"
+			},
+			{
+				"url": "https://github.com/Dysnomia-Studio/cosmic-idle",
+				"name": "Github"
+			}
+		],
+		"dysnomiaProject": false
+	},
 	"dehash-me": {
 		"title": "Dehash.me",
 		"description": "Dehash.me was created to raise awareness on basic hashing weaknesses. It owned and generated its own (weak) hashes dictionnary.",
