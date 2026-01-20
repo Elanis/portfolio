@@ -130,7 +130,7 @@
 		"dates": {
 			"begin": "2021-05-24",
 			"first-release": "2021-05-24",
-			"updated": "2025-10-02"
+			"updated": "2026-01-02"
 		},
 		"links": [
 			{
@@ -232,7 +232,7 @@
 		"dates": {
 			"begin": "2018-10-05",
 			"first-release": "2018-10-05",
-			"updated": "2025-09-17"
+			"updated": "2025-12-28"
 		},
 		"links": [
 			{
@@ -361,7 +361,8 @@
 				"name": "NuGet"
 			}
 		],
-		"dysnomiaProject": true
+		"dysnomiaProject": true,
+		"stopped": true,
 	},
 	"Dysnomia.Common.BlizzardWebAPI": {
 		"title": "Dysnomia.Common.BlizzardWebAPI",
@@ -375,7 +376,7 @@
 		"dates": {
 			"begin": "2021-06-21",
 			"first-release": "2021-06-23",
-			"updated": "2024-12-27"
+			"updated": "2026-01-02"
 		},
 		"links": [
 			{
@@ -401,7 +402,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-04-01",
-			"updated": "2025-08-22"
+			"updated": "2025-11-30"
 		},
 		"links": [
 			{
@@ -427,7 +428,7 @@
 		"dates": {
 			"begin": "2021-04-01",
 			"first-release": "2021-06-20",
-			"updated": "2025-02-09"
+			"updated": "2025-11-30"
 		},
 		"links": [
 			{
@@ -455,7 +456,7 @@
 		"dates": {
 			"begin": "2024-04-12",
 			"first-release": "2024-05-18",
-			"updated": "2025-10-03"
+			"updated": "2025-10-29"
 		},
 		"links": [
 			{
@@ -515,16 +516,12 @@
 		"dates": {
 			"begin": "2020-02-15",
 			"first-release": "2020-10-30",
-			"updated": "2024-10-26"
+			"updated": "2025-10-22"
 		},
 		"links": [
 			{
 				"url": "https://store.steampowered.com/app/1299430/Extortion/",
 				"name": "Steam"
-			},
-			{
-				"url": "https://twitter.com/Extortion_Game",
-				"name": "Twitter"
 			},
 			{
 				"url": "https://elanis.itch.io/extortion",
@@ -555,14 +552,6 @@
 			{
 				"url": "https://galactae.eu/",
 				"name": "Website"
-			},
-			{
-				"url": "https://twitter.com/GalactaeSAD",
-				"name": "Twitter"
-			},
-			{
-				"url": "https://www.reddit.com/r/Galactae/",
-				"name": "Reddit"
 			}
 		],
 		"major": true,
@@ -642,7 +631,7 @@
 		"dates": {
 			"begin": "2022-03-18",
 			"first-release": "2022-03-18",
-			"updated": "2025-09-22"
+			"updated": "2025-11-14"
 		},
 		"links": [
 			{
@@ -692,7 +681,7 @@
 		"dates": {
 			"begin": "2016-05-01",
 			"first-release": "2020-12-09",
-			"updated": "2025-09-14"
+			"updated": "2026-01-01"
 		},
 		"links": [
 			{
