@@ -1,1090 +1,1087 @@
 {
-	"achieve-games": {
-		"title": "Achieve.games",
-		"description": "Track achievements from all your favorite game libraries.",
-		"image": "/img/achievegames.webp", 
-		"tags": [
-			"Website"
-		],
-		"techs": [
-			".NET 8"
-		],
-		"dates": {
-			"begin": "2021-03-29",
-			"first-release": "2021-04",
-			"updated": "2025-08-19"
-		},
-		"links": [
-			{
-				"url": "https://achieve.games",
-				"name": "Website"
-			}
-		],
-		"major": true,
-		"dysnomiaProject": true
-	},
-	"alchemistry": {
-		"title": "Alchemistry",
-		"description": "Merge elements to discover new ones ! Craft the entire world from fire to life.",
-		"image": "/img/alchemistry.webp", 
-		"tags": [
-			"Game"
-		],
-		"techs": [
-			"React",
-			"node-webkit",
-			"Steam (greenworks.js)"
-		],
-		"dates": {
-			"begin": "2021-08-01",
-			"first-release": "2022-03-07",
-			"updated": "2024-11-22"
-		},
-		"links": [
-			{
-				"url": "https://store.steampowered.com/app/1730540/Alchemistry/",
-				"name": "Steam"
-			},
-			{
-				"url": "https://elanis.itch.io/alchemistry",
-				"name": "Itch"
-			}
-		],
-		"major": true,
-		"dysnomiaProject": true
-	},
-	"atomic-text": {
-		"title": "Atomic Text",
-		"description": "Transform a text into Atom Symbols",
-		"tags": [
-			"Tool"
-		],
-		"techs": [
-			"Node.js"
-		],
-		"dates": {
-			"begin": "2021-04-17",
-			"first-release": "2021-04-17",
-			"updated": "2021-04-17"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/atomic-text",
-				"name": "Github | Archive"
-			}
-		],
-		"stopped": true
-	},
-	"backup-git-repositories": {
-		"title": "backup-git-repositories",
-		"description": "Script used to backup my Github repositories on my TrueNAS Scale server",
-		"tags": [
-			"Tool"
-		],
-		"techs": [
-			"Bash"
-		],
-		"dates": {
-			"begin": "2022-08-15",
-			"first-release": "2022-08-15",
-			"updated": "2024-09-17"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/backup-git-repositories",
-				"name": "Github"
-			}
-		]
-	},
-	"browser-particle-animation-canvas2d": {
-		"title": "browser-particle-animation-canvas2d",
-		"description": "Browser particle animation using canvas2d-wrapper",
-		"image": "/img/browser-particle-animation-canvas2d.webp",
-		"tags": [
-		],
-		"techs": [
-			"JS"
-		],
-		"dates": {
-			"begin": "2023-12-14",
-			"first-release": "2023-12-14",
-			"updated": "2023-12-14"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/browser-particle-animation-canvas2d",
-				"name": "Github"
-			}
-		]
-	},
-	"canvas2d-wrapper": {
-		"title": "canvas2d-wrapper",
-		"description": "A React Wrapper to use HTML5 canvas with mouse move and zoom abilities.",
-		"image": "/img/canvas2d-wrapper.webp", 
-		"tags": [
-			"Library"
-		],
-		"techs": [
-			"React"
-		],
-		"dates": {
-			"begin": "2021-05-24",
-			"first-release": "2021-05-24",
-			"updated": "2026-01-02"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Dysnomia-Studio/canvas2d-wrapper",
-				"name": "Github"
-			}
-		],
-		"dysnomiaProject": true
-	},
-	"cosmic-idle": {
-		"title": "Cosmic Idle",
-		"description": "Small gamejam game for Game Dev Unlocked Game Jam #6. Build the universe from big bang to life in this incremental game !",
-		"tags": [
-			"Game"
-		],
-		"image": "/img/cosmic-idle.webp",
-		"techs": [
-			"React"
-		],
-		"dates": {
-			"begin": "2023-06-25",
-			"first-release": "2023-07-01",
-			"updated": "2023-07-02"
-		},
-		"links": [
-			{
-				"url": "https://elanis.itch.io/cosmic-idle",
-				"name": "Itch"
-			},
-			{
-				"url": "https://github.com/Dysnomia-Studio/cosmic-idle",
-				"name": "Github"
-			}
-		],
-		"dysnomiaProject": true
-	},
-	"crash-in-space": {
-		"title": "Crash In Space",
-		"description": "A short narrative game about someone whose ship crashed. Multiple narrative choices available, try restarting the game and not following the narrator!",
-		"tags": [
-			"Game"
-		],
-		"image": "/img/crash-in-space.webp",
-		"techs": [
-			"Godot"
-		],
-		"dates": {
-			"begin": "2025-11-29",
-			"first-release": "2025-12-07",
-			"updated": "2025-12-07"
-		},
-		"links": [
-			{
-				"url": "https://elanis.itch.io/crash-in-space",
-				"name": "Itch"
-			},
-			{
-				"url": "https://github.com/Dysnomia-Studio/cosmic-idle",
-				"name": "Github"
-			}
-		],
-		"dysnomiaProject": false
-	},
-	"dehash-me": {
-		"title": "Dehash.me",
-		"description": "Dehash.me was created to raise awareness on basic hashing weaknesses. It owned and generated its own (weak) hashes dictionnary.",
-		"image": "/img/dehashme.webp", 
-		"tags": [
-			"Website"
-		],
-		"techs": [
-			".NET 8"
-		],
-		"dates": {
-			"begin": "2017-04-05",
-			"first-release": "2017-04-05",
-			"updated": "2025-06-28"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Dysnomia-Studio/dehash-me",
-				"name": "GitHub | Archive"
-			}
-		],
-		"major": true,
-		"stopped": true,
-		"dysnomiaProject": true
-	},
-	"devblog": {
-		"title": "Devblog",
-		"description": "Dysnomia's devblog",
-		"tags": [
-			"Website"
-		],
-		"techs": [
-			"JS",
-			"Astro"
-		],
-		"dates": {
-			"begin": "2018-10-05",
-			"first-release": "2018-10-05",
-			"updated": "2025-12-28"
-		},
-		"links": [
-			{
-				"url": "https://blog.dysnomia.studio",
-				"name": "Website"
-			},
-			{
-				"url": "https://github.com/Dysnomia-Studio/devblog",
-				"name": "Github"
-			}
-		],
-		"major": true,
-		"dysnomiaProject": true
-	},
-	"discord-server-stats": {
-		"title": "Discord server stats",
-		"description": "A discord bot made to produce stats about servers, users and channels by saving data to local files.",
-		"tags": [
-			"Tool"
-		],
-		"techs": [
-			"Node.js"
-		],
-		"dates": {
-			"begin": "2023-04-27",
-			"first-release": "2023-04-27",
-			"updated": "2025-04-11"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/discord-server-stats",
-				"name": "Github"
-			}
-		]
-	},
-	"domain-checker": {
-		"title": "Domain checker",
-		"description": "Check domain availability using the api available at whoisxmlapi.com",
-		"tags": [
-			"Tool"
-		],
-		"techs": [
-			"Node.js"
-		],
-		"dates": {
-			"begin": "2021-03-27",
-			"first-release": "2021-03-27",
-			"updated": "2024-05-07"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/domain-checker",
-				"name": "Github | Archive"
-			}
-		],
-		"stopped": true
-	},
-	"dmarc-parser": {
-		"title": "dmarc-parser",
-		"description": "A simple job that query, parse and save to database dmarc aggregate reports",
-		"tags": [
-			"Tool"
-		],
-		"techs": [
-			"Node.js"
-		],
-		"dates": {
-			"begin": "2022-08-27",
-			"first-release": "2022-08-27",
-			"updated": "2023-01-22"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Dysnomia-Studio/dmarc-parser",
-				"name": "Github | Archive"
-			}
-		],
-		"stopped": true,
-		"dysnomiaProject": true
-	},
-	"downstat-us": {
-		"title": "Downstat.us",
-		"description": "Downstat.us was a website monitoring popular services.",
-		"image": "/img/downstatus.webp", 
-		"tags": [
-			"Website"
-		],
-		"techs": [
-			".NET 8"
-		],
-		"dates": {
-			"begin": "2022-02-26",
-			"first-release": "2022-11-08",
-			"updated": "2023-12-02"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Dysnomia-Studio/downstatus",
-				"name": "GitHub | Archive"
-			}
-		],
-		"dysnomiaProject": true,
-		"stopped": true
-	},
-	"Dysnomia.Common.SQL": {
-		"title": "Dysnomia.Common.SQL",
-		"description": "A driver agnostic Micro-ORM for .NET 6/7",
-		"tags": [
-			"Library"
-		],
-		"techs": [
-			".NET 8"
-		],
-		"dates": {
-			"begin": "2019-10-03",
-			"first-release": "2019-10-05",
-			"updated": "2024-12-02"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Dysnomia-Studio/Dysnomia.Common.SQL",
-				"name": "Github"
-			},
-			{
-				"url": "https://www.nuget.org/packages/Dysnomia.Common.SQL/",
-				"name": "NuGet"
-			}
-		],
-		"dysnomiaProject": true,
-		"stopped": true,
-	},
-	"Dysnomia.Common.BlizzardWebAPI": {
-		"title": "Dysnomia.Common.BlizzardWebAPI",
-		"description": "A C# library to easily get data from Blizzard Web API.",
-		"tags": [
-			"Library"
-		],
-		"techs": [
-			".NET 8"
-		],
-		"dates": {
-			"begin": "2021-06-21",
-			"first-release": "2021-06-23",
-			"updated": "2026-01-02"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Dysnomia-Studio/Dysnomia.Common.BlizzardWebAPI",
-				"name": "Github"
-			},
-			{
-				"url": "https://www.nuget.org/packages/Dysnomia.Common.BlizzardWebAPI/",
-				"name": "NuGet"
-			}
-		],
-		"dysnomiaProject": true
-	},
-	"Dysnomia.Common.SteamWebAPI": {
-		"title": "Dysnomia.Common.SteamWebAPI",
-		"description": "A C# library to easily get data from Steam Web API.",
-		"tags": [
-			"Library"
-		],
-		"techs": [
-			".NET 8"
-		],
-		"dates": {
-			"begin": "2021-04-01",
-			"first-release": "2021-04-01",
-			"updated": "2025-11-30"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Dysnomia-Studio/Dysnomia.Common.SteamWebAPI",
-				"name": "Github"
-			},
-			{
-				"url": "https://www.nuget.org/packages/Dysnomia.Common.SteamWebAPI/",
-				"name": "NuGet"
-			}
-		],
-		"dysnomiaProject": true
-	},
-	"Dysnomia.Common.WebAPIWrapper": {
-		"title": "Dysnomia.Common.WebAPIWrapper",
-		"description": "A C# library to easily get data from Web API. It's used in our Web API wrapper like Steam, Blizzard, etc.",
-		"tags": [
-			"Library"
-		],
-		"techs": [
-			".NET 8"
-		],
-		"dates": {
-			"begin": "2021-04-01",
-			"first-release": "2021-06-20",
-			"updated": "2025-11-30"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Dysnomia-Studio/Dysnomia.Common.WebAPIWrapper",
-				"name": "Github"
-			},
-			{
-				"url": "https://www.nuget.org/packages/Dysnomia.Common.WebAPIWrapper/",
-				"name": "NuGet"
-			}
-		],
-		"dysnomiaProject": true
-	},
-	"dysnomia-wiki": {
-		"title": "Dysnomia's games wiki",
-		"description": "The wiki about everything in my games",
-		"image": "/img/dysnomia-wiki.webp",
-		"tags": [
-			"Website"
-		],
-		"techs": [
-			"JS",
-			"Astro"
-		],
-		"dates": {
-			"begin": "2024-04-12",
-			"first-release": "2024-05-18",
-			"updated": "2025-10-29"
-		},
-		"links": [
-			{
-				"url": "https://wiki.dysnomia.studio",
-				"name": "Website"
-			},
-			{
-				"url": "https://github.com/Dysnomia-Studio/dysnomia-wiki",
-				"name": "Github"
-			}
-		],
-		"dysnomiaProject": true,
-		"major": true
-	},
-	"evolution-addon-pack": {
-		"title": "Evolution Addon Pack",
-		"description": "The Evolution Addon Pack (EAP) is an addon based on the Stargate Franchise! We have many entities (including spaceships), props, tools, weapons, NPCs and much more!",
-		"image": "/img/EvolutionAddonPack.webp",
-		"tags": [
-			"Addon",
-			"Stopped"
-		],
-		"techs": [
-			"Lua",
-			"Garry's mod Addon"
-		],
-		"dates": {
-			"begin": "2015",
-			"first-release": "2015-07-01",
-			"updated": "2017-07-02"
-		},
-		"links": [
-			{
-				"url": "https://steamcommunity.com/sharedfiles/filedetails/?id=473313458",
-				"name": "Steam"
-			},
-			{
-				"url": "https://github.com/williamdefly/EvolutionAddonPack/",
-				"name": "Github"
-			}
-		],
-		"major": true,
-		"stopped": true
-	},
-	"extortion": {
-		"title": "Extortion",
-		"description": "You're a computer engineer with a terrible secret. Someone is blackmailing you and now, you have to hack some servers and get secret files for him. Would you succeed to achieve his missions or would you find him and revenge ?",
-		"image": "/img/extortion.webp", 
-		"tags": [
-			"Game"
-		],
-		"techs": [
-			"React",
-			"node-webkit",
-			"Steam (greenworks.js)"
-		],
-		"dates": {
-			"begin": "2020-02-15",
-			"first-release": "2020-10-30",
-			"updated": "2025-10-22"
-		},
-		"links": [
-			{
-				"url": "https://store.steampowered.com/app/1299430/Extortion/",
-				"name": "Steam"
-			},
-			{
-				"url": "https://elanis.itch.io/extortion",
-				"name": "Itch"
-			}
-		],
-		"major": true,
-		"dysnomiaProject": true
-	},
-	"galactae": {
-		"title": "Galactae",
-		"description": "Galactae is an in-browser space nation management multiplayer game.",
-		"image": "/img/galactae.webp", 
-		"tags": [
-			"Game"
-		],
-		"techs": [
-			"PHP",
-			"Node.JS",
-			"Socket.io"
-		],
-		"dates": {
-			"begin": "2016-06-01",
-			"first-release": "2019-06-01",
-			"updated": "2021-08-11"
-		},
-		"links": [
-			{
-				"url": "https://galactae.eu/",
-				"name": "Website"
-			}
-		],
-		"major": true,
-		"dysnomiaProject": true
-	},
-	"gamedev-roadmap": {
-		"title": "GameDev Roadmap",
-		"description": "This repository contains the whole (technical, commercial, communication, and so on) roadmap of my games not to forget things to do.",
-		"tags": [],
-		"techs": [],
-		"dates": {
-			"begin": "2024-04-06",
-			"first-release": "2024-04-06",
-			"updated": "2025-10-02"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Dysnomia-Studio/gamedev-roadmap",
-				"name": "Github"
-			}
-		]
-
-	},
-	"generative-art": {
-		"title": "Generative art experimentations",
-		"description": "",
-		"image": "/img/generative-art.webp",
-		"tags": [],
-		"techs": [
-			"Javascript"
-		],
-		"dates": {
-			"begin": "2023-06-15",
-			"first-release": "2023-06-15",
-			"updated": "2023-06-15"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/generative-art",
-				"name": "Github | Archive"
-			}
-		],
-		"stopped": true
-	},
-	"howtoopenme": {
-		"title": "HowToOpen.me",
-		"description": "HowToOpen.me was a website to provide a list of software to open a specific file type.",
-		"tags": [
-			"Website"
-		],
-		"techs": [
-			".NET 8"
-		],
-		"dates": {
-			"begin": "2018-04-29",
-			"first-release": "2018-05-01",
-			"updated": "2020-07-10"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Dysnomia-Studio/howtoopenme",
-				"name": "GitHub | Archive"
-			}
-		],
-		"dysnomiaProject": true,
-		"stopped": true
-	},
-	"infras": {
-		"title": "Infras",
-		"description": "This repostiories hosts my homelab and my production (Dysnomia) infrastructures files..",
-		"tags": [],
-		"techs": [
-			"Ansible",
-			"OctoDNS",
-			"Wireguard"
-		],
-		"dates": {
-			"begin": "2022-03-18",
-			"first-release": "2022-03-18",
-			"updated": "2025-11-14"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/Infras",
-				"name": "Github"
-			}
-		],
-		"dysnomiaProject": true
-	},
-	"logistik": {
-		"title": "Logistik",
-		"description": "Lay tracks, schedule trains, and optimize routes to transport passengers and cargo across the map.Balance fuel costs, adapt to your environment, and demands in this ever-evolving train-based puzzle.",
-		"image": "/img/logistik.webp", 
-		"tags": [
-			"Game"
-		],
-		"techs": [
-			"React",
-			"NW.JS",
-			"Node.js"
-		],
-		"dates": {
-			"begin": "2025-04-07",
-			"first-release": "2026-12-31",
-			"updated": "2026-12-31"
-		},
-		"links": [
-			{
-				"url": "https://store.steampowered.com/app/3928180/Logistik",
-				"name": "Steam"
-			}
-		],
-		"major": true,
-		"dysnomiaProject": true
-	},
-	"lumen": {
-		"title": "L.U.M.E.N.",
-		"description": "L.U.M.E.N. is a simple and modulable personal assistant built on Electron. Modules gives you plenty of differents features like: music, time management, statistics, etc.",
-		"image": "/img/lumen.webp", 
-		"tags": [
-			"Software"
-		],
-		"techs": [
-			"Electron",
-			"Grafana"
-		],
-		"dates": {
-			"begin": "2016-05-01",
-			"first-release": "2020-12-09",
-			"updated": "2026-01-01"
-		},
-		"links": [
-			{
-				"url": "https://github.com/L-U-M-E-N",
-				"name": "Github"
-			}
-		],
-		"major": true
-	},
-	"manufacturinc": {
-		"title": "Manufactur'inc.",
-		"description": "Lead your new company to success in this industry management game. Blueprint and optimize your production; make ethical choices to influence your worker conditions, ecological impact, automation level, and more.",
-		"image": "/img/manufacturinc.webp", 
-		"tags": [
-			"Game"
-		],
-		"techs": [
-			"React",
-			"NW.JS",
-			"Node.js",
-			"Socket.io"
-		],
-		"dates": {
-			"begin": "2020-08-01",
-			"first-release": "2026-12-31",
-			"updated": "2026-12-31"
-		},
-		"links": [
-			{
-				"url": "https://store.steampowered.com/app/2146380/Manufactur_inc/",
-				"name": "Steam"
-			}
-		],
-		"major": true,
-		"dysnomiaProject": true
-	},
-	"neverending": {
-		"title": "Neverending",
-		"description": "(GameJam game:) A tower defense game with a little trick: timelines! You’re playing the game in three eras at the same moment!",
-		"tags": [
-			"Game"
-		],
-		"techs": [
-			"React"
-		],
-		"dates": {
-			"begin": "2024-12-07",
-			"first-release": "2024-12-15",
-			"updated": "2024-12-15"
-		},
-		"links": [
-			{
-				"url": "https://elanis.itch.io/neverending",
-				"name": "Itch"
-			},
-			{
-				"url": "https://github.com/Dysnomia-Studio/neverending",
-				"name": "Github | Archive"
-			}
-		],
-		"dysnomiaProject": true,
-		"stopped": true
-	},
-	"prey-predator": {
-		"title": "Prey/predator",
-		"description": "Small simulation to try handwritten neuralnetwork on a prey/predator pattern.",
-		"tags": [],
-		"techs": [
-			"Rust"
-		],
-		"dates": {
-			"begin": "2022-09-02",
-			"first-release": "2022-09-02",
-			"updated": "2022-10-06"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/prey-predator",
-				"name": "Github | Archive"
-			}
-		],
-		"stopped": true
-	},
-	"raytracer-rust": {
-		"title": "Raytracer (Rust)",
-		"description": "Application of \"Raytracing in a week-end\" in Rust.",
-		"image": "/img/raytracer-rust.webp",
-		"tags": [],
-		"techs": [
-			"Rust"
-		],
-		"dates": {
-			"begin": "2020-11-27",
-			"first-release": "2020-11-27",
-			"updated": "2021-06-29"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/raytracer",
-				"name": "Github | Archive"
-			}
-		],
-		"stopped": true
-	},
-	"redmine-to-openproject": {
-		"title": "Redmine to OpenProject",
-		"description": "Tool I used to migrate from redmine to openproject.",
-		"tags": [
-			"Tool",
-			"Stopped"
-		],
-		"techs": [
-			"Node.js"
-		],
-		"dates": {
-			"begin": "2021-01-13",
-			"first-release": "2021-01-13",
-			"updated": "2021-03-04"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/redmine-to-openproject",
-				"name": "Github | Archive"
-			}
-		],
-		"stopped": true
-	},
-	"rust-physical-engine": {
-		"title": "Rust physical engine",
-		"description": "A basic physical engine built for testing Rust Language.",
-		"image": "/img/rust-physical-engine.webp",
-		"tags": [],
-		"techs": [
-			"Rust"
-		],
-		"dates": {
-			"begin": "2019-11-18",
-			"first-release": "2019-11-18",
-			"updated": "2019-11-23"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/rust_physical_engine",
-				"name": "Github | Archive"
-			}
-		],
-		"stopped": true
-	},
-	"sbox-scifipack": {
-		"title": "Sci-Fi Pack (S&box version)",
-		"description": "This S&Box addon is a port of few of my (and other dev) addons on Garry's Mod about science fiction.",
-		"tags": [
-			"Addon"
-		],
-		"techs": [
-			"C#",
-			"S&Box Addon"
-		],
-		"dates": {
-			"begin": "2021-09-27",
-			"first-release": "2021-09-27",
-			"updated": "2021-09-30"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/sbox-scifipack",
-				"name": "Github"
-			}
-		],
-		"major": true
-	},
-	"scifi-pack": {
-		"title": "SciFi-Pack (Garry's Mod version)",
-		"description": "The Scifi-Pack is an addon pack made to work as an addon and as a gamemode depending on player choice. It's a pack about many Science Fiction shows, movies, games, etc.",
-		"image": "/img/SciFi-Pack.webp",
-		"tags": [
-			"Addon",
-			"Stopped"
-		],
-		"techs": [
-			"Lua",
-			"Garry's mod Addon"
-		],
-		"dates": {
-			"begin": "2014-06",
-			"first-release": "2015-06-11",
-			"updated": "2017-07-02"
-		},
-		"links": [
-			{
-				"url": "https://steamcommunity.com/sharedfiles/filedetails/?id=459240346",
-				"name": "Steam"
-			},
-			{
-				"url": "https://github.com/Elanis/SciFi-Pack-Addon-Gamemode/",
-				"name": "Github"
-			}
-		],
-		"major": true,
-		"stopped": true
-	},
-	"simple-anti-propsurf": {
-		"title": "Simple Anti Propsurf",
-		"description": "A simple and optimized (lag-free) anti propsurf on Garry's Mod.",
-		"image": "/img/GmodAntiSurf.webp",
-		"tags": [
-			"Addon"
-		],
-		"techs": [
-			"Lua",
-			"Garry's mod Addon"
-		],
-		"dates": {
-			"begin": "2017-12-13",
-			"first-release": "2017-12-13",
-			"updated": "2017-12-24"
-		},
-		"links": [
-			{
-				"url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1230723021",
-				"name": "Steam"
-			},
-			{
-				"url": "https://github.com/TeamCookiePixel/GmodAntiSurf",
-				"name": "Github"
-			}
-		]
-	},
-	"steam-auth-poc": {
-		"title": "Steam Auth POC",
-		"description": "Proof of Concept of various headless browser softwares calling node.js server and using Steam APIs.",
-		"tags": [
-		],
-		"techs": [
-			"Tauri",
-			"Nw.js",
-			"Node.js",
-			"Steam"
-		],
-		"dates": {
-			"begin": "2022-06-11",
-			"first-release": "2022-06-11",
-			"updated": "2022-11-22"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/steam-auth-poc-nwjs",
-				"name": "Github | NW.JS"
-			},
-			{
-				"url": "https://github.com/Elanis/steam-auth-poc-tauri",
-				"name": "Github | Tauri"
-			}
-		]
-	},
-	"steam-achievements": {
-		"title": "Steam Achievements",
-		"description": "A small script to fetch and parse Achievements & Game list from Steam API.",
-		"tags": [
-			"Tool"
-		],
-		"techs": [
-			"Node.js"
-		],
-		"dates": {
-			"begin": "2021-01-25",
-			"first-release": "2021-01-25",
-			"updated": "2021-01-26"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/steam-achievements",
-				"name": "Github | Archive"
-			}
-		]
-	},
-	"translatool": {
-		"title": "Translatool",
-		"description": "A cross-platform GUI to easily translate your local projects",
-		"tags": [
-			"Tool"
-		],
-		"techs": [
-			"Tauri"
-		],
-		"dates": {
-			"begin": "2022-02-14",
-			"first-release": "2022-02-14",
-			"updated": "2024-12-05"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Dysnomia-Studio/translatool",
-				"name": "Github"
-			}
-		],
-		"dysnomiaProject": true
-	},
-	"ultimate-constrainer": {
-		"title": "Ultimate Constrainer",
-		"description": "The Ultimate constrainer is a tool to parent and modify physic of a prop or of a group of props on Garry's Mod.",
-		"image": "/img/UltimateConstrainer.webp",
-		"tags": [
-			"Addon"
-		],
-		"techs": [
-			"Lua",
-			"Garry's mod Addon"
-		],
-		"dates": {
-			"begin": "2015-03-27",
-			"first-release": "2016-04-04",
-			"updated": "2017-12-28"
-		},
-		"links": [
-			{
-				"url": "https://steamcommunity.com/sharedfiles/filedetails/?id=659473058",
-				"name": "Steam"
-			}
-		]
-	},
-	"underwater": {
-		"title": "Underwater",
-		"description": "Small gamejam game for Game Dev Unlocked Game Jam #4.",
-		"tags": [
-			"Game"
-		],
-		"image": "/img/underwater.webp",
-		"techs": [
-			"React"
-		],
-		"dates": {
-			"begin": "2022-04-09",
-			"first-release": "2022-04-10",
-			"updated": "2023-12-26"
-		},
-		"links": [
-			{
-				"url": "https://elanis.itch.io/underwater",
-				"name": "Itch"
-			},
-			{
-				"url": "https://github.com/Elanis/underwater",
-				"name": "Github | Archive"
-			}
-		]
-	},
-	"vulkan-triangle-rust": {
-		"title": "Vulkan Triangle (Rust)",
-		"description": "Application of \"vulkan-tutorial\" in Rust.",
-		"image": "/img/vulkan-triangle-rust.webp",
-		"tags": [],
-		"techs": [
-			"Rust",
-			"Vulkan"
-		],
-		"dates": {
-			"begin": "2020-03-17",
-			"first-release": "2020-03-17",
-			"updated": "2020-03-30"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/vulkan-tutorial-rs",
-				"name": "Github | Archive"
-			}
-		]
-	},
-	"webgpu-tests": {
-		"title": "WebGPU triangle & other scripts",
-		"description": "Some javascript scripts to test WebGPU API",
-		"tags": [],
-		"techs": [
-			"JS"
-		],
-		"dates": {
-			"begin": "2021-05-30",
-			"first-release": "2021-05-30",
-			"updated": "2025-07-19"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/webgpu-tests",
-				"name": "Github"
-			}
-		]
-	},
-	"web-to-desktop-framework-comparison": {
-		"title": "Web to Desktop framework comparison",
-		"description": "This repository was made to create an objective comparison of multiple framework that grant us to \"transform\" our web app to desktop application formats.",
-		"tags": [],
-		"techs": [],
-		"dates": {
-			"begin": "2021-03-09",
-			"first-release": "2021-03-09",
-			"updated": "2024-12-25"
-		},
-		"links": [
-			{
-				"url": "https://github.com/Elanis/web-to-desktop-framework-comparison",
-				"name": "Github"
-			}
-		],
-		"major": true
-	}
+    "achieve-games": {
+        "title": "Achieve.games",
+        "description": "Track achievements from all your favorite game libraries.",
+        "image": "/img/achievegames.webp",
+        "tags": [
+            "Website"
+        ],
+        "techs": [
+            ".NET 8"
+        ],
+        "dates": {
+            "begin": "2021-03-29",
+            "first-release": "2021-04",
+            "updated": "2025-08-19"
+        },
+        "links": [
+            {
+                "url": "https://achieve.games",
+                "name": "Website"
+            }
+        ],
+        "major": true,
+        "dysnomiaProject": true
+    },
+    "alchemistry": {
+        "title": "Alchemistry",
+        "description": "Merge elements to discover new ones ! Craft the entire world from fire to life.",
+        "image": "/img/alchemistry.webp",
+        "tags": [
+            "Game"
+        ],
+        "techs": [
+            "React",
+            "node-webkit",
+            "Steam (greenworks.js)"
+        ],
+        "dates": {
+            "begin": "2021-08-01",
+            "first-release": "2022-03-07",
+            "updated": "2024-11-22"
+        },
+        "links": [
+            {
+                "url": "https://store.steampowered.com/app/1730540/Alchemistry/",
+                "name": "Steam"
+            },
+            {
+                "url": "https://elanis.itch.io/alchemistry",
+                "name": "Itch"
+            }
+        ],
+        "major": true,
+        "dysnomiaProject": true
+    },
+    "atomic-text": {
+        "title": "Atomic Text",
+        "description": "Transform a text into Atom Symbols",
+        "tags": [
+            "Tool"
+        ],
+        "techs": [
+            "Node.js"
+        ],
+        "dates": {
+            "begin": "2021-04-17",
+            "first-release": "2021-04-17",
+            "updated": "2021-04-17"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/atomic-text",
+                "name": "Github | Archive"
+            }
+        ],
+        "stopped": true
+    },
+    "backup-git-repositories": {
+        "title": "backup-git-repositories",
+        "description": "Script used to backup my Github repositories on my TrueNAS Scale server",
+        "tags": [
+            "Tool"
+        ],
+        "techs": [
+            "Bash"
+        ],
+        "dates": {
+            "begin": "2022-08-15",
+            "first-release": "2022-08-15",
+            "updated": "2024-09-17"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/backup-git-repositories",
+                "name": "Github"
+            }
+        ]
+    },
+    "browser-particle-animation-canvas2d": {
+        "title": "browser-particle-animation-canvas2d",
+        "description": "Browser particle animation using canvas2d-wrapper",
+        "image": "/img/browser-particle-animation-canvas2d.webp",
+        "tags": [],
+        "techs": [
+            "JS"
+        ],
+        "dates": {
+            "begin": "2023-12-14",
+            "first-release": "2023-12-14",
+            "updated": "2023-12-14"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/browser-particle-animation-canvas2d",
+                "name": "Github"
+            }
+        ]
+    },
+    "canvas2d-wrapper": {
+        "title": "canvas2d-wrapper",
+        "description": "A React Wrapper to use HTML5 canvas with mouse move and zoom abilities.",
+        "image": "/img/canvas2d-wrapper.webp",
+        "tags": [
+            "Library"
+        ],
+        "techs": [
+            "React"
+        ],
+        "dates": {
+            "begin": "2021-05-24",
+            "first-release": "2021-05-24",
+            "updated": "2026-01-02"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Dysnomia-Studio/canvas2d-wrapper",
+                "name": "Github"
+            }
+        ],
+        "dysnomiaProject": true
+    },
+    "cosmic-idle": {
+        "title": "Cosmic Idle",
+        "description": "Small gamejam game for Game Dev Unlocked Game Jam #6. Build the universe from big bang to life in this incremental game !",
+        "tags": [
+            "Game"
+        ],
+        "image": "/img/cosmic-idle.webp",
+        "techs": [
+            "React"
+        ],
+        "dates": {
+            "begin": "2023-06-25",
+            "first-release": "2023-07-01",
+            "updated": "2023-07-02"
+        },
+        "links": [
+            {
+                "url": "https://elanis.itch.io/cosmic-idle",
+                "name": "Itch"
+            },
+            {
+                "url": "https://github.com/Dysnomia-Studio/cosmic-idle",
+                "name": "Github"
+            }
+        ],
+        "dysnomiaProject": true
+    },
+    "crash-in-space": {
+        "title": "Crash In Space",
+        "description": "A short narrative game about someone whose ship crashed. Multiple narrative choices available, try restarting the game and not following the narrator!",
+        "tags": [
+            "Game"
+        ],
+        "image": "/img/crash-in-space.webp",
+        "techs": [
+            "Godot"
+        ],
+        "dates": {
+            "begin": "2025-11-29",
+            "first-release": "2025-12-07",
+            "updated": "2025-12-07"
+        },
+        "links": [
+            {
+                "url": "https://elanis.itch.io/crash-in-space",
+                "name": "Itch"
+            },
+            {
+                "url": "https://github.com/Dysnomia-Studio/cosmic-idle",
+                "name": "Github"
+            }
+        ],
+        "dysnomiaProject": false
+    },
+    "dehash-me": {
+        "title": "Dehash.me",
+        "description": "Dehash.me was created to raise awareness on basic hashing weaknesses. It owned and generated its own (weak) hashes dictionnary.",
+        "image": "/img/dehashme.webp",
+        "tags": [
+            "Website"
+        ],
+        "techs": [
+            ".NET 8"
+        ],
+        "dates": {
+            "begin": "2017-04-05",
+            "first-release": "2017-04-05",
+            "updated": "2025-06-28"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Dysnomia-Studio/dehash-me",
+                "name": "GitHub | Archive"
+            }
+        ],
+        "major": true,
+        "stopped": true,
+        "dysnomiaProject": true
+    },
+    "devblog": {
+        "title": "Devblog",
+        "description": "Dysnomia's devblog",
+        "tags": [
+            "Website"
+        ],
+        "techs": [
+            "JS",
+            "Astro"
+        ],
+        "dates": {
+            "begin": "2018-10-05",
+            "first-release": "2018-10-05",
+            "updated": "2025-12-28"
+        },
+        "links": [
+            {
+                "url": "https://blog.dysnomia.studio",
+                "name": "Website"
+            },
+            {
+                "url": "https://github.com/Dysnomia-Studio/devblog",
+                "name": "Github"
+            }
+        ],
+        "major": true,
+        "dysnomiaProject": true
+    },
+    "discord-server-stats": {
+        "title": "Discord server stats",
+        "description": "A discord bot made to produce stats about servers, users and channels by saving data to local files.",
+        "tags": [
+            "Tool"
+        ],
+        "techs": [
+            "Node.js"
+        ],
+        "dates": {
+            "begin": "2023-04-27",
+            "first-release": "2023-04-27",
+            "updated": "2025-04-11"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/discord-server-stats",
+                "name": "Github"
+            }
+        ]
+    },
+    "domain-checker": {
+        "title": "Domain checker",
+        "description": "Check domain availability using the api available at whoisxmlapi.com",
+        "tags": [
+            "Tool"
+        ],
+        "techs": [
+            "Node.js"
+        ],
+        "dates": {
+            "begin": "2021-03-27",
+            "first-release": "2021-03-27",
+            "updated": "2024-05-07"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/domain-checker",
+                "name": "Github | Archive"
+            }
+        ],
+        "stopped": true
+    },
+    "dmarc-parser": {
+        "title": "dmarc-parser",
+        "description": "A simple job that query, parse and save to database dmarc aggregate reports",
+        "tags": [
+            "Tool"
+        ],
+        "techs": [
+            "Node.js"
+        ],
+        "dates": {
+            "begin": "2022-08-27",
+            "first-release": "2022-08-27",
+            "updated": "2023-01-22"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Dysnomia-Studio/dmarc-parser",
+                "name": "Github | Archive"
+            }
+        ],
+        "stopped": true,
+        "dysnomiaProject": true
+    },
+    "downstat-us": {
+        "title": "Downstat.us",
+        "description": "Downstat.us was a website monitoring popular services.",
+        "image": "/img/downstatus.webp",
+        "tags": [
+            "Website"
+        ],
+        "techs": [
+            ".NET 8"
+        ],
+        "dates": {
+            "begin": "2022-02-26",
+            "first-release": "2022-11-08",
+            "updated": "2023-12-02"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Dysnomia-Studio/downstatus",
+                "name": "GitHub | Archive"
+            }
+        ],
+        "dysnomiaProject": true,
+        "stopped": true
+    },
+    "Dysnomia.Common.SQL": {
+        "title": "Dysnomia.Common.SQL",
+        "description": "A driver agnostic Micro-ORM for .NET 6/7",
+        "tags": [
+            "Library"
+        ],
+        "techs": [
+            ".NET 8"
+        ],
+        "dates": {
+            "begin": "2019-10-03",
+            "first-release": "2019-10-05",
+            "updated": "2024-12-02"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Dysnomia-Studio/Dysnomia.Common.SQL",
+                "name": "Github"
+            },
+            {
+                "url": "https://www.nuget.org/packages/Dysnomia.Common.SQL/",
+                "name": "NuGet"
+            }
+        ],
+        "dysnomiaProject": true,
+        "stopped": true
+    },
+    "Dysnomia.Common.BlizzardWebAPI": {
+        "title": "Dysnomia.Common.BlizzardWebAPI",
+        "description": "A C# library to easily get data from Blizzard Web API.",
+        "tags": [
+            "Library"
+        ],
+        "techs": [
+            ".NET 8"
+        ],
+        "dates": {
+            "begin": "2021-06-21",
+            "first-release": "2021-06-23",
+            "updated": "2026-01-02"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Dysnomia-Studio/Dysnomia.Common.BlizzardWebAPI",
+                "name": "Github"
+            },
+            {
+                "url": "https://www.nuget.org/packages/Dysnomia.Common.BlizzardWebAPI/",
+                "name": "NuGet"
+            }
+        ],
+        "dysnomiaProject": true
+    },
+    "Dysnomia.Common.SteamWebAPI": {
+        "title": "Dysnomia.Common.SteamWebAPI",
+        "description": "A C# library to easily get data from Steam Web API.",
+        "tags": [
+            "Library"
+        ],
+        "techs": [
+            ".NET 8"
+        ],
+        "dates": {
+            "begin": "2021-04-01",
+            "first-release": "2021-04-01",
+            "updated": "2025-11-30"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Dysnomia-Studio/Dysnomia.Common.SteamWebAPI",
+                "name": "Github"
+            },
+            {
+                "url": "https://www.nuget.org/packages/Dysnomia.Common.SteamWebAPI/",
+                "name": "NuGet"
+            }
+        ],
+        "dysnomiaProject": true
+    },
+    "Dysnomia.Common.WebAPIWrapper": {
+        "title": "Dysnomia.Common.WebAPIWrapper",
+        "description": "A C# library to easily get data from Web API. It's used in our Web API wrapper like Steam, Blizzard, etc.",
+        "tags": [
+            "Library"
+        ],
+        "techs": [
+            ".NET 8"
+        ],
+        "dates": {
+            "begin": "2021-04-01",
+            "first-release": "2021-06-20",
+            "updated": "2025-11-30"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Dysnomia-Studio/Dysnomia.Common.WebAPIWrapper",
+                "name": "Github"
+            },
+            {
+                "url": "https://www.nuget.org/packages/Dysnomia.Common.WebAPIWrapper/",
+                "name": "NuGet"
+            }
+        ],
+        "dysnomiaProject": true
+    },
+    "dysnomia-wiki": {
+        "title": "Dysnomia's games wiki",
+        "description": "The wiki about everything in my games",
+        "image": "/img/dysnomia-wiki.webp",
+        "tags": [
+            "Website"
+        ],
+        "techs": [
+            "JS",
+            "Astro"
+        ],
+        "dates": {
+            "begin": "2024-04-12",
+            "first-release": "2024-05-18",
+            "updated": "2025-10-29"
+        },
+        "links": [
+            {
+                "url": "https://wiki.dysnomia.studio",
+                "name": "Website"
+            },
+            {
+                "url": "https://github.com/Dysnomia-Studio/dysnomia-wiki",
+                "name": "Github"
+            }
+        ],
+        "dysnomiaProject": true,
+        "major": true
+    },
+    "evolution-addon-pack": {
+        "title": "Evolution Addon Pack",
+        "description": "The Evolution Addon Pack (EAP) is an addon based on the Stargate Franchise! We have many entities (including spaceships), props, tools, weapons, NPCs and much more!",
+        "image": "/img/EvolutionAddonPack.webp",
+        "tags": [
+            "Addon",
+            "Stopped"
+        ],
+        "techs": [
+            "Lua",
+            "Garry's mod Addon"
+        ],
+        "dates": {
+            "begin": "2015",
+            "first-release": "2015-07-01",
+            "updated": "2017-07-02"
+        },
+        "links": [
+            {
+                "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=473313458",
+                "name": "Steam"
+            },
+            {
+                "url": "https://github.com/williamdefly/EvolutionAddonPack/",
+                "name": "Github"
+            }
+        ],
+        "major": true,
+        "stopped": true
+    },
+    "extortion": {
+        "title": "Extortion",
+        "description": "You're a computer engineer with a terrible secret. Someone is blackmailing you and now, you have to hack some servers and get secret files for him. Would you succeed to achieve his missions or would you find him and revenge ?",
+        "image": "/img/extortion.webp",
+        "tags": [
+            "Game"
+        ],
+        "techs": [
+            "React",
+            "node-webkit",
+            "Steam (greenworks.js)"
+        ],
+        "dates": {
+            "begin": "2020-02-15",
+            "first-release": "2020-10-30",
+            "updated": "2025-10-22"
+        },
+        "links": [
+            {
+                "url": "https://store.steampowered.com/app/1299430/Extortion/",
+                "name": "Steam"
+            },
+            {
+                "url": "https://elanis.itch.io/extortion",
+                "name": "Itch"
+            }
+        ],
+        "major": true,
+        "dysnomiaProject": true
+    },
+    "galactae": {
+        "title": "Galactae",
+        "description": "Galactae is an in-browser space nation management multiplayer game.",
+        "image": "/img/galactae.webp",
+        "tags": [
+            "Game"
+        ],
+        "techs": [
+            "PHP",
+            "Node.JS",
+            "Socket.io"
+        ],
+        "dates": {
+            "begin": "2016-06-01",
+            "first-release": "2019-06-01",
+            "updated": "2021-08-11"
+        },
+        "links": [
+            {
+                "url": "https://galactae.eu/",
+                "name": "Website"
+            }
+        ],
+        "major": true,
+        "dysnomiaProject": true
+    },
+    "gamedev-roadmap": {
+        "title": "GameDev Roadmap",
+        "description": "This repository contains the whole (technical, commercial, communication, and so on) roadmap of my games not to forget things to do.",
+        "tags": [],
+        "techs": [],
+        "dates": {
+            "begin": "2024-04-06",
+            "first-release": "2024-04-06",
+            "updated": "2025-10-02"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Dysnomia-Studio/gamedev-roadmap",
+                "name": "Github"
+            }
+        ]
+    },
+    "generative-art": {
+        "title": "Generative art experimentations",
+        "description": "",
+        "image": "/img/generative-art.webp",
+        "tags": [],
+        "techs": [
+            "Javascript"
+        ],
+        "dates": {
+            "begin": "2023-06-15",
+            "first-release": "2023-06-15",
+            "updated": "2023-06-15"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/generative-art",
+                "name": "Github | Archive"
+            }
+        ],
+        "stopped": true
+    },
+    "howtoopenme": {
+        "title": "HowToOpen.me",
+        "description": "HowToOpen.me was a website to provide a list of software to open a specific file type.",
+        "tags": [
+            "Website"
+        ],
+        "techs": [
+            ".NET 8"
+        ],
+        "dates": {
+            "begin": "2018-04-29",
+            "first-release": "2018-05-01",
+            "updated": "2020-07-10"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Dysnomia-Studio/howtoopenme",
+                "name": "GitHub | Archive"
+            }
+        ],
+        "dysnomiaProject": true,
+        "stopped": true
+    },
+    "infras": {
+        "title": "Infras",
+        "description": "This repostiories hosts my homelab and my production (Dysnomia) infrastructures files..",
+        "tags": [],
+        "techs": [
+            "Ansible",
+            "OctoDNS",
+            "Wireguard"
+        ],
+        "dates": {
+            "begin": "2022-03-18",
+            "first-release": "2022-03-18",
+            "updated": "2025-11-14"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/Infras",
+                "name": "Github"
+            }
+        ],
+        "dysnomiaProject": true
+    },
+    "logistik": {
+        "title": "Logistik",
+        "description": "Lay tracks, schedule trains, and optimize routes to transport passengers and cargo across the map.Balance fuel costs, adapt to your environment, and demands in this ever-evolving train-based puzzle.",
+        "image": "/img/logistik.webp",
+        "tags": [
+            "Game"
+        ],
+        "techs": [
+            "React",
+            "NW.JS",
+            "Node.js"
+        ],
+        "dates": {
+            "begin": "2025-04-07",
+            "first-release": "2026-12-31",
+            "updated": "2026-12-31"
+        },
+        "links": [
+            {
+                "url": "https://store.steampowered.com/app/3928180/Logistik",
+                "name": "Steam"
+            }
+        ],
+        "major": true,
+        "dysnomiaProject": true
+    },
+    "lumen": {
+        "title": "L.U.M.E.N.",
+        "description": "L.U.M.E.N. is a simple and modulable personal assistant built on Electron. Modules gives you plenty of differents features like: music, time management, statistics, etc.",
+        "image": "/img/lumen.webp",
+        "tags": [
+            "Software"
+        ],
+        "techs": [
+            "Electron",
+            "Grafana"
+        ],
+        "dates": {
+            "begin": "2016-05-01",
+            "first-release": "2020-12-09",
+            "updated": "2026-01-01"
+        },
+        "links": [
+            {
+                "url": "https://github.com/L-U-M-E-N",
+                "name": "Github"
+            }
+        ],
+        "major": true
+    },
+    "manufacturinc": {
+        "title": "Manufactur'inc.",
+        "description": "Lead your new company to success in this industry management game. Blueprint and optimize your production; make ethical choices to influence your worker conditions, ecological impact, automation level, and more.",
+        "image": "/img/manufacturinc.webp",
+        "tags": [
+            "Game"
+        ],
+        "techs": [
+            "React",
+            "NW.JS",
+            "Node.js",
+            "Socket.io"
+        ],
+        "dates": {
+            "begin": "2020-08-01",
+            "first-release": "2026-12-31",
+            "updated": "2026-12-31"
+        },
+        "links": [
+            {
+                "url": "https://store.steampowered.com/app/2146380/Manufactur_inc/",
+                "name": "Steam"
+            }
+        ],
+        "major": true,
+        "dysnomiaProject": true
+    },
+    "neverending": {
+        "title": "Neverending",
+        "description": "(GameJam game:) A tower defense game with a little trick: timelines! You’re playing the game in three eras at the same moment!",
+        "tags": [
+            "Game"
+        ],
+        "techs": [
+            "React"
+        ],
+        "dates": {
+            "begin": "2024-12-07",
+            "first-release": "2024-12-15",
+            "updated": "2024-12-15"
+        },
+        "links": [
+            {
+                "url": "https://elanis.itch.io/neverending",
+                "name": "Itch"
+            },
+            {
+                "url": "https://github.com/Dysnomia-Studio/neverending",
+                "name": "Github | Archive"
+            }
+        ],
+        "dysnomiaProject": true,
+        "stopped": true
+    },
+    "prey-predator": {
+        "title": "Prey/predator",
+        "description": "Small simulation to try handwritten neuralnetwork on a prey/predator pattern.",
+        "tags": [],
+        "techs": [
+            "Rust"
+        ],
+        "dates": {
+            "begin": "2022-09-02",
+            "first-release": "2022-09-02",
+            "updated": "2022-10-06"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/prey-predator",
+                "name": "Github | Archive"
+            }
+        ],
+        "stopped": true
+    },
+    "raytracer-rust": {
+        "title": "Raytracer (Rust)",
+        "description": "Application of \"Raytracing in a week-end\" in Rust.",
+        "image": "/img/raytracer-rust.webp",
+        "tags": [],
+        "techs": [
+            "Rust"
+        ],
+        "dates": {
+            "begin": "2020-11-27",
+            "first-release": "2020-11-27",
+            "updated": "2021-06-29"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/raytracer",
+                "name": "Github | Archive"
+            }
+        ],
+        "stopped": true
+    },
+    "redmine-to-openproject": {
+        "title": "Redmine to OpenProject",
+        "description": "Tool I used to migrate from redmine to openproject.",
+        "tags": [
+            "Tool",
+            "Stopped"
+        ],
+        "techs": [
+            "Node.js"
+        ],
+        "dates": {
+            "begin": "2021-01-13",
+            "first-release": "2021-01-13",
+            "updated": "2021-03-04"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/redmine-to-openproject",
+                "name": "Github | Archive"
+            }
+        ],
+        "stopped": true
+    },
+    "rust-physical-engine": {
+        "title": "Rust physical engine",
+        "description": "A basic physical engine built for testing Rust Language.",
+        "image": "/img/rust-physical-engine.webp",
+        "tags": [],
+        "techs": [
+            "Rust"
+        ],
+        "dates": {
+            "begin": "2019-11-18",
+            "first-release": "2019-11-18",
+            "updated": "2019-11-23"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/rust_physical_engine",
+                "name": "Github | Archive"
+            }
+        ],
+        "stopped": true
+    },
+    "sbox-scifipack": {
+        "title": "Sci-Fi Pack (S&box version)",
+        "description": "This S&Box addon is a port of few of my (and other dev) addons on Garry's Mod about science fiction.",
+        "tags": [
+            "Addon"
+        ],
+        "techs": [
+            "C#",
+            "S&Box Addon"
+        ],
+        "dates": {
+            "begin": "2021-09-27",
+            "first-release": "2021-09-27",
+            "updated": "2021-09-30"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/sbox-scifipack",
+                "name": "Github"
+            }
+        ],
+        "major": true
+    },
+    "scifi-pack": {
+        "title": "SciFi-Pack (Garry's Mod version)",
+        "description": "The Scifi-Pack is an addon pack made to work as an addon and as a gamemode depending on player choice. It's a pack about many Science Fiction shows, movies, games, etc.",
+        "image": "/img/SciFi-Pack.webp",
+        "tags": [
+            "Addon",
+            "Stopped"
+        ],
+        "techs": [
+            "Lua",
+            "Garry's mod Addon"
+        ],
+        "dates": {
+            "begin": "2014-06",
+            "first-release": "2015-06-11",
+            "updated": "2017-07-02"
+        },
+        "links": [
+            {
+                "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=459240346",
+                "name": "Steam"
+            },
+            {
+                "url": "https://github.com/Elanis/SciFi-Pack-Addon-Gamemode/",
+                "name": "Github"
+            }
+        ],
+        "major": true,
+        "stopped": true
+    },
+    "simple-anti-propsurf": {
+        "title": "Simple Anti Propsurf",
+        "description": "A simple and optimized (lag-free) anti propsurf on Garry's Mod.",
+        "image": "/img/GmodAntiSurf.webp",
+        "tags": [
+            "Addon"
+        ],
+        "techs": [
+            "Lua",
+            "Garry's mod Addon"
+        ],
+        "dates": {
+            "begin": "2017-12-13",
+            "first-release": "2017-12-13",
+            "updated": "2017-12-24"
+        },
+        "links": [
+            {
+                "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1230723021",
+                "name": "Steam"
+            },
+            {
+                "url": "https://github.com/TeamCookiePixel/GmodAntiSurf",
+                "name": "Github"
+            }
+        ]
+    },
+    "steam-auth-poc": {
+        "title": "Steam Auth POC",
+        "description": "Proof of Concept of various headless browser softwares calling node.js server and using Steam APIs.",
+        "tags": [],
+        "techs": [
+            "Tauri",
+            "Nw.js",
+            "Node.js",
+            "Steam"
+        ],
+        "dates": {
+            "begin": "2022-06-11",
+            "first-release": "2022-06-11",
+            "updated": "2022-11-22"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/steam-auth-poc-nwjs",
+                "name": "Github | NW.JS"
+            },
+            {
+                "url": "https://github.com/Elanis/steam-auth-poc-tauri",
+                "name": "Github | Tauri"
+            }
+        ]
+    },
+    "steam-achievements": {
+        "title": "Steam Achievements",
+        "description": "A small script to fetch and parse Achievements & Game list from Steam API.",
+        "tags": [
+            "Tool"
+        ],
+        "techs": [
+            "Node.js"
+        ],
+        "dates": {
+            "begin": "2021-01-25",
+            "first-release": "2021-01-25",
+            "updated": "2021-01-26"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/steam-achievements",
+                "name": "Github | Archive"
+            }
+        ]
+    },
+    "translatool": {
+        "title": "Translatool",
+        "description": "A cross-platform GUI to easily translate your local projects",
+        "tags": [
+            "Tool"
+        ],
+        "techs": [
+            "Tauri"
+        ],
+        "dates": {
+            "begin": "2022-02-14",
+            "first-release": "2022-02-14",
+            "updated": "2024-12-05"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Dysnomia-Studio/translatool",
+                "name": "Github"
+            }
+        ],
+        "dysnomiaProject": true
+    },
+    "ultimate-constrainer": {
+        "title": "Ultimate Constrainer",
+        "description": "The Ultimate constrainer is a tool to parent and modify physic of a prop or of a group of props on Garry's Mod.",
+        "image": "/img/UltimateConstrainer.webp",
+        "tags": [
+            "Addon"
+        ],
+        "techs": [
+            "Lua",
+            "Garry's mod Addon"
+        ],
+        "dates": {
+            "begin": "2015-03-27",
+            "first-release": "2016-04-04",
+            "updated": "2017-12-28"
+        },
+        "links": [
+            {
+                "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=659473058",
+                "name": "Steam"
+            }
+        ]
+    },
+    "underwater": {
+        "title": "Underwater",
+        "description": "Small gamejam game for Game Dev Unlocked Game Jam #4.",
+        "tags": [
+            "Game"
+        ],
+        "image": "/img/underwater.webp",
+        "techs": [
+            "React"
+        ],
+        "dates": {
+            "begin": "2022-04-09",
+            "first-release": "2022-04-10",
+            "updated": "2023-12-26"
+        },
+        "links": [
+            {
+                "url": "https://elanis.itch.io/underwater",
+                "name": "Itch"
+            },
+            {
+                "url": "https://github.com/Elanis/underwater",
+                "name": "Github | Archive"
+            }
+        ]
+    },
+    "vulkan-triangle-rust": {
+        "title": "Vulkan Triangle (Rust)",
+        "description": "Application of \"vulkan-tutorial\" in Rust.",
+        "image": "/img/vulkan-triangle-rust.webp",
+        "tags": [],
+        "techs": [
+            "Rust",
+            "Vulkan"
+        ],
+        "dates": {
+            "begin": "2020-03-17",
+            "first-release": "2020-03-17",
+            "updated": "2020-03-30"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/vulkan-tutorial-rs",
+                "name": "Github | Archive"
+            }
+        ]
+    },
+    "webgpu-tests": {
+        "title": "WebGPU triangle & other scripts",
+        "description": "Some javascript scripts to test WebGPU API",
+        "tags": [],
+        "techs": [
+            "JS"
+        ],
+        "dates": {
+            "begin": "2021-05-30",
+            "first-release": "2021-05-30",
+            "updated": "2025-07-19"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/webgpu-tests",
+                "name": "Github"
+            }
+        ]
+    },
+    "web-to-desktop-framework-comparison": {
+        "title": "Web to Desktop framework comparison",
+        "description": "This repository was made to create an objective comparison of multiple framework that grant us to \"transform\" our web app to desktop application formats.",
+        "tags": [],
+        "techs": [],
+        "dates": {
+            "begin": "2021-03-09",
+            "first-release": "2021-03-09",
+            "updated": "2024-12-25"
+        },
+        "links": [
+            {
+                "url": "https://github.com/Elanis/web-to-desktop-framework-comparison",
+                "name": "Github"
+            }
+        ],
+        "major": true
+    }
 }
