@@ -21,7 +21,8 @@
             }
         ],
         "major": true,
-        "dysnomiaProject": true
+        "dysnomiaProject": true,
+        "stopped": true
     },
     "alchemistry": {
         "title": "Alchemistry",
@@ -38,7 +39,7 @@
         "dates": {
             "begin": "2021-08-01",
             "first-release": "2022-03-07",
-            "updated": "2024-11-22"
+            "updated": "2026-03-07"
         },
         "links": [
             {
@@ -258,7 +259,7 @@
         "dates": {
             "begin": "2023-04-27",
             "first-release": "2023-04-27",
-            "updated": "2025-04-11"
+            "updated": "2026-02-01"
         },
         "links": [
             {
@@ -455,7 +456,7 @@
         "dates": {
             "begin": "2024-04-12",
             "first-release": "2024-05-18",
-            "updated": "2025-10-29"
+            "updated": "2026-03-07"
         },
         "links": [
             {
@@ -679,7 +680,7 @@
         "dates": {
             "begin": "2016-05-01",
             "first-release": "2020-12-09",
-            "updated": "2026-01-01"
+            "updated": "2026-04-02"
         },
         "links": [
             {
@@ -1074,7 +1075,7 @@
         "dates": {
             "begin": "2021-03-09",
             "first-release": "2021-03-09",
-            "updated": "2024-12-25"
+            "updated": "2026-04-13"
         },
         "links": [
             {
