@@ -130,7 +130,7 @@
         "dates": {
             "begin": "2021-05-24",
             "first-release": "2021-05-24",
-            "updated": "2026-01-02"
+            "updated": "2026-07-17"
         },
         "links": [
             {
@@ -259,7 +259,7 @@
         "dates": {
             "begin": "2023-04-27",
             "first-release": "2023-04-27",
-            "updated": "2026-02-01"
+            "updated": "2026-04-20"
         },
         "links": [
             {
@@ -402,7 +402,7 @@
         "dates": {
             "begin": "2021-04-01",
             "first-release": "2021-04-01",
-            "updated": "2025-11-30"
+            "updated": "2026-05-01"
         },
         "links": [
             {
@@ -428,7 +428,7 @@
         "dates": {
             "begin": "2021-04-01",
             "first-release": "2021-06-20",
-            "updated": "2025-11-30"
+            "updated": "2026-04-23"
         },
         "links": [
             {
@@ -630,7 +630,7 @@
         "dates": {
             "begin": "2022-03-18",
             "first-release": "2022-03-18",
-            "updated": "2025-11-14"
+            "updated": "2026-07-23"
         },
         "links": [
             {
@@ -654,7 +654,7 @@
         ],
         "dates": {
             "begin": "2025-04-07",
-            "first-release": "2026-12-31",
+            "first-release": "2027-12-31",
             "updated": "2026-12-31"
         },
         "links": [
@@ -680,7 +680,7 @@
         "dates": {
             "begin": "2016-05-01",
             "first-release": "2020-12-09",
-            "updated": "2026-04-02"
+            "updated": "2026-06-29"
         },
         "links": [
             {
@@ -705,7 +705,7 @@
         ],
         "dates": {
             "begin": "2020-08-01",
-            "first-release": "2026-12-31",
+            "first-release": "2027-12-31",
             "updated": "2026-12-31"
         },
         "links": [
@@ -1075,7 +1075,7 @@
         "dates": {
             "begin": "2021-03-09",
             "first-release": "2021-03-09",
-            "updated": "2026-04-13"
+            "updated": "2026-05-08"
         },
         "links": [
             {
