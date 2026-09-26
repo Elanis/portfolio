@@ -676,6 +676,23 @@
         ],
         "dysnomiaProject": true
     },
+    "liink": {
+        "title": "Liink",
+        "description": "Liink was a link shortener",
+        "tags": [],
+        "techs": [
+            "PHP"
+        ],
+        "dates": {
+            "begin": "2017-01-01",
+            "first-release": "2017-01-01",
+            "updated": "2017-12-31"
+        },
+        "links": [
+        ],
+        "major": true,
+        "stopped": true
+    },
     "logistik": {
         "title": "Logistik",
         "description": "Lay tracks, schedule trains, and optimize routes to transport passengers and cargo across the map.Balance fuel costs, adapt to your environment, and demands in this ever-evolving train-based puzzle.",
