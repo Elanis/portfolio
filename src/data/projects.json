@@ -593,6 +593,23 @@
             }
         ]
     },
+    "gaspar": {
+        "title": "Gaspar",
+        "description": "A website about tatoos",
+        "tags": [],
+        "techs": [".NET"],
+        "dates": {
+            "begin": "2014-11-10",
+            "first-release": "2014-11-10",
+            "updated": "2026-08-10"
+        },
+        "links": [
+            {
+                "url": "https://gaspar.ovh",
+                "name": "Website"
+            }
+        ]
+    },
     "generative-art": {
         "title": "Generative art experimentations",
         "description": "",
