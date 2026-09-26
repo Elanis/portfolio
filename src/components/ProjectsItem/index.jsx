@@ -1,4 +1,4 @@
-import './index.css'; 
+import './index.css';
 
 export default function ProjectsItem(props) {
 	const project = props.project;
@@ -6,9 +6,9 @@ export default function ProjectsItem(props) {
 	project.image = project.image || '';
 
 	return (
-		<div className="projects-item" style={{ 'backgroundImage': 'url(' + project.image + ')'}}>
+		<div className="projects-item" style={{ 'backgroundImage': 'url(' + project.image + ')' }}>
 			<div className="project-item-opacityBg">
-				<a className="projects-item-bgLink" href={project.links[0].url}>
+				<a className="projects-item-bgLink" href={project.links[0]?.url ?? '#'}>
 					<span className="project-item-title">{project.title}</span>
 					{project.dates.updated !== project.dates['first-release'] && <span className="project-item-lastUpdate">Last updated: {new Date(project.dates.updated).getFullYear()}</span>}
 					<div className="project-item-tags">

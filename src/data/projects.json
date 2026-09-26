@@ -219,6 +219,25 @@
         "stopped": true,
         "dysnomiaProject": true
     },
+    "dev42": {
+        "title": "Dev42",
+        "description": "Dev42 was a website to manage, share and sell scripts and programs. It eventually only was a technical preview and never went fully live.",
+        "image": "/img/dev42.webp",
+        "tags": [
+            "Website"
+        ],
+        "techs": [
+            "PHP"
+        ],
+        "dates": {
+            "begin": "2016-01-01",
+            "first-release": "2017-12-31",
+            "updated": "2017-12-31"
+        },
+        "links": [],
+        "major": true,
+        "stopped": true
+    },
     "devblog": {
         "title": "Devblog",
         "description": "Dysnomia's devblog",
