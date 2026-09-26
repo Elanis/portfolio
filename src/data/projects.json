@@ -1047,7 +1047,7 @@
             }
         ]
     },
-    "webgpu-tests": {
+    "webgpu-sandbox": {
         "title": "WebGPU triangle & other scripts",
         "description": "Some javascript scripts to test WebGPU API",
         "tags": [],
@@ -1061,7 +1061,7 @@
         },
         "links": [
             {
-                "url": "https://github.com/Elanis/webgpu-tests",
+                "url": "https://github.com/Elanis/webgpu-sandbox",
                 "name": "Github"
             }
         ]
