@@ -668,13 +668,12 @@
     },
     "lumen": {
         "title": "L.U.M.E.N.",
-        "description": "L.U.M.E.N. is a simple and modulable personal assistant built on Electron. Modules gives you plenty of differents features like: music, time management, statistics, etc.",
-        "image": "/img/lumen.webp",
+        "description": "Lumen is a customizable and modulable personal assistant I built for myself to help my daily life and do some datamining. It was originally built in private using a PHP/Vanilla JS stack. Then an electron(desktop)/nodejs(server) version has been built.\n\nThe currently maintained and active version is Lumen.App built using .NET.",
         "tags": [
             "Software"
         ],
         "techs": [
-            "Electron",
+            ".NET",
             "Grafana"
         ],
         "dates": {
