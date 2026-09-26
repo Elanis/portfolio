@@ -19,11 +19,15 @@ export default function Projects({ projects, allowMinors }) {
 			{allowMinors && <p className="page-link"><a href="/#projects">Get back to index</a></p>}
 			<div id="projects" className="projects">
 				{projects.filter((p) => allowMinors || p.major).map((project) => {
-					const currentYear = new Date(project.dates[FIRST_RELEASE_FIELD]).getFullYear();
+					const firstReleaseDate = new Date(project.dates[FIRST_RELEASE_FIELD]);
+					let currentProjectYear = firstReleaseDate.getFullYear();
+					if (firstReleaseDate.getTime() > Date.now()) {
+						currentProjectYear = 'Future';
+					}
 					let yearSeparator = null;
-					if (currentYear !== previousYear) {
-						previousYear = currentYear;
-						yearSeparator = (<h3 key={currentYear} className="year-separator">{currentYear}</h3>);
+					if (currentProjectYear !== previousYear) {
+						previousYear = currentProjectYear;
+						yearSeparator = (<h3 key={currentProjectYear} className="year-separator">{currentProjectYear}</h3>);
 					}
 
 					return (<>
